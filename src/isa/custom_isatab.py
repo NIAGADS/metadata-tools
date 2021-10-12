@@ -632,8 +632,6 @@ def dump(isa_obj, output_path, i_file_name='i_investigation.txt',
                 protocol_type_term_accession,
                 protocol_type_term_source_name,
                 protocol.description,
-                protocol.uri,
-                protocol.version,
                 parameters_names,
                 parameters_accession_numbers,
                 parameters_source_refs,
@@ -1840,6 +1838,11 @@ def read_investigation_file(fp):
     df_dict = dict()
 
     # Read in investigation file into DataFrames first
+    df_dict['ontology_sources'] = _build_section_df(_read_tab_section(
+        f=memf,
+        sec_key='ONTOLOGY SOURCE REFERENCE',
+        next_sec_key='STUDY'
+    ))
     df_dict['studies'] = list()
     df_dict['s_design_descriptors'] = list()
     df_dict['s_publications'] = list()
@@ -1955,11 +1958,11 @@ def load_investigation(fp):
 
     # Read in investigation file into DataFrames first
     df_dict = read_investigation_file(fp)
-    #log.debug("Loading ONTOLOGY SOURCE REFERENCE section")
-    #labels_expected = {'Term Source Name', 'Term Source File',
-    #                   'Term Source Version', 'Term Source Description'}
-    #check_labels('ONTOLOGY SOURCE REFERENCE',
-    #            labels_expected, df_dict['ontology_sources'])
+    log.debug("Loading ONTOLOGY SOURCE REFERENCE section")
+    labels_expected = {'Term Source Name', 'Term Source File',
+                      'Term Source Version', 'Term Source Description'}
+    check_labels('ONTOLOGY SOURCE REFERENCE',
+               labels_expected, df_dict['ontology_sources'])
 
     for i in range(0, len(df_dict['studies'])):
         log.debug("Loading STUDY section")
@@ -1982,12 +1985,6 @@ def load_investigation(fp):
         check_labels('STUDY PUBLICATIONS', labels_expected,
                      df_dict['s_publications'][i])
 
-        log.debug("Loading STUDY FACTORS section")
-        labels_expected = {'Study Factor Name', 'Study Factor Type',
-                           'Study Factor Type Term Accession Number',
-                           'Study Factor Type Term Source REF'}
-        check_labels('STUDY FACTORS', labels_expected, df_dict['s_factors'][i])
-
         log.debug("Loading STUDY ASSAYS section")
         labels_expected = {
             'Study Assay Measurement Type',
@@ -2005,8 +2002,7 @@ def load_investigation(fp):
             'Study Protocol Name', 'Study Protocol Type',
             'Study Protocol Type Term Accession Number',
             'Study Protocol Type Term Source REF',
-            'Study Protocol Description', 'Study Protocol URI',
-            'Study Protocol Version',
+            'Study Protocol Description',
             'Study Protocol Parameters Name',
             'Study Protocol Parameters Name Term Accession Number',
             'Study Protocol Parameters Name Term Source REF',
@@ -2084,14 +2080,6 @@ def check_date_formats(i_df):
                 log.warning("(W) Date {} does not conform to ISO8601 format"
                             .format(date_str))
     import iso8601
-    release_date_vals = i_df['investigation'][
-        'Investigation Public Release Date'].tolist()
-    if len(release_date_vals) > 0:
-        check_iso8601_date(release_date_vals[0])
-    sub_date_values = i_df['investigation'][
-        'Investigation Submission Date'].tolist()
-    if len(sub_date_values) > 0:
-        check_iso8601_date(sub_date_values[0])
     for i, study_df in enumerate(i_df['studies']):
         release_date_vals = study_df['Study Public Release Date'].tolist()
         if len(release_date_vals) > 0:
@@ -2124,9 +2112,7 @@ def check_dois(i_df):
                 })
                 log.warning("(W) DOI {} does not conform to DOI format"
                             .format(doi_str))
-    for doi in i_df['i_publications'][
-            'Investigation Publication DOI'].tolist():
-        check_doi(doi)
+
     for i, study_df in enumerate(i_df['s_publications']):
         for doi in study_df['Study Publication DOI'].tolist():
             check_doi(doi)
@@ -2154,8 +2140,6 @@ def check_pubmed_ids_format(i_df):
                 })
                 log.warning("(W) PubMed ID {} is not valid format"
                             .format(pubmed_id_str))
-    for doi in i_df['i_publications']['Investigation PubMed ID'].tolist():
-        check_pubmed_id(str(doi))
     for study_pubs_df in i_df['s_publications']:
         for doi in study_pubs_df['Study PubMed ID'].tolist():
             check_pubmed_id(str(doi))
@@ -3318,12 +3302,6 @@ def check_investigation_against_config(i_df, configs):
     required_fields = [i.header for i in configs[(
         '[investigation]', '')].get_isatab_configuration()[0].get_field()
         if i.is_required]
-    check_section_against_required_fields_one_value(
-        i_df['investigation'], required_fields)
-    check_section_against_required_fields_one_value(
-        i_df['i_publications'], required_fields)
-    check_section_against_required_fields_one_value(
-        i_df['i_contacts'], required_fields)
 
     for x, study_df in enumerate(i_df['studies']):
         check_section_against_required_fields_one_value(
@@ -3332,8 +3310,6 @@ def check_investigation_against_config(i_df, configs):
             i_df['s_design_descriptors'][x], required_fields, x)
         check_section_against_required_fields_one_value(
             i_df['s_publications'][x], required_fields, x)
-        check_section_against_required_fields_one_value(
-            i_df['s_factors'][x], required_fields, x)
         check_section_against_required_fields_one_value(
             i_df['s_assays'][x], required_fields, x)
         check_section_against_required_fields_one_value(
@@ -4162,8 +4138,6 @@ def validate(fp, config_dir=default_config_dir, log_level=None):
         # and 0009, covered by later validation?
         check_samples_not_declared_in_study_used_in_assay(
             i_df, os.path.dirname(fp.name))  # Rule 1003
-        check_study_factor_usage(i_df, os.path.dirname(
-            fp.name))  # Rules 1008 and 1021
         check_protocol_usage(i_df, os.path.dirname(
             fp.name))  # Rules 1007 and 1019
         check_protocol_parameter_usage(
@@ -4173,7 +4147,6 @@ def validate(fp, config_dir=default_config_dir, log_level=None):
         check_pubmed_ids_format(i_df)  # Rule 3003
         check_protocol_names(i_df)  # Rule 1010
         check_protocol_parameter_names(i_df)  # Rule 1011
-        check_study_factor_names(i_df)  # Rule 1012
         term_source_refs = check_ontology_sources(i_df)  # Rule 3008
         log.info("Finished prechecks...")
         log.info("Loading configurations found in {}".format(config_dir))
@@ -4213,9 +4186,6 @@ def validate(fp, config_dir=default_config_dir, log_level=None):
                         config = configs[('[sample]', '')]
                         log.info("Validating {} against default study table "
                                  "configuration".format(study_filename))
-                        log.info("Checking Factor Value presence...")
-                        check_factor_value_presence(
-                            study_sample_table)  # Rule 4007
                         log.info("Checking required fields...")
                         # Rule 4003-8, 4010
                         check_required_fields(study_sample_table, config)
@@ -4718,20 +4688,6 @@ def load(isatab_path_or_ifile, skip_load_tables=False):
             map(lambda x: (x.name, x),
                 investigation.ontology_source_references))
 
-        if len(df_dict['investigation'].index) > 0:
-            row = df_dict['investigation'].iloc[0]
-            investigation.identifier = str(row['Investigation Identifier'])
-            investigation.title = row['Investigation Title']
-            investigation.description = row['Investigation Description']
-            investigation.submission_date = \
-                row['Investigation Submission Date']
-            investigation.public_release_date = \
-                row['Investigation Public Release Date']
-            investigation.publications = get_publications(
-                df_dict['i_publications'])
-            investigation.contacts = get_contacts(df_dict['i_contacts'])
-            investigation.comments = get_comments(df_dict['investigation'])
-
         for i in range(0, len(df_dict['studies'])):
             row = df_dict['studies'][i].iloc[0]
             study = Study()
@@ -4756,23 +4712,11 @@ def load(isatab_path_or_ifile, skip_load_tables=False):
                 design_descriptor.comments = these_comments
                 study.design_descriptors.append(design_descriptor)
 
-            for _, row in df_dict['s_factors'][i].iterrows():
-                factor = StudyFactor(name=row['Study Factor Name'])
-                factor.factor_type = get_oa(
-                    row['Study Factor Type'],
-                    row['Study Factor Type Term Accession Number'],
-                    row['Study Factor Type Term Source REF'])
-                factor.comments = get_comments_row(
-                    df_dict['s_factors'][i].columns, row)
-                study.factors.append(factor)
-
             protocol_map = {}
             for _, row in df_dict['s_protocols'][i].iterrows():
                 protocol = Protocol()
                 protocol.name = row['Study Protocol Name']
                 protocol.description = row['Study Protocol Description']
-                protocol.uri = row['Study Protocol URI']
-                protocol.version = row['Study Protocol Version']
                 protocol.protocol_type = get_oa(
                     row['Study Protocol Type'],
                     row['Study Protocol Type Term Accession Number'],

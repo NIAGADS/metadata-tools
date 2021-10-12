@@ -1,14 +1,19 @@
+ONTOLOGY SOURCE REFERENCE									
+Term Source Name	NOLS								
+Term Source File	localhost:8083/ols								
+Term Source Version	1.0								
+Term Source Description	NIAGADS Ontology Lookup Service								
 STUDY									
-Study Identifier	NG00102								
-Study File Name	s_NG00102.txt								
-Study Title	My Study Long Title								
-Comment[Abbreviated Study Title]	My Study								
-Study Description	description of my study								
+Study Identifier	rnaseq_template_test								
+Study File Name	s_rnaseq_template_test.txt								
+Study Title	RNA Seq Template File								
+Comment[Abbreviated Study Title]	RNA-seq								
+Study Description	template for RNASeq submission w/toy data								
 Study Submission Date									
 Study Public Release Date									
 Comment[Study Grant Number]	NIA2123								
 Comment[Study Funding Agency]	NIA								
-Comment[NIAGADS Dataset Identifier]	NG00102								
+Comment[NIAGADS Dataset Identifier]	rnaseq_template_test								
 Comment[NIAGADS File Identifier]									
 Comment[NIAGADS Exchange File Path]									
 STUDY DESIGN DESCRIPTORS									
@@ -17,30 +22,30 @@ Study Design Type Term Accession Number	OBI_0001293
 Study Design Type Term Source REF	OBI								
 STUDY PUBLICATIONS									
 Study PubMed ID									
-Study Publication DOI
+Study Publication DOI									
 STUDY CONTACTS									
-Study Person Last Name									
-Study Person First Name									
+Study Person Last Name	A	B	A						
+Study Person First Name	Investigator	Investigator	Submitter						
 Study Person Mid Initials									
-Study Person Email									
+Study Person Email	investigator@someplace.com	investigator@someplace.com	submitter@someplace.com						
 Study Person Phone									
 Study Person Fax									
 Study Person Address									
-Study Person Affiliation									
+Study Person Affiliation	Investigator A Affiliation	Investigator B Affiliation	Submitter Affiliation						
 Study Person Roles	investigator	investigator	submitter						
 Study Person Roles Term Accession Number	OBI_0000202	OBI_0000202	OBI_0000068						
 Study Person Roles Term Source REF	NDD	NIAGADS	NIAGADS						
 STUDY ASSAYS									
-Study Assay File Name	a_NG00102.txt								
+Study Assay File Name	a_rnaseq_template_test.txt								
 Study Assay Measurement Type	transcription profiling								
 Study Assay Measurement Type Term Accession Number	OBI_0000424								
 Study Assay Measurement Type Term Source REF	OBI								
-Study Assay Technology Type	nucleotide_sequencing								
+Study Assay Technology Type	nucleotide sequencing								
 Study Assay Technology Type Term Accession Number	OBI_0000626								
 Study Assay Technology Type Term Source REF	OBI								
 Study Assay Technology Platform									
 STUDY PROTOCOLS									
-Study Protocol Name	Extraction Kit Name	Library Preparation	Illumina HiSeq 2000 Sequencing System	STAR Alignment	GCAD Normalization and Annotation	FACS isolation of microglia	split		
+Study Protocol Name	Extraction Kit Name	Library Preparation	Illumina HiSeq 2000 Sequencing System	STAR Alignment	GCAD Normalization and Annotation	FACS isolation of microglia	split	gene knock out	treatment
 Study Protocol Type	nucleic acid extraction	library construction	nucleic acid sequencing	sequence assembly algorithm	sequence analysis data transformation	isolation of cell population	cell culture splitting	gene knock out	treatment
 Study Protocol Type Term Accession Number	OBI_0666667	OBI_0000711	OBI_0001177	OBI_0200187	OBI_0200187			EFO_0000506	
 Study Protocol Type Term Source REF	NDD	NDD	NDD	NDD	NDD	NDD	NDD	NDD	NDD

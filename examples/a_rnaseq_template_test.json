@@ -1,0 +1,1893 @@
+{
+    "comments": [],
+    "description": "",
+    "identifier": "",
+    "ontologySourceReferences": [
+        {
+            "comments": [],
+            "description": "NIAGADS Ontology Lookup Service",
+            "file": "localhost:8083/ols",
+            "name": "NOLS",
+            "version": "1.0"
+        }
+    ],
+    "people": [],
+    "publicReleaseDate": "",
+    "publications": [],
+    "studies": [
+        {
+            "assays": [
+                {
+                    "characteristicCategories": [],
+                    "comments": [],
+                    "dataFiles": [
+                        {
+                            "@id": "#data/deriveddatafile-140267518893168",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bam"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file1.bam",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data/derviveddatafile-140267518890816",
+                            "comments": [],
+                            "name": "file1.bed",
+                            "type": "Dervived Data File"
+                        },
+                        {
+                            "@id": "#data/rawdatafile-140267518892640",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "fastq"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file1.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data/deriveddatafile-140267518893312",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bam"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file2.bam",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data/derviveddatafile-140267518893456",
+                            "comments": [],
+                            "name": "file2.bed",
+                            "type": "Dervived Data File"
+                        },
+                        {
+                            "@id": "#data/rawdatafile-140267518890672",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "fastq"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file2.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data/deriveddatafile-140267518891584",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bam"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file3.bam",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data/derviveddatafile-140267518891152",
+                            "comments": [],
+                            "name": "file3.bed",
+                            "type": "Dervived Data File"
+                        },
+                        {
+                            "@id": "#data/rawdatafile-140267518891200",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "fastq"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file3.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data/deriveddatafile-140267518893264",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bam"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file4.bam",
+                            "type": "Derived Data File"
+                        },
+                        {
+                            "@id": "#data/derviveddatafile-140267518893408",
+                            "comments": [],
+                            "name": "file4.bed",
+                            "type": "Dervived Data File"
+                        },
+                        {
+                            "@id": "#data/rawdatafile-140267518892784",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "fastq"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file4.fastq",
+                            "type": "Raw Data File"
+                        },
+                        {
+                            "@id": "#data/rawdatafile-140267518890720",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "fastq"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "name": "file5.fastq",
+                            "type": "Raw Data File"
+                        }
+                    ],
+                    "filename": "a_rnaseq_template_test.txt",
+                    "materials": {
+                        "otherMaterials": [],
+                        "samples": [
+                            {
+                                "@id": "#sample/140267521763696",
+                                "characteristics": [
+                                    {
+                                        "category": {
+                                            "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                        },
+                                        "comments": [],
+                                        "value": {
+                                            "@id": "#6d6a24d4-ede3-4832-9e6d-c1b718b387a7",
+                                            "annotationValue": "microglia",
+                                            "comments": [],
+                                            "termAccession": "CL_0000129",
+                                            "termSource": ""
+                                        }
+                                    }
+                                ],
+                                "comments": [],
+                                "factorValues": [],
+                                "name": "donor1_sample1"
+                            },
+                            {
+                                "@id": "#sample/140267521761728",
+                                "characteristics": [
+                                    {
+                                        "category": {
+                                            "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                        },
+                                        "comments": [],
+                                        "value": {
+                                            "@id": "#14fc869c-2f06-4484-9468-475df1f2bf43",
+                                            "annotationValue": "microglia",
+                                            "comments": [],
+                                            "termAccession": "CL_0000129",
+                                            "termSource": ""
+                                        }
+                                    }
+                                ],
+                                "comments": [],
+                                "factorValues": [],
+                                "name": "donor1_sample2"
+                            },
+                            {
+                                "@id": "#sample/140267521761440",
+                                "characteristics": [
+                                    {
+                                        "category": {
+                                            "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                        },
+                                        "comments": [],
+                                        "value": {
+                                            "@id": "#7e2c020f-0dd4-4a27-ae42-58be1998546f",
+                                            "annotationValue": "microglia",
+                                            "comments": [],
+                                            "termAccession": "CL_0000129",
+                                            "termSource": ""
+                                        }
+                                    }
+                                ],
+                                "comments": [],
+                                "factorValues": [],
+                                "name": "donor2_sample1"
+                            },
+                            {
+                                "@id": "#sample/140267521761392",
+                                "characteristics": [
+                                    {
+                                        "category": {
+                                            "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                        },
+                                        "comments": [],
+                                        "value": {
+                                            "@id": "#af5f7a3d-cdae-4b86-9a96-9c2771361be6",
+                                            "annotationValue": "microglia",
+                                            "comments": [],
+                                            "termAccession": "CL_0000129",
+                                            "termSource": ""
+                                        }
+                                    }
+                                ],
+                                "comments": [],
+                                "factorValues": [],
+                                "name": "donor3_sample1"
+                            },
+                            {
+                                "@id": "#sample/140267521763840",
+                                "characteristics": [
+                                    {
+                                        "category": {
+                                            "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                        },
+                                        "comments": [],
+                                        "value": {
+                                            "@id": "#5069b7b9-920e-429c-ba88-85c3a40f655c",
+                                            "annotationValue": "microglia",
+                                            "comments": [],
+                                            "termAccession": "CL_0000129",
+                                            "termSource": ""
+                                        }
+                                    }
+                                ],
+                                "comments": [],
+                                "factorValues": [],
+                                "name": "donor3_sample2"
+                            }
+                        ]
+                    },
+                    "measurementType": {
+                        "@id": "#335bae35-e1d5-475e-a766-3824e024007c",
+                        "annotationValue": "transcription profiling",
+                        "comments": [],
+                        "termAccession": "OBI_0000424",
+                        "termSource": ""
+                    },
+                    "processSequence": [
+                        {
+                            "@id": "#process/140267519016384",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140268697847264"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/140267521763696"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518890864"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/140267524590800",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140268697847264"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/140267521761728"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518892496"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/140267519016576",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140268697847264"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/140267521761440"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518890528"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/140267519013984",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140268697847264"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/140267521761392"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518893216"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/140267518892928",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140268697847264"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#sample/140267521763840"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518891344"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": ""
+                        },
+                        {
+                            "@id": "#process/140267518890864",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267522890288"
+                            },
+                            "inputs": [],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518892976"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267519016384"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518892496",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267522890288"
+                            },
+                            "inputs": [],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518890960"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267524590800"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518890528",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267522890288"
+                            },
+                            "inputs": [],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518891728"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267519016576"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518893216",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267522890288"
+                            },
+                            "inputs": [],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518892688"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267519013984"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518891344",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267522890288"
+                            },
+                            "inputs": [],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267518890576"
+                            },
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518892928"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518892976",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523335504"
+                            },
+                            "inputs": [],
+                            "name": "assay_donor1_sample1",
+                            "nextProcess": {
+                                "@id": "#process/140267524591328"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518892640"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518890864"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518890960",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523335504"
+                            },
+                            "inputs": [],
+                            "name": "assay_donor1_sample2",
+                            "nextProcess": {
+                                "@id": "#process/140267524591520"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518890672"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518892496"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518891728",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523335504"
+                            },
+                            "inputs": [],
+                            "name": "assay_donor2_sample1",
+                            "nextProcess": {
+                                "@id": "#process/140267518891536"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518891200"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518890528"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518892688",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523335504"
+                            },
+                            "inputs": [],
+                            "name": "assay_donor3_sample1",
+                            "nextProcess": {
+                                "@id": "#process/140267519015760"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518892784"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518893216"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518890576",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523335504"
+                            },
+                            "inputs": [],
+                            "name": "assay_donor3_sample2",
+                            "nextProcess": {
+                                "@id": "#process/140267524591184"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518890720"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518891344"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267524591328",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336944"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518892640"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267524638800"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518893168"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518892976"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267524591520",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336944"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518890672"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267524638800"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518893168"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518890960"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267518891536",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336944"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518891200"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267524640144"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518893312"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518891728"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267519015760",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336944"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518892784"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267524636880"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518891584"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518892688"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267524591184",
+                            "comments": [],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336944"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/rawdatafile-140267518890720"
+                                }
+                            ],
+                            "name": "",
+                            "nextProcess": {
+                                "@id": "#process/140267524639424"
+                            },
+                            "outputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518893264"
+                                }
+                            ],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518890576"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267524638800",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bed6"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336416"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518893168"
+                                }
+                            ],
+                            "name": "",
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267524591520"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267524640144",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bed6"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336416"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518893312"
+                                }
+                            ],
+                            "name": "",
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267518891536"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267524636880",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bed6"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336416"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518891584"
+                                }
+                            ],
+                            "name": "",
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267519015760"
+                            }
+                        },
+                        {
+                            "@id": "#process/140267524639424",
+                            "comments": [
+                                {
+                                    "name": "file format",
+                                    "value": "bed6"
+                                },
+                                {
+                                    "name": "transferred date",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "file size",
+                                    "value": ""
+                                },
+                                {
+                                    "name": "md5sum",
+                                    "value": ""
+                                }
+                            ],
+                            "date": "",
+                            "executesProtocol": {
+                                "@id": "#140267523336416"
+                            },
+                            "inputs": [
+                                {
+                                    "@id": "#data/deriveddatafile-140267518893264"
+                                }
+                            ],
+                            "name": "",
+                            "outputs": [],
+                            "parameterValues": [],
+                            "performer": "",
+                            "previousProcess": {
+                                "@id": "#process/140267524591184"
+                            }
+                        }
+                    ],
+                    "technologyPlatform": "",
+                    "technologyType": {
+                        "@id": "#54ac8b6b-36e3-43a9-a6d9-959b2da94fb2",
+                        "annotationValue": "nucleotide sequencing",
+                        "comments": [],
+                        "termAccession": "OBI_0000626",
+                        "termSource": ""
+                    },
+                    "unitCategories": []
+                }
+            ],
+            "characteristicCategories": [
+                {
+                    "@id": "#d70dc2a4-ed00-427d-af57-09efcff7c12d",
+                    "characteristicType": {
+                        "@id": "#d70dc2a4-ed00-427d-af57-09efcff7c12d",
+                        "annotationValue": "additional phenotype1; must be ontology term",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#3f62c42f-2668-4a0c-ac7c-ad2ba1fb07a8",
+                    "characteristicType": {
+                        "@id": "#3f62c42f-2668-4a0c-ac7c-ad2ba1fb07a8",
+                        "annotationValue": "age",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#0baa12b9-c7fb-474c-aa55-d67279a18546",
+                    "characteristicType": {
+                        "@id": "#0baa12b9-c7fb-474c-aa55-d67279a18546",
+                        "annotationValue": "biological sex",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb",
+                    "characteristicType": {
+                        "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb",
+                        "annotationValue": "cell type",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#567c9b81-c7a1-4025-bb26-b66e841c3b1c",
+                    "characteristicType": {
+                        "@id": "#567c9b81-c7a1-4025-bb26-b66e841c3b1c",
+                        "annotationValue": "diagnosis",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#4bbed54f-01d2-493c-ad4d-0f6379936f03",
+                    "characteristicType": {
+                        "@id": "#4bbed54f-01d2-493c-ad4d-0f6379936f03",
+                        "annotationValue": "ethnicity",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                },
+                {
+                    "@id": "#04a16607-ff1a-45d8-af31-d639c59a9f28",
+                    "characteristicType": {
+                        "@id": "#04a16607-ff1a-45d8-af31-d639c59a9f28",
+                        "annotationValue": "life stage",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    }
+                }
+            ],
+            "comments": [
+                {
+                    "name": "Abbreviated Study Title",
+                    "value": "RNA-seq"
+                },
+                {
+                    "name": "Study Grant Number",
+                    "value": "NIA2123"
+                },
+                {
+                    "name": "Study Funding Agency",
+                    "value": "NIA"
+                },
+                {
+                    "name": "NIAGADS Dataset Identifier",
+                    "value": "rnaseq_template_test"
+                },
+                {
+                    "name": "NIAGADS File Identifier",
+                    "value": ""
+                },
+                {
+                    "name": "NIAGADS Exchange File Path",
+                    "value": ""
+                }
+            ],
+            "description": "template for RNASeq submission w/toy data",
+            "factors": [],
+            "filename": "s_rnaseq_template_test.txt",
+            "identifier": "rnaseq_template_test",
+            "materials": {
+                "otherMaterials": [],
+                "samples": [
+                    {
+                        "@id": "#sample/140267521763696",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#6d6a24d4-ede3-4832-9e6d-c1b718b387a7",
+                                    "annotationValue": "microglia",
+                                    "comments": [],
+                                    "termAccession": "CL_0000129",
+                                    "termSource": ""
+                                }
+                            }
+                        ],
+                        "comments": [],
+                        "factorValues": [],
+                        "name": "donor1_sample1"
+                    },
+                    {
+                        "@id": "#sample/140267521761728",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#14fc869c-2f06-4484-9468-475df1f2bf43",
+                                    "annotationValue": "microglia",
+                                    "comments": [],
+                                    "termAccession": "CL_0000129",
+                                    "termSource": ""
+                                }
+                            }
+                        ],
+                        "comments": [],
+                        "factorValues": [],
+                        "name": "donor1_sample2"
+                    },
+                    {
+                        "@id": "#sample/140267521761440",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#7e2c020f-0dd4-4a27-ae42-58be1998546f",
+                                    "annotationValue": "microglia",
+                                    "comments": [],
+                                    "termAccession": "CL_0000129",
+                                    "termSource": ""
+                                }
+                            }
+                        ],
+                        "comments": [],
+                        "factorValues": [],
+                        "name": "donor2_sample1"
+                    },
+                    {
+                        "@id": "#sample/140267521761392",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#af5f7a3d-cdae-4b86-9a96-9c2771361be6",
+                                    "annotationValue": "microglia",
+                                    "comments": [],
+                                    "termAccession": "CL_0000129",
+                                    "termSource": ""
+                                }
+                            }
+                        ],
+                        "comments": [],
+                        "factorValues": [],
+                        "name": "donor3_sample1"
+                    },
+                    {
+                        "@id": "#sample/140267521763840",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#62ab160d-a66d-41e9-b5d5-5f23070139eb"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#5069b7b9-920e-429c-ba88-85c3a40f655c",
+                                    "annotationValue": "microglia",
+                                    "comments": [],
+                                    "termAccession": "CL_0000129",
+                                    "termSource": ""
+                                }
+                            }
+                        ],
+                        "comments": [],
+                        "factorValues": [],
+                        "name": "donor3_sample2"
+                    }
+                ],
+                "sources": [
+                    {
+                        "@id": "#source/140267521762352",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#567c9b81-c7a1-4025-bb26-b66e841c3b1c"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#4c71e754-8404-4554-b973-75846889f43a",
+                                    "annotationValue": "late-onset Alzheimers disease",
+                                    "comments": [],
+                                    "termAccession": "EFO_1001870",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#04a16607-ff1a-45d8-af31-d639c59a9f28"
+                                },
+                                "comments": [],
+                                "value": "adult"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#3f62c42f-2668-4a0c-ac7c-ad2ba1fb07a8"
+                                },
+                                "comments": [],
+                                "value": "70"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#0baa12b9-c7fb-474c-aa55-d67279a18546"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#fd0bdc5f-54b2-40f8-9ced-3545c9b32a13",
+                                    "annotationValue": "male",
+                                    "comments": [],
+                                    "termAccession": "PATO_0000384",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#4bbed54f-01d2-493c-ad4d-0f6379936f03"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#9ce2eff3-8875-40be-ac24-eae24c7484a6",
+                                    "annotationValue": "European",
+                                    "comments": [],
+                                    "termAccession": "HANCESTRO_0005 ",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#d70dc2a4-ed00-427d-af57-09efcff7c12d"
+                                },
+                                "comments": [],
+                                "value": ""
+                            }
+                        ],
+                        "comments": [
+                            {
+                                "name": "autopsy info",
+                                "value": ""
+                            }
+                        ],
+                        "name": "donor1"
+                    },
+                    {
+                        "@id": "#source/140267521763936",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#567c9b81-c7a1-4025-bb26-b66e841c3b1c"
+                                },
+                                "comments": [],
+                                "value": ""
+                            },
+                            {
+                                "category": {
+                                    "@id": "#04a16607-ff1a-45d8-af31-d639c59a9f28"
+                                },
+                                "comments": [],
+                                "value": "adult"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#3f62c42f-2668-4a0c-ac7c-ad2ba1fb07a8"
+                                },
+                                "comments": [],
+                                "value": "70"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#0baa12b9-c7fb-474c-aa55-d67279a18546"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#ad353663-b81a-4999-a4b3-db65ab232ff8",
+                                    "annotationValue": "female",
+                                    "comments": [],
+                                    "termAccession": "PATO_0000383",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#4bbed54f-01d2-493c-ad4d-0f6379936f03"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#71c696c5-178e-489c-ad11-18eb284ef861",
+                                    "annotationValue": "African American",
+                                    "comments": [],
+                                    "termAccession": "HANCESTRO_0568 ",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#d70dc2a4-ed00-427d-af57-09efcff7c12d"
+                                },
+                                "comments": [],
+                                "value": ""
+                            }
+                        ],
+                        "comments": [
+                            {
+                                "name": "autopsy info",
+                                "value": ""
+                            }
+                        ],
+                        "name": "donor2"
+                    },
+                    {
+                        "@id": "#source/140267521761872",
+                        "characteristics": [
+                            {
+                                "category": {
+                                    "@id": "#567c9b81-c7a1-4025-bb26-b66e841c3b1c"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#851637a2-05fd-41d8-b968-3b3c4ed19ac3",
+                                    "annotationValue": "late-onset Alzheimers disease",
+                                    "comments": [],
+                                    "termAccession": "EFO_1001870",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#04a16607-ff1a-45d8-af31-d639c59a9f28"
+                                },
+                                "comments": [],
+                                "value": "adult"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#3f62c42f-2668-4a0c-ac7c-ad2ba1fb07a8"
+                                },
+                                "comments": [],
+                                "value": "70"
+                            },
+                            {
+                                "category": {
+                                    "@id": "#0baa12b9-c7fb-474c-aa55-d67279a18546"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#981d9667-2e3c-40f4-b995-f7a26c21ba2d",
+                                    "annotationValue": "male",
+                                    "comments": [],
+                                    "termAccession": "PATO_0000384",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#4bbed54f-01d2-493c-ad4d-0f6379936f03"
+                                },
+                                "comments": [],
+                                "value": {
+                                    "@id": "#f130159b-567d-4a6f-b1b1-5ef67b6d4272",
+                                    "annotationValue": "European",
+                                    "comments": [],
+                                    "termAccession": "HANCESTRO_0005 ",
+                                    "termSource": ""
+                                }
+                            },
+                            {
+                                "category": {
+                                    "@id": "#d70dc2a4-ed00-427d-af57-09efcff7c12d"
+                                },
+                                "comments": [],
+                                "value": ""
+                            }
+                        ],
+                        "comments": [
+                            {
+                                "name": "autopsy info",
+                                "value": ""
+                            }
+                        ],
+                        "name": "donor3"
+                    }
+                ]
+            },
+            "people": [
+                {
+                    "address": "",
+                    "affiliation": "Investigator A Affiliation",
+                    "comments": [],
+                    "email": "investigator@someplace.com",
+                    "fax": "",
+                    "firstName": "Investigator",
+                    "lastName": "A",
+                    "midInitials": "",
+                    "phone": "",
+                    "roles": [
+                        {
+                            "@id": "#75a54424-5258-4950-85d3-d69d89210922",
+                            "annotationValue": "investigator",
+                            "comments": [],
+                            "termAccession": "OBI_0000202",
+                            "termSource": ""
+                        }
+                    ]
+                },
+                {
+                    "address": "",
+                    "affiliation": "Investigator B Affiliation",
+                    "comments": [],
+                    "email": "investigator@someplace.com",
+                    "fax": "",
+                    "firstName": "Investigator",
+                    "lastName": "B",
+                    "midInitials": "",
+                    "phone": "",
+                    "roles": [
+                        {
+                            "@id": "#5c6b32f6-2b17-4fe0-a71c-ce97bbbcc8ca",
+                            "annotationValue": "investigator",
+                            "comments": [],
+                            "termAccession": "OBI_0000202",
+                            "termSource": ""
+                        }
+                    ]
+                },
+                {
+                    "address": "",
+                    "affiliation": "Submitter Affiliation",
+                    "comments": [],
+                    "email": "submitter@someplace.com",
+                    "fax": "",
+                    "firstName": "Submitter",
+                    "lastName": "A",
+                    "midInitials": "",
+                    "phone": "",
+                    "roles": [
+                        {
+                            "@id": "#5708c5ef-09f7-44fd-8095-9169aeed1c44",
+                            "annotationValue": "submitter",
+                            "comments": [],
+                            "termAccession": "OBI_0000068",
+                            "termSource": ""
+                        }
+                    ]
+                }
+            ],
+            "processSequence": [
+                {
+                    "@id": "#process/140267521764752",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#140267523337136"
+                    },
+                    "inputs": [
+                        {
+                            "@id": "#source/140267521762352"
+                        }
+                    ],
+                    "name": "",
+                    "nextProcess": {
+                        "@id": "#process/140267518851536"
+                    },
+                    "outputs": [],
+                    "parameterValues": [
+                        {
+                            "category": {
+                                "@id": "#140267523390096"
+                            },
+                            "value": "CD11b+CD45Low-to-Intermediate"
+                        }
+                    ],
+                    "performer": ""
+                },
+                {
+                    "@id": "#process/140267523388848",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#140267523337136"
+                    },
+                    "inputs": [
+                        {
+                            "@id": "#source/140267521763936"
+                        }
+                    ],
+                    "name": "",
+                    "nextProcess": {
+                        "@id": "#process/140267518849952"
+                    },
+                    "outputs": [],
+                    "parameterValues": [
+                        {
+                            "category": {
+                                "@id": "#140267523390096"
+                            },
+                            "value": "CD11b+CD45Low-to-Intermediate"
+                        }
+                    ],
+                    "performer": ""
+                },
+                {
+                    "@id": "#process/140267518851488",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#140267523337136"
+                    },
+                    "inputs": [
+                        {
+                            "@id": "#source/140267521761872"
+                        }
+                    ],
+                    "name": "",
+                    "nextProcess": {
+                        "@id": "#process/140267523389952"
+                    },
+                    "outputs": [],
+                    "parameterValues": [
+                        {
+                            "category": {
+                                "@id": "#140267523390096"
+                            },
+                            "value": "CD11b+CD45Low-to-Intermediate"
+                        }
+                    ],
+                    "performer": ""
+                },
+                {
+                    "@id": "#process/140267518851536",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#140267522890384"
+                    },
+                    "inputs": [],
+                    "name": "",
+                    "outputs": [
+                        {
+                            "@id": "#sample/140267521763696"
+                        },
+                        {
+                            "@id": "#sample/140267521761728"
+                        }
+                    ],
+                    "parameterValues": [],
+                    "performer": "",
+                    "previousProcess": {
+                        "@id": "#process/140267521764752"
+                    }
+                },
+                {
+                    "@id": "#process/140267518849952",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#140267522891104"
+                    },
+                    "inputs": [],
+                    "name": "",
+                    "outputs": [
+                        {
+                            "@id": "#sample/140267521761440"
+                        }
+                    ],
+                    "parameterValues": [],
+                    "performer": "",
+                    "previousProcess": {
+                        "@id": "#process/140267523388848"
+                    }
+                },
+                {
+                    "@id": "#process/140267523389952",
+                    "comments": [],
+                    "date": "",
+                    "executesProtocol": {
+                        "@id": "#140267522891104"
+                    },
+                    "inputs": [],
+                    "name": "",
+                    "outputs": [
+                        {
+                            "@id": "#sample/140267521761392"
+                        },
+                        {
+                            "@id": "#sample/140267521763840"
+                        }
+                    ],
+                    "parameterValues": [],
+                    "performer": "",
+                    "previousProcess": {
+                        "@id": "#process/140267518851488"
+                    }
+                }
+            ],
+            "protocols": [
+                {
+                    "@id": "#140268697847264",
+                    "comments": [],
+                    "components": [],
+                    "description": "RNA extraction using some kit as described in the manufacturer's protocol.",
+                    "name": "Extraction Kit Name",
+                    "parameters": [
+                        {
+                            "@id": "#140267523337376",
+                            "parameterName": {
+                                "@id": "#40f2031e-3899-420d-9eaf-586d41920f13",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#790fde96-1e06-493f-85e4-a5df56b0ed4d",
+                        "annotationValue": "nucleic acid extraction",
+                        "comments": [],
+                        "termAccession": "OBI_0666667",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267522890288",
+                    "comments": [],
+                    "components": [],
+                    "description": "",
+                    "name": "Library Preparation",
+                    "parameters": [
+                        {
+                            "@id": "#140267523337328",
+                            "parameterName": {
+                                "@id": "#c573ff92-58a9-423f-a56d-95322ce1e014",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#278d737c-7eae-4409-9226-41a3cbbe23f0",
+                        "annotationValue": "library construction",
+                        "comments": [],
+                        "termAccession": "OBI_0000711",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267523335504",
+                    "comments": [],
+                    "components": [],
+                    "description": "followed manufacturer's protocol",
+                    "name": "Illumina HiSeq 2000 Sequencing System",
+                    "parameters": [],
+                    "protocolType": {
+                        "@id": "#9fb41aa4-c932-4c13-9840-e613df60cc8c",
+                        "annotationValue": "nucleic acid sequencing",
+                        "comments": [],
+                        "termAccession": "OBI_0001177",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267523336944",
+                    "comments": [],
+                    "components": [],
+                    "description": "",
+                    "name": "STAR Alignment",
+                    "parameters": [
+                        {
+                            "@id": "#140267523336320",
+                            "parameterName": {
+                                "@id": "#816e5e2a-f7c5-4c61-a81f-a032fdb9f0c9",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#c438e428-72fa-41be-ab07-9d280803e836",
+                        "annotationValue": "sequence assembly algorithm",
+                        "comments": [],
+                        "termAccession": "OBI_0200187",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267523336416",
+                    "comments": [],
+                    "components": [],
+                    "description": "",
+                    "name": "GCAD Normalization and Annotation",
+                    "parameters": [
+                        {
+                            "@id": "#140267523390192",
+                            "parameterName": {
+                                "@id": "#af574c59-5c71-4c78-9ba2-3674be353cc7",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#7d5d16bd-c9a4-4d79-af2a-239bae5e93f5",
+                        "annotationValue": "sequence analysis data transformation",
+                        "comments": [],
+                        "termAccession": "OBI_0200187",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267523337136",
+                    "comments": [],
+                    "components": [],
+                    "description": "",
+                    "name": "FACS isolation of microglia",
+                    "parameters": [
+                        {
+                            "@id": "#140267523390096",
+                            "parameterName": {
+                                "@id": "#15c9ee4d-830c-4c7f-8fc0-10739529df71",
+                                "annotationValue": "cell surface marker",
+                                "comments": [],
+                                "termAccession": "CHEBI_59163",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#f7dca482-c532-42c8-ae1b-a54f3dcfb0b9",
+                        "annotationValue": "isolation of cell population",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267522890384",
+                    "comments": [],
+                    "components": [],
+                    "description": "",
+                    "name": "split",
+                    "parameters": [
+                        {
+                            "@id": "#140267522889376",
+                            "parameterName": {
+                                "@id": "#d37eaa51-62f0-4702-90ca-9d4bcf485cf6",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#d8bc9e57-8747-4bf6-af17-5a41d5a4e915",
+                        "annotationValue": "cell culture splitting",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267522889136",
+                    "comments": [],
+                    "components": [],
+                    "description": "",
+                    "name": "gene knock out",
+                    "parameters": [
+                        {
+                            "@id": "#140267522891584",
+                            "parameterName": {
+                                "@id": "#4344c7be-6d79-4d55-9fbe-15c0abe1cb12",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#0e15bd38-9101-4b0d-bea1-0154c40cf60c",
+                        "annotationValue": "gene knock out",
+                        "comments": [],
+                        "termAccession": "EFO_0000506",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267522889424",
+                    "comments": [],
+                    "components": [],
+                    "description": "",
+                    "name": "treatment",
+                    "parameters": [
+                        {
+                            "@id": "#140267522889184",
+                            "parameterName": {
+                                "@id": "#1f5fbbc4-56f5-4263-881c-b5305f77b8e2",
+                                "annotationValue": "",
+                                "comments": [],
+                                "termAccession": "",
+                                "termSource": ""
+                            }
+                        }
+                    ],
+                    "protocolType": {
+                        "@id": "#752ab5fd-8a3e-4350-bcfa-12ff8fbd1e13",
+                        "annotationValue": "treatment",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                },
+                {
+                    "@id": "#140267522891104",
+                    "comments": [],
+                    "components": [],
+                    "description": "This protocol was auto-generated where a protocol could not be determined.",
+                    "name": "unknown protocol",
+                    "parameters": [],
+                    "protocolType": {
+                        "@id": "#77326a0b-4138-40b9-87c0-c19873b6f0a4",
+                        "annotationValue": "",
+                        "comments": [],
+                        "termAccession": "",
+                        "termSource": ""
+                    },
+                    "uri": "",
+                    "version": ""
+                }
+            ],
+            "publicReleaseDate": "",
+            "publications": [],
+            "studyDesignDescriptors": [
+                {
+                    "@id": "#6714a1ff-210e-429f-91b8-ff9bd5ba6efa",
+                    "annotationValue": "disease state design",
+                    "comments": [],
+                    "termAccession": "OBI_0001293",
+                    "termSource": ""
+                }
+            ],
+            "submissionDate": "",
+            "title": "RNA Seq Template File",
+            "unitCategories": []
+        }
+    ],
+    "submissionDate": "",
+    "title": ""
+}
