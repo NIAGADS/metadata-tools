@@ -1,0 +1,54 @@
+STUDY									
+Study Identifier	NG00102								
+Study File Name	s_NG00102.txt								
+Study Title	My Study Long Title								
+Comment[Abbreviated Study Title]	My Study								
+Study Description	description of my study								
+Study Submission Date									
+Study Public Release Date									
+Comment[Study Grant Number]	NIA2123								
+Comment[Study Funding Agency]	NIA								
+Comment[NIAGADS Dataset Identifier]	NG00102								
+Comment[NIAGADS File Identifier]									
+Comment[NIAGADS Exchange File Path]									
+STUDY DESIGN DESCRIPTORS									
+Study Design Type	disease state design								
+Study Design Type Term Accession Number	OBI_0001293								
+Study Design Type Term Source REF	OBI								
+STUDY PUBLICATIONS									
+Study PubMed ID									
+Study Publication DOI
+STUDY CONTACTS									
+Study Person Last Name									
+Study Person First Name									
+Study Person Mid Initials									
+Study Person Email									
+Study Person Phone									
+Study Person Fax									
+Study Person Address									
+Study Person Affiliation									
+Study Person Roles	investigator	investigator	submitter						
+Study Person Roles Term Accession Number	OBI_0000202	OBI_0000202	OBI_0000068						
+Study Person Roles Term Source REF	NDD	NIAGADS	NIAGADS						
+STUDY ASSAYS									
+Study Assay File Name	a_NG00102.txt								
+Study Assay Measurement Type	transcription profiling								
+Study Assay Measurement Type Term Accession Number	OBI_0000424								
+Study Assay Measurement Type Term Source REF	OBI								
+Study Assay Technology Type	nucleotide_sequencing								
+Study Assay Technology Type Term Accession Number	OBI_0000626								
+Study Assay Technology Type Term Source REF	OBI								
+Study Assay Technology Platform									
+STUDY PROTOCOLS									
+Study Protocol Name	Extraction Kit Name	Library Preparation	Illumina HiSeq 2000 Sequencing System	STAR Alignment	GCAD Normalization and Annotation	FACS isolation of microglia	split		
+Study Protocol Type	nucleic acid extraction	library construction	nucleic acid sequencing	sequence assembly algorithm	sequence analysis data transformation	isolation of cell population	cell culture splitting	gene knock out	treatment
+Study Protocol Type Term Accession Number	OBI_0666667	OBI_0000711	OBI_0001177	OBI_0200187	OBI_0200187			EFO_0000506	
+Study Protocol Type Term Source REF	NDD	NDD	NDD	NDD	NDD	NDD	NDD	NDD	NDD
+Study Protocol Description	RNA extraction using some kit as described in the manufacturer's protocol.		followed manufacturer's protocol						
+Study Protocol Parameters Name						cell surface marker			
+Study Protocol Parameters Name Term Accession Number						CHEBI_59163			
+Study Protocol Parameters Name Term Source REF			NDD			NDD			
+Study Protocol Components Name		genomic;;single;first strand	Illumina HiSeq 2000;150	STAR;2.7.9;GRCh38.p13;38	GCAD	/exchange/path/to/image			
+Study Protocol Components Type		library source;library selection;library layout;library strand	sequencer;read length	software pipeline;pipeline version;genome build;GENCODE version	software pipeline;pipeline version;genome build;Ensembl version				
+Study Protocol Components Type Term Accession Number			EFO_0003739;OBI_0002479	OBI_0001943;EDAM:data_0953;EDAM:data_2340;EDAM:data_1670	OBI_0001943;EDAM:data_0953;EDAM:data_2340;EDAM:data_1670				
+Study Protocol Components Type Term Source REF			NDD;NDD;NDD;NDD	NDD;NDD;NDD;NDD	NDD;NDD;NDD;NDD				

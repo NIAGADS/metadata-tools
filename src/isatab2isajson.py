@@ -5,8 +5,8 @@ transform ISA-tab to ISA-json and output
 '''
 from __future__ import print_function
 import isatools
-from isatools.convert import isatab2json
-from isa.validator import validate as isa_validate
+import isa.isatab2json as isatab2json
+from isa.custom_isatab import validate as isa_validate
 import logging
 
 import argparse

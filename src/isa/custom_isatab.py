@@ -1788,7 +1788,11 @@ def read_investigation_file(fp):
         :return: A memory file of the section slice, as a string buffer object
         """
         line = f.readline()
+
         normed_line = line.rstrip()
+
+        log.debug(normed_line)
+
         if normed_line[0] == '"':
             normed_line = normed_line[1:]
         if normed_line[len(normed_line) - 1] == '"':
@@ -1836,26 +1840,6 @@ def read_investigation_file(fp):
     df_dict = dict()
 
     # Read in investigation file into DataFrames first
-    df_dict['ontology_sources'] = _build_section_df(_read_tab_section(
-        f=memf,
-        sec_key='ONTOLOGY SOURCE REFERENCE',
-        next_sec_key='INVESTIGATION'
-    ))
-    df_dict['investigation'] = _build_section_df(_read_tab_section(
-        f=memf,
-        sec_key='INVESTIGATION',
-        next_sec_key='INVESTIGATION PUBLICATIONS'
-    ))
-    df_dict['i_publications'] = _build_section_df(_read_tab_section(
-        f=memf,
-        sec_key='INVESTIGATION PUBLICATIONS',
-        next_sec_key='INVESTIGATION CONTACTS'
-    ))
-    df_dict['i_contacts'] = _build_section_df(_read_tab_section(
-        f=memf,
-        sec_key='INVESTIGATION CONTACTS',
-        next_sec_key='STUDY'
-    ))
     df_dict['studies'] = list()
     df_dict['s_design_descriptors'] = list()
     df_dict['s_publications'] = list()
@@ -1878,11 +1862,11 @@ def read_investigation_file(fp):
         df_dict['s_publications'].append(_build_section_df(_read_tab_section(
             f=memf,
             sec_key='STUDY PUBLICATIONS',
-            next_sec_key='STUDY FACTORS'
+            next_sec_key='STUDY CONTACTS'
         )))
-        df_dict['s_factors'].append(_build_section_df(_read_tab_section(
+        df_dict['s_contacts'].append(_build_section_df(_read_tab_section(
             f=memf,
-            sec_key='STUDY FACTORS',
+            sec_key='STUDY CONTACTS',
             next_sec_key='STUDY ASSAYS'
         )))
         df_dict['s_assays'].append(_build_section_df(_read_tab_section(
@@ -1893,13 +1877,11 @@ def read_investigation_file(fp):
         df_dict['s_protocols'].append(_build_section_df(_read_tab_section(
             f=memf,
             sec_key='STUDY PROTOCOLS',
-            next_sec_key='STUDY CONTACTS'
-        )))
-        df_dict['s_contacts'].append(_build_section_df(_read_tab_section(
-            f=memf,
-            sec_key='STUDY CONTACTS',
             next_sec_key='STUDY'
         )))
+       
+       
+      
     return df_dict
 
 
@@ -1973,46 +1955,12 @@ def load_investigation(fp):
 
     # Read in investigation file into DataFrames first
     df_dict = read_investigation_file(fp)
-    log.debug("Loading ONTOLOGY SOURCE REFERENCE section")
-    labels_expected = {'Term Source Name', 'Term Source File',
-                       'Term Source Version', 'Term Source Description'}
-    check_labels('ONTOLOGY SOURCE REFERENCE',
-                 labels_expected, df_dict['ontology_sources'])
+    #log.debug("Loading ONTOLOGY SOURCE REFERENCE section")
+    #labels_expected = {'Term Source Name', 'Term Source File',
+    #                   'Term Source Version', 'Term Source Description'}
+    #check_labels('ONTOLOGY SOURCE REFERENCE',
+    #            labels_expected, df_dict['ontology_sources'])
 
-    log.debug("Loading INVESTIGATION section")
-    labels_expected = {'Investigation Identifier', 'Investigation Title',
-                       'Investigation Description',
-                       'Investigation Submission Date',
-                       'Investigation Public Release Date'}
-    check_labels('INVESTIGATION', labels_expected, df_dict['investigation'])
-
-    log.debug("Loading INVESTIGATION PUBLICATIONS section")
-    labels_expected = {
-        'Investigation PubMed ID',
-        'Investigation Publication DOI',
-        'Investigation Publication Author List',
-        'Investigation Publication Title',
-        'Investigation Publication Status',
-        'Investigation Publication Status Term Accession Number',
-        'Investigation Publication Status Term Source REF'}
-    check_labels('INVESTIGATION PUBLICATIONS', labels_expected,
-                 df_dict['i_publications'])
-
-    log.debug("Loading INVESTIGATION CONTACTS section")
-    labels_expected = {'Investigation Person Last Name',
-                       'Investigation Person First Name',
-                       'Investigation Person Mid Initials',
-                       'Investigation Person Email',
-                       'Investigation Person Phone',
-                       'Investigation Person Fax',
-                       'Investigation Person Address',
-                       'Investigation Person Affiliation',
-                       'Investigation Person Roles',
-                       'Investigation Person Roles',
-                       'Investigation Person Roles Term Accession Number',
-                       'Investigation Person Roles Term Source REF'}
-    check_labels('INVESTIGATION CONTACTS', labels_expected,
-                 df_dict['i_contacts'])
     for i in range(0, len(df_dict['studies'])):
         log.debug("Loading STUDY section")
         labels_expected = {'Study Identifier', 'Study Title',
@@ -2030,12 +1978,7 @@ def load_investigation(fp):
                      df_dict['s_design_descriptors'][i])
 
         log.debug("Loading STUDY PUBLICATIONS section")
-        labels_expected = {'Study PubMed ID', 'Study Publication DOI',
-                           'Study Publication Author List',
-                           'Study Publication Title',
-                           'Study Publication Status',
-                           'Study Publication Status Term Accession Number',
-                           'Study Publication Status Term Source REF'}
+        labels_expected = {'Study PubMed ID', 'Study Publication DOI'}
         check_labels('STUDY PUBLICATIONS', labels_expected,
                      df_dict['s_publications'][i])
 
