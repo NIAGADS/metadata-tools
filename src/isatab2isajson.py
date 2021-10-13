@@ -16,7 +16,7 @@ import json
 
 def convert():
     '''
-    validate the isa-tab file
+    validate & convert the isa-tab file
     '''
     invalid = False
     isaJson = isatab2json.convert(args.tabdir, use_new_parser=True,  config_dir=args.config) \
