@@ -28,7 +28,7 @@
             <description>
                 <![CDATA[specifies whether to expect single, paired, or other configuration of reads.]]></description>
             <default-value><![CDATA[]]></default-value>
-            <list-values>SINGLE,PAIRED</list-values>
+            <list-values>SINGLE,PAIRED,OTHER</list-values>
         </field>
         <field header="Parameter Value[mid]" data-type="String" is-file-field="false" is-multiple-value="true"
                is-required="false" is-hidden="false" is-forced-ontology="false">
