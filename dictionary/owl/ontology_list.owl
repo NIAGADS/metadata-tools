@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/niagads/niagads_ontology.owl"
+     xml:base="http://purl.obolibrary.org/niagads/niagads_ontology.owl"
+     xmlns:edamontology="http://edamontology.org/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/niagads/niagads_ontology.owl">
+       <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/efo.owl"/>
+       <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/mondo.owl"/>	
+       <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/uberon.owl"/>
+       <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/hp.owl"/>
+    </owl:Ontology>
+</rdf:RDF>

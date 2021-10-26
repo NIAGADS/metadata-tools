@@ -1,8 +1,8 @@
 [URI of the OWL(RDF/XML) output file]
-uberon.owl
+cl.owl
 
 [Source ontology]
-UBERON
+CL
 
 [Low level source term URIs]
 
