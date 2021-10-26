@@ -1,0 +1,22 @@
+[URI of the OWL(RDF/XML) output file]
+hp.owl
+
+[Source ontology]
+HP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/HP_0100256 #Senile plaques
+
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+includeAllAxioms
+inclueAllAxiomsRecursivey
+
+[Source annotation URIs to be excluded]

@@ -1,0 +1,24 @@
+[URI of the OWL(RDF/XML) output file]
+efo.owl
+
+[Source ontology]
+EFO
+
+[Low level source term URIs]
+http://www.ebi.ac.uk/efo/EFO_0006514 #Alzheimer's disease biomarker measurement
+http://www.ebi.ac.uk/efo/EFO_1001870 #late-onset Alzheimers disease
+http://www.ebi.ac.uk/efo/EFO_0009268 #family history of Alzheimer’s disease
+http://www.orpha.net/ORDO/Orphanet_1020 #Early-onset autosomal dominant Alzheimer disease
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+includeAllAxioms
+inclueAllAxiomsRecursivey
+
+[Source annotation URIs to be excluded]
