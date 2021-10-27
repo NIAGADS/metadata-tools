@@ -1,11 +1,15 @@
 [URI of the OWL(RDF/XML) output file]
-cl.owl
+pr.owl
 
 [Source ontology]
-CL
+PR
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/CL_0000000 #cell
+
+http://purl.obolibrary.org/obo/PR_000005615 #clusterin
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=613 #APOE (human)
+http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=37 #ABCA7 (human)
+http://purl.obolibrary.org/obo/PR_Q8IZY2 #phospholipid-transporting ATPase ABCA7 (human)
 
 [Top level source term URIs and target direct superclass URIs]
 

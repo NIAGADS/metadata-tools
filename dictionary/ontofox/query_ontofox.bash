@@ -1,4 +1,4 @@
-ONTOLOGIES=(mondo efo hp uberon cl)
+ONTOLOGIES=(cl clo doid efo hancestro hp mondo ncit obi pr uberon)
 
 for ONTOLOGY in "${ONTOLOGIES[@]}"
 do

@@ -5,7 +5,11 @@ uberon.owl
 UBERON
 
 [Low level source term URIs]
-
+http://purl.obolibrary.org/obo/UBERON_0000922 #embryo
+http://purl.obolibrary.org/obo/UBERON_0001359 #cerebrospinal fluid
+http://purl.obolibrary.org/obo/UBERON_0003210 #blood-cerebrospinal fluid barrier
+http://purl.obolibrary.org/obo/UBERON_0000955 #brain includeAllChildren
+http://purl.obolibrary.org/obo/UBERON_0001969 #blood plasma
 
 [Top level source term URIs and target direct superclass URIs]
 

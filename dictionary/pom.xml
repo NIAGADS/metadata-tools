@@ -56,6 +56,9 @@
   </properties>
   
   <build>
+    <directory>${project.basedir}/bin</directory>
+    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+    <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
     <plugins>
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>

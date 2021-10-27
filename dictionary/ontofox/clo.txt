@@ -1,0 +1,27 @@
+[URI of the OWL(RDF/XML) output file]
+clo.owl
+
+[Source ontology]
+CLO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CLO_0000031 #cell line
+http://purl.obolibrary.org/obo/CLO_0001915 #BE(2)-C cell
+http://purl.obolibrary.org/obo/CLO_0008425 #PFSK-1 cell
+http://purl.obolibrary.org/obo/CLO_0009058 #SK-N-MC cell
+http://purl.obolibrary.org/obo/CLO_0009059 #SK-N-SH cell
+http://purl.obolibrary.org/obo/CLO_0009464 #U-87 MG cell
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+includeAllAxioms
+inclueAllAxiomsRecursivey
+
+[Source annotation URIs to be excluded]
+
