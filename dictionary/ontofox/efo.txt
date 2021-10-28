@@ -5,7 +5,8 @@ efo.owl
 EFO
 
 [Low level source term URIs]
-http://www.ebi.ac.uk/efo/EFO_0006514 #Alzheimer's disease biomarker measurement
+http://www.ebi.ac.uk/efo/EFO_0006514
+includeAllChildren #Alzheimer's disease biomarker measurement
 http://www.ebi.ac.uk/efo/EFO_1001870 #late-onset Alzheimers disease
 http://www.ebi.ac.uk/efo/EFO_0009268 #family history of Alzheimer’s disease
 http://www.orpha.net/ORDO/Orphanet_1020 #Early-onset autosomal dominant Alzheimer disease
@@ -15,22 +16,23 @@ http://www.ebi.ac.uk/efo/EFO_0004874 #memory performance
 http://www.ebi.ac.uk/efo/EFO_0004760 #t-tau measurement
 http://www.ebi.ac.uk/efo/EFO_0004763 #p-tau measurement
 http://www.ebi.ac.uk/efo/EFO_0005194 #amyloid-beta measurement
-http://www.ebi.ac.uk/efo/EFO_0004670 #beta-amyloid 1-42 measurement includeAllChildren
-http://www.ebi.ac.uk/efo/EFO_0007655 #clusterin measurement includeAllChildren
+http://www.ebi.ac.uk/efo/EFO_0004670
+includeAllChildre #beta-amyloid 1-42 measurement 
+http://www.ebi.ac.uk/efo/EFO_0007655
+includeAllChildren #clusterin measurement 
 http://www.ebi.ac.uk/efo/EFO_0001272 #adult
-http://www.ebi.ac.uk/efo/EFO_0000324 #cell type
-http://www.ebi.ac.uk/efo/EFO_0000513 #genotype
-http://purl.obolibrary.org/obo/CHEBI_59163 #biomarker
+
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://www.ebi.ac.uk/efo/EFO_0000513 #genotype
+http://purl.obolibrary.org/obo/CHEBI_59163 #biomarker
+http://www.ebi.ac.uk/efo/EFO_0006848 #mental or behavioural disorder biomarker
 
 [Source term retrieval setting]
 includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-includeAllAxioms
-inclueAllAxiomsRecursivey
+
 
 [Source annotation URIs to be excluded]

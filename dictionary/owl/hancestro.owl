@@ -63,6 +63,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0004">
         <rdfs:label>ancestry category</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:IAO_0000115>Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ancestral group</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
@@ -74,6 +75,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0005">
         <rdfs:label>European</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
         <oboInOwl:hasExactSynonym>Caucasian</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115 xml:lang="en">Includes individuals who either self-report or have been described by authors as
 European, Caucasian, White or one of the sub-populations from this region (e.g Dutch). This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap CEU, FIN, GBR, IBS and TSI populations.</obo:IAO_0000115>
@@ -87,6 +89,7 @@ European, Caucasian, White or one of the sub-populations from this region (e.g D
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0006">
         <rdfs:label>South Asian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0008"/>
         <obo:IAO_0000115 xml:lang="en">Includes individuals who either self-report or have been described by authors as South Asian or one of the sub-populations from this region (e.g Asian Indian). This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap
 BEB, GIH, ITU, PJL and STU populations.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
@@ -98,7 +101,20 @@ BEB, GIH, ITU, PJL and STU populations.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0007">
         <rdfs:label>South East Asian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0008"/>
         <obo:IAO_0000115 xml:lang="en">Includes individuals who either self-report or have been described by authors as South East Asian or one of the sub-populations from this region (e.g Vietnamese). This category also includes includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes KHV population. We note that East Asian and South East Asian populations are often conflated. However, recent studies indicate a unique genetic background for South East Asian populations.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0008">
+        <rdfs:label>Asian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <oboInOwl:hasExactSynonym>Asian unspecified</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">Includes individuals that either self-report or have been described as Asian but there was not sufficient information to allow classification as East Asian, Central Asian, South Asian or South-East Asian.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -108,6 +124,7 @@ BEB, GIH, ITU, PJL and STU populations.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0009">
         <rdfs:label>East Asian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0008"/>
         <obo:IAO_0000115 xml:lang="en">Includes individuals who either self-report or have been described by authors as East Asian or one of the sub-populations from this region (e.g Chinese). This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap CDX, CHB, CHS and JPT populations.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
@@ -118,8 +135,21 @@ BEB, GIH, ITU, PJL and STU populations.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0010">
         <rdfs:label>African</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
         <oboInOwl:hasExactSynonym xml:lang="en">African unspecified</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115 xml:lang="en">Includes individuals that either self-report or have been described as African, but there was not sufficient information to allow classification as African American, AfroCaribbean or Sub-Saharan African.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0011">
+        <rdfs:label>Sub-Saharan African</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0010"/>
+        <obo:IAO_0000115 xml:lang="en">Includes individuals who either self-report or have been described by authors as SubSaharan African or one of the subpopulations from this region (e.g. Yoruban).
+This category also includes individuals who genetically cluster with reference populations from this region for example 1000 Genomes and/or HapMap ESN, LWK, GWD, MSL, MKK and YRI populations.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -129,6 +159,7 @@ BEB, GIH, ITU, PJL and STU populations.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0013">
         <rdfs:label xml:lang="en">Native American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
         <oboInOwl:hasExactSynonym>American Indian</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115 xml:lang="en">Includes indigenous individuals of North, Central and South America, descended from the original human migration into the Americas from Siberia. We note that there does not appear to be a suitable reference population for this category and efforts are required to fill this gap.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
@@ -140,6 +171,7 @@ BEB, GIH, ITU, PJL and STU populations.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0014">
         <rdfs:label>Hispanic or Latin American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
         <obo:IAO_0000117>Joannella Morales</obo:IAO_0000117>
         <obo:IAO_0000117>Jackie MacArthur</obo:IAO_0000117>
         <obo:IAO_0000115>Includes individuals who either self-report or are described by authors as Hispanic, Latino, Latin American or one of the sub-populations
@@ -149,11 +181,47 @@ from this region. This category includes individuals with known admixture of pri
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0015">
+        <rdfs:label xml:lang="en">Greater Middle Eastern  (Middle Eastern, North African or Persian)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <oboInOwl:hasExactSynonym>Middle Eastern/North African</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">Includes individuals who self-report or were described by authors as Middle Eastern, North African, Persian or one of the subpopulations from this region (e.g. Saudi Arabian). We note there is heterogeneity in this category with different degrees of admixture as well as levels of genetic isolation. We note that there does not appear to be a suitable reference population for this category and efforts are required to fill this gap.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HANCESTRO_0016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0016">
         <rdfs:label>African American or Afro-Caribbean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
         <obo:IAO_0000115>Includes individuals who either self-report or have been described by authors as African American or Afro-Caribbean. This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap ACB or ASW populations. We note that there is likely to be significant admixture with European ancestry populations.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0017">
+        <rdfs:label>Oceanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <obo:IAO_0000115 xml:lang="en">Includes individuals that either self-report or have been described by authors as
+Oceanian or one of the sub-populations from this region (e.g. Native Hawaiian). We note that there does not appear to be a suitable reference population for this category and efforts are required to fill this gap.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0018">
+        <rdfs:label>uncategorised population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <obo:IAO_0000115>A population for which specific ancestry information is known but that does not fall into any of the defined ancestry categories</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -163,6 +231,134 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0019">
         <rdfs:label>Japanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0009"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0020">
+        <rdfs:label>Taiwanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0009"/>
+        <oboInOwl:hasExactSynonym>non-aboriginal Taiwanese</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0021">
+        <rdfs:label>Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0009"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0022">
+        <rdfs:label>Korean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0009"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0023">
+        <rdfs:label>Mongolian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0009"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0024">
+        <rdfs:label>Macanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0025">
+        <rdfs:label>Singaporean Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0026">
+        <rdfs:label>Hong Kong Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0027">
+        <rdfs:label>Han Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0286">
+        <rdfs:label xml:lang="en">Central Asian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0008"/>
+        <obo:IAO_0000115 xml:lang="en">Includes individuals who either self-report or have been described by authors as Central Asian. We note that there does not appear to be a suitable reference population for this population and efforts are required to fill this gap.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0290 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0290">
+        <rdfs:label xml:lang="en">genetically isolated population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <obo:IAO_0000115>A population with increased genetic homogeneity and reduced genetic variation due to cultural or geographic isolation</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>founder population</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>population isolate</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0304">
+        <rdfs:label xml:lang="en">ancestry status</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <obo:IAO_0000115>General characterisation of the ancestry of a population or individual</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0305">
+        <rdfs:label xml:lang="en">genetically isolated ancestry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0304"/>
+        <obo:IAO_0000115>Ancestry that is the result of cultural or geographic isolation. Generally characterised by increased genetic homogeneity and reduced genetic variation</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -172,7 +368,62 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0306">
         <rdfs:label xml:lang="en">admixed ancestry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0304"/>
         <obo:IAO_0000115>Ancestry which is an admixture of more than one defined ancestral population. The degree and type of admixture may vary within a population and the accuracy of classification requires well-defined reference samples</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0307 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0307">
+        <rdfs:label xml:lang="en">Italian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0309">
+        <rdfs:label xml:lang="en">Sardinian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0307"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0310">
+        <rdfs:label xml:lang="en">Val Borbera</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0307"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0311">
+        <rdfs:label xml:lang="en">Friuli Venezia Giulia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0307"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0312 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0312">
+        <rdfs:label xml:lang="en">Carlantino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0307"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -182,6 +433,30 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0313">
         <rdfs:label xml:lang="en">Old Order Amish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0314">
+        <rdfs:label xml:lang="en">Sorbian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0315 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0315">
+        <rdfs:label xml:lang="en">Hutterite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -191,6 +466,51 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0316">
         <rdfs:label xml:lang="en">Amish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0317">
+        <rdfs:label xml:lang="en">Erasmus Rucphen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0318">
+        <rdfs:label xml:lang="en">Orcadian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0319">
+        <rdfs:label xml:lang="en">Korculan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0320">
+        <rdfs:label xml:lang="en">Dutch</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -200,6 +520,1132 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0321">
         <rdfs:label xml:lang="en">Finnish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0322">
+        <rdfs:label xml:lang="en">Finnish founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0321"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0323">
+        <rdfs:label xml:lang="en">Dutch founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0320"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0324">
+        <rdfs:label>Ashkenazi Jew</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0331">
+        <rdfs:label xml:lang="en">Sudanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0332">
+        <rdfs:label xml:lang="en">Sahrawi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0333">
+        <rdfs:label xml:lang="en">Anguillan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0016"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0334">
+        <rdfs:label xml:lang="en">Antiguan or Barbudan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0016"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0335">
+        <rdfs:label xml:lang="en">Barbadian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0016"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0336">
+        <rdfs:label xml:lang="en">Haitian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0016"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0337">
+        <rdfs:label xml:lang="en">Jamaican</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0016"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0338">
+        <rdfs:label xml:lang="en">Tajikistani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0339">
+        <rdfs:label xml:lang="en">Turkmen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0340">
+        <rdfs:label xml:lang="en">Uzbekistani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0341">
+        <rdfs:label xml:lang="en">Afghan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0342">
+        <rdfs:label xml:lang="en">Kazakhstani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0343">
+        <rdfs:label xml:lang="en">Kyrgyzstani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0344">
+        <rdfs:label xml:lang="en">Albanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0345">
+        <rdfs:label xml:lang="en">Andorran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0346 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0346">
+        <rdfs:label xml:lang="en">Australian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0347">
+        <rdfs:label xml:lang="en">Austrian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0348">
+        <rdfs:label xml:lang="en">Belarusian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0349">
+        <rdfs:label xml:lang="en">Belgian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0350">
+        <rdfs:label xml:lang="en">Bermudian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0351">
+        <rdfs:label xml:lang="en">Bosnian or Herzegovinian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0352">
+        <rdfs:label xml:lang="en">Brazilian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0014"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0353">
+        <rdfs:label xml:lang="en">Bulgarian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0354">
+        <rdfs:label xml:lang="en">Canadian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0355">
+        <rdfs:label xml:lang="en">Channel Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0356">
+        <rdfs:label xml:lang="en">Chilean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0357">
+        <rdfs:label xml:lang="en">Croatian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0358">
+        <rdfs:label xml:lang="en">Czech</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0359">
+        <rdfs:label xml:lang="en">Danish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0360">
+        <rdfs:label xml:lang="en">Estonian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0361">
+        <rdfs:label xml:lang="en">Faroese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0362">
+        <rdfs:label xml:lang="en">Falkland Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0363">
+        <rdfs:label xml:lang="en">French</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0364">
+        <rdfs:label xml:lang="en">German</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0365">
+        <rdfs:label xml:lang="en">Gibraltarian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0366 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0366">
+        <rdfs:label xml:lang="en">Greek</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0367">
+        <rdfs:label xml:lang="en">Greenlander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0368">
+        <rdfs:label xml:lang="en">Hungrian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0369">
+        <rdfs:label xml:lang="en">Icelandic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0370">
+        <rdfs:label xml:lang="en">Manx</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0371">
+        <rdfs:label xml:lang="en">Latvian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0372">
+        <rdfs:label xml:lang="en">Liechtensteiner</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0373">
+        <rdfs:label xml:lang="en">Lithuanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0374">
+        <rdfs:label xml:lang="en">Luxembourgish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0375">
+        <rdfs:label xml:lang="en">Maltese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0376">
+        <rdfs:label xml:lang="en">Monegasque</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0377 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0377">
+        <rdfs:label xml:lang="en">Montenegrin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0378 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0378">
+        <rdfs:label xml:lang="en">New Zealandish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0379 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0379">
+        <rdfs:label xml:lang="en">Norfolk Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0380 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0380">
+        <rdfs:label xml:lang="en">Norwegian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0381">
+        <rdfs:label xml:lang="en">Polish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0382 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0382">
+        <rdfs:label xml:lang="en">Portugese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0383">
+        <rdfs:label xml:lang="en">Irish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0384 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0384">
+        <rdfs:label xml:lang="en">Moldovan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0385 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0385">
+        <rdfs:label xml:lang="en">Romanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0386">
+        <rdfs:label xml:lang="en">Russian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0387 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0387">
+        <rdfs:label xml:lang="en">Saint-Pierrais or Miquelonnais</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0388 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0388">
+        <rdfs:label xml:lang="en">Sammarinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0389">
+        <rdfs:label xml:lang="en">Serb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0390 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0390">
+        <rdfs:label xml:lang="en">Slovak</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0391">
+        <rdfs:label xml:lang="en">Slovene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0392">
+        <rdfs:label xml:lang="en">Spanish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0393">
+        <rdfs:label xml:lang="en">Swedish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0394 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0394">
+        <rdfs:label xml:lang="en">Swiss</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0395 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0395">
+        <rdfs:label xml:lang="en">Macedonian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0396 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0396">
+        <rdfs:label xml:lang="en">Ukrainian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0397 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0397">
+        <rdfs:label xml:lang="en">Argentine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0398 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0398">
+        <rdfs:label xml:lang="en">Bahamian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0399 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0399">
+        <rdfs:label xml:lang="en">Belizean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0400">
+        <rdfs:label xml:lang="en">Bolivian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0401">
+        <rdfs:label xml:lang="en">British Virgin Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0402 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0402">
+        <rdfs:label xml:lang="en">Caymanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0403 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0403">
+        <rdfs:label xml:lang="en">Colombian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0404 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0404">
+        <rdfs:label xml:lang="en">Costa Rican</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0014"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0405 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0405">
+        <rdfs:label xml:lang="en">Cuban</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0014"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0406 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0406">
+        <rdfs:label xml:lang="en">Dominican</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0014"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0407 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0407">
+        <rdfs:label xml:lang="en">Ecuadorian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0408 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0408">
+        <rdfs:label xml:lang="en">Salvadoran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0409 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0409">
+        <rdfs:label xml:lang="en">French Guianese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0410">
+        <rdfs:label xml:lang="en">Grenadian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0411">
+        <rdfs:label xml:lang="en">Guatemalan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0412 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0412">
+        <rdfs:label xml:lang="en">Guyanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0413 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0413">
+        <rdfs:label xml:lang="en">Honduran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0414">
+        <rdfs:label xml:lang="en">Martinican</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0415 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0415">
+        <rdfs:label xml:lang="en">Mexican</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0014"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0416 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0416">
+        <rdfs:label xml:lang="en">Montserratian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0417">
+        <rdfs:label xml:lang="en">Nicaraguan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0418 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0418">
+        <rdfs:label xml:lang="en">Panamanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0419 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0419">
+        <rdfs:label xml:lang="en">Paraguayan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0420 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0420">
+        <rdfs:label xml:lang="en">Peruvian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0421">
+        <rdfs:label xml:lang="en">Puerto Rican</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0014"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0422 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0422">
+        <rdfs:label xml:lang="en">Kittitian or Nevisian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0423 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0423">
+        <rdfs:label xml:lang="en">Saint Lucian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0424 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0424">
+        <rdfs:label xml:lang="en">Saint Vincentian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0425">
+        <rdfs:label xml:lang="en">Surinamese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <oboInOwl:hasExactSynonym>Surinamer</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0426 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0426">
+        <rdfs:label xml:lang="en">Trinidadian or Tobagonian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0427 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0427">
+        <rdfs:label xml:lang="en">Turks and Caicos Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0428">
+        <rdfs:label xml:lang="en">Virgin Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0429">
+        <rdfs:label xml:lang="en">Uruguayan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0430 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0430">
+        <rdfs:label xml:lang="en">Venezuelan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0431">
+        <rdfs:label xml:lang="en">Algerian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0432">
+        <rdfs:label xml:lang="en">Armenian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0433 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0433">
+        <rdfs:label xml:lang="en">Azerbaijani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0434 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0434">
+        <rdfs:label xml:lang="en">Bahraini</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0435 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0435">
+        <rdfs:label xml:lang="en">Cypriote</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0436 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0436">
+        <rdfs:label xml:lang="en">Egyptian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0437 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0437">
+        <rdfs:label xml:lang="en">Georgian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0438 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0438">
+        <rdfs:label xml:lang="en">Iranian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0439 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0439">
+        <rdfs:label xml:lang="en">Iraqi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -209,6 +1655,228 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0440">
         <rdfs:label xml:lang="en">Israeli</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0441 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0441">
+        <rdfs:label xml:lang="en">Jordanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0442">
+        <rdfs:label xml:lang="en">Kuwaiti</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0443 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0443">
+        <rdfs:label xml:lang="en">Lebanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0444">
+        <rdfs:label xml:lang="en">Libyan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0445">
+        <rdfs:label xml:lang="en">Moroccan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0446 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0446">
+        <rdfs:label xml:lang="en">Palestinian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0447 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0447">
+        <rdfs:label xml:lang="en">Omani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0448 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0448">
+        <rdfs:label xml:lang="en">Qatari</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0449 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0449">
+        <rdfs:label xml:lang="en">Saudi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <oboInOwl:hasExactSynonym>Saudi Arab</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0450 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0450">
+        <rdfs:label xml:lang="en">Tunisian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0451">
+        <rdfs:label xml:lang="en">Turkish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0452">
+        <rdfs:label xml:lang="en">Emirati</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0453">
+        <rdfs:label xml:lang="en">Yemeni</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0454 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0454">
+        <rdfs:label xml:lang="en">Aruban</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0455 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0455">
+        <rdfs:label xml:lang="en">Christmas Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0456 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0456">
+        <rdfs:label xml:lang="en">Cocos Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0457 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0457">
+        <rdfs:label xml:lang="en">Curacaoan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0458 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0458">
+        <rdfs:label xml:lang="en">Kosovar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0459 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0459">
+        <rdfs:label xml:lang="en">Northern Mariana Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0460 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0460">
+        <rdfs:label xml:lang="en">South Sudanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0461">
+        <rdfs:label xml:lang="en">Syrian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0462">
+        <rdfs:label xml:lang="en">British</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -218,6 +1886,905 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0463">
         <rdfs:label xml:lang="en">American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0464">
+        <rdfs:label xml:lang="en">American Samoan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0465">
+        <rdfs:label xml:lang="en">Cook Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0466">
+        <rdfs:label xml:lang="en">Fijian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0467 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0467">
+        <rdfs:label xml:lang="en">French Polynesian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0468 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0468">
+        <rdfs:label xml:lang="en">Guamanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0469 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0469">
+        <rdfs:label xml:lang="en">I-Kiribati</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0470">
+        <rdfs:label xml:lang="en">Marshallese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0471">
+        <rdfs:label xml:lang="en">Micronesian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0017"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0472">
+        <rdfs:label xml:lang="en">Nauruan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0473 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0473">
+        <rdfs:label xml:lang="en">New Caledonian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0474 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0474">
+        <rdfs:label xml:lang="en">Niuean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0475 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0475">
+        <rdfs:label xml:lang="en">Palauan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0476 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0476">
+        <rdfs:label xml:lang="en">Papua New Guinean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0017"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0477 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0477">
+        <rdfs:label xml:lang="en">Pitcairn Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0478 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0478">
+        <rdfs:label xml:lang="en">Samoan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0479 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0479">
+        <rdfs:label xml:lang="en">Solomon Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0017"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0480">
+        <rdfs:label xml:lang="en">Tokelauan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0481 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0481">
+        <rdfs:label xml:lang="en">Tongan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0482 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0482">
+        <rdfs:label xml:lang="en">Tuvaluan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0483">
+        <rdfs:label xml:lang="en">Ni-Vanuato</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0484 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0484">
+        <rdfs:label xml:lang="en">Wallis and Futuna Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0485 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0485">
+        <rdfs:label xml:lang="en">Bangladeshi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0006"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0486">
+        <rdfs:label xml:lang="en">Bhutanese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0487">
+        <rdfs:label xml:lang="en">Indian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0006"/>
+        <oboInOwl:hasExactSynonym>Indian Asian</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Asian Indian</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0488">
+        <rdfs:label xml:lang="en">Maldivian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0489 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0489">
+        <rdfs:label xml:lang="en">Nepalese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0008"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0490">
+        <rdfs:label xml:lang="en">Pakistani</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0006"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0491 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0491">
+        <rdfs:label xml:lang="en">Sri Lankan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0006"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0492 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0492">
+        <rdfs:label xml:lang="en">Bruneian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0493 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0493">
+        <rdfs:label xml:lang="en">Cambodian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0494 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0494">
+        <rdfs:label xml:lang="en">Indonesian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0007"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0495 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0495">
+        <rdfs:label xml:lang="en">Lao</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0496 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0496">
+        <rdfs:label xml:lang="en">Malaysian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0007"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0497 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0497">
+        <rdfs:label xml:lang="en">Burmese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0498 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0498">
+        <rdfs:label xml:lang="en">Filipino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0008"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0500 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0500">
+        <rdfs:label xml:lang="en">Thai</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0007"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0501">
+        <rdfs:label xml:lang="en">Timorese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0502">
+        <rdfs:label xml:lang="en">Vietnamese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0007"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0503 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0503">
+        <rdfs:label xml:lang="en">Cameroonian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0504 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0504">
+        <rdfs:label xml:lang="en">Cape Verdean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0505 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0505">
+        <rdfs:label xml:lang="en">Chadian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0506 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0506">
+        <rdfs:label xml:lang="en">Ethiopian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0507">
+        <rdfs:label xml:lang="en">Kenyan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0508 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0508">
+        <rdfs:label xml:lang="en">Liberian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0509 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0509">
+        <rdfs:label xml:lang="en">Malagasy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0510 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0510">
+        <rdfs:label xml:lang="en">Mauritanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0511 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0511">
+        <rdfs:label xml:lang="en">Mauritian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0512">
+        <rdfs:label xml:lang="en">Mahoran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0513">
+        <rdfs:label xml:lang="en">Namibian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0514 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0514">
+        <rdfs:label xml:lang="en">Sao Tomean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0515 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0515">
+        <rdfs:label xml:lang="en">Senegalese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0516 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0516">
+        <rdfs:label xml:lang="en">Seychellois</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0517 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0517">
+        <rdfs:label xml:lang="en">Sierra Leonean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0518 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0518">
+        <rdfs:label xml:lang="en">Somali</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0519 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0519">
+        <rdfs:label xml:lang="en">South African</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0520 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0520">
+        <rdfs:label xml:lang="en">St. Helenian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0521 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0521">
+        <rdfs:label xml:lang="en">Ugandan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0522">
+        <rdfs:label xml:lang="en">Angolan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0523 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0523">
+        <rdfs:label xml:lang="en">Beninese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0524">
+        <rdfs:label xml:lang="en">Motswana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0525">
+        <rdfs:label xml:lang="en">Burkinabe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0526">
+        <rdfs:label xml:lang="en">Burundian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0527 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0527">
+        <rdfs:label xml:lang="en">Central African</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0528 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0528">
+        <rdfs:label xml:lang="en">Comoran</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0529 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0529">
+        <rdfs:label xml:lang="en">Congolese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0530">
+        <rdfs:label xml:lang="en">Ivoirian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0531 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0531">
+        <rdfs:label xml:lang="en">Djiboutian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0532">
+        <rdfs:label xml:lang="en">Equatorial Guinean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0533 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0533">
+        <rdfs:label xml:lang="en">Eritrean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0534">
+        <rdfs:label xml:lang="en">Gabonese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0535 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0535">
+        <rdfs:label xml:lang="en">Gambian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0536 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0536">
+        <rdfs:label xml:lang="en">Ghanaian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0537 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0537">
+        <rdfs:label xml:lang="en">Guinean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0538">
+        <rdfs:label xml:lang="en">Bissau-Guinean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0539 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0539">
+        <rdfs:label xml:lang="en">Mosotho</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0540">
+        <rdfs:label xml:lang="en">Malawian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0541 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0541">
+        <rdfs:label xml:lang="en">Malian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0542">
+        <rdfs:label xml:lang="en">Mozambican</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0543 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0543">
+        <rdfs:label xml:lang="en">Nigerien</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0544">
+        <rdfs:label xml:lang="en">Nigerian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0545">
+        <rdfs:label xml:lang="en">Rwandan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0546 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0546">
+        <rdfs:label xml:lang="en">Swazi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0547 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0547">
+        <rdfs:label xml:lang="en">Togolese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0548 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0548">
+        <rdfs:label xml:lang="en">Tanzanian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0549 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0549">
+        <rdfs:label xml:lang="en">Zambian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0550 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0550">
+        <rdfs:label xml:lang="en">Zimbabweian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0566"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0551 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0551">
+        <rdfs:label xml:lang="en">genetically homogenous Irish</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0383"/>
+        <oboInOwl:hasExactSynonym>Irish founder</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0552">
+        <rdfs:label>Aboriginal Australian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <obo:IAO_0000115>Includes individuals who either self-report or have been described by authors as
+Australian Aboriginal. These are expected to be descendents of early human migration into Australia from Eastern Asia and can be distinguished from other Asian populations by mtDNA and Y chromosome variation.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0554 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0554">
+        <rdfs:label>Silk Road founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0286"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -227,7 +2794,133 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0555">
         <rdfs:label>Arab Israeli founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
         <oboInOwl:hasExactSynonym>Israeli Arab</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0556 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0556">
+        <rdfs:label>Cilento</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0307"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0557 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0557">
+        <rdfs:label>Costa Rican founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0404"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0558 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0558">
+        <rdfs:label>French Canadian founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0354"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0559 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0559">
+        <rdfs:label>Italian founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0307"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0560 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0560">
+        <rdfs:label>Northern Finnish founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0321"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0561">
+        <rdfs:label>Romanian founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0385"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0563 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0563">
+        <rdfs:label>South Tyrolean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0564 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0564">
+        <rdfs:label>Vis founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0357"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0565 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0565">
+        <rdfs:label>Split founder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0357"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0566 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0566">
+        <rdfs:label>undefined ancestry population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <obo:IAO_0000115>Population for which insufficient information is available to allocate it to a specific ancestral group or which contain individuals from a range of known ancestry categories, eg American</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0567">
+        <rdfs:label>Afro-Caribbean</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0016"/>
+        <oboInOwl:hasExactSynonym>African Caribbean</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -237,6 +2930,200 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0568">
         <rdfs:label>African American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0016"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0569 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0569">
+        <rdfs:label>Talana</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0290"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0307"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0570 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0570">
+        <rdfs:label>Pima Indian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0013"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0571 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0571">
+        <rdfs:label>Plains American Indian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0013"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0572 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0572">
+        <rdfs:label>Kosraen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0017"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0573">
+        <rdfs:label>Native Hawaiian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0017"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0574 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0574">
+        <rdfs:label>Pacific Islander</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0017"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0575">
+        <rdfs:label>Yoruban</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0576 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0576">
+        <rdfs:label>West African</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0577">
+        <rdfs:label>Dai Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0578">
+        <rdfs:label>Hui Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0579">
+        <rdfs:label>Jingpo Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0580 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0580">
+        <rdfs:label>Malaysian Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0581 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0581">
+        <rdfs:label>Uygur Chinese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0021"/>
+        <oboInOwl:hasExactSynonym>Uigur Chinese</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0582 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0582">
+        <rdfs:label>Tibetan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0009"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0583">
+        <rdfs:label>Taiwanese Han</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0009"/>
+        <oboInOwl:hasExactSynonym>Han Taiwanese</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0584">
+        <rdfs:label>Sri Lankan Sinhalese</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0006"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0585 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0585">
+        <rdfs:label>Tatar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0586 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0586">
+        <rdfs:label>Bashkir</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0587 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0587">
+        <rdfs:label>Martu Australian Aboriginal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -246,6 +3133,85 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0588">
         <rdfs:label>Jewish Israeli</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0589 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0589">
+        <rdfs:label>Punjabi Sikh</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0006"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0590 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0590">
+        <rdfs:label>European American</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0005"/>
+        <oboInOwl:hasExactSynonym>American of European ancestry</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0591 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0591">
+        <rdfs:label xml:lang="en">Esan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000115>The Esan people are one of the major ethnic groups in Edo State, Nigeria who speak the Esan language. (PMID:10146569) Samples from this population were studied as part of the full 1000 Genomes project (https://www.coriell.org/1/NHGRI/Collections/1000-Genomes-Collections/Esan-in-Nigeria-ESN)</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0592 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0592">
+        <rdfs:label xml:lang="en">Luhya</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000115>The Luhya are the second-largest ethnic group in Kenya and are comprised of subgroups that speak a common Bantu language. (PMID: 27813082) The Luhya ancestry group was assembled as part of phase III of the HapMap project and used in a number of rare variant density studies (PMID:22373165, PMID:26673965)</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0593 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0593">
+        <rdfs:label xml:lang="en">Maasai</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000115>The Maasai are an indigenous African ethnic group of semi-nomadic people located in northern Tanzania and Kenya. (PMID:29868928) The Maasai ancestry group was assembled as part of phase III of the HapMap project and used as reference in a range of population genetic studies (PMID:28049708).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0594 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0594">
+        <rdfs:label xml:lang="en">Mende</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0011"/>
+        <obo:IAO_0000115>The Mende people are one of the largest ethnic groups in Sierra Leone who speak a language of the Mande branch of the Niger-Congo family. (PMID:15761855)  Samples from this population were studied as part of the full 1000 Genomes project (https://www.coriell.org/1/NHGRI/Collections/1000-Genomes-Collections/Mende-in-Sierra-Leone-MSL)</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HANCESTRO_0595 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0595">
+        <rdfs:label>Eskimo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0018"/>
+        <obo:IAO_0000119>PMID:25884279</obo:IAO_0000119>
+        <obo:IAO_0000119>PMID:29220501</obo:IAO_0000119>
+        <obo:IAO_0000115>Native people residing in the Arctic of Alaska, northern Canada, Greenland, or eastern Siberia</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
     </owl:Class>
     
@@ -255,6 +3221,7 @@ from this region. This category includes individuals with known admixture of pri
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0596">
         <rdfs:label>Arab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0015"/>
         <obo:IAO_0000119>PMID:27393651</obo:IAO_0000119>
         <obo:IAO_0000115>Includes individuals with ethnic origins in the Semitic people populating the Arabian Peninsula and other countries in the Middle East and Northern Africa</obo:IAO_0000115>
         <obo:IAO_0000119>PMID:28106113</obo:IAO_0000119>
@@ -266,3 +3233,8 @@ from this region. This category includes individuals with known admixture of pri
 
 <!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
 
+<!--
+Notice: All the OBO ontologies have changed the term URI format from http://purl.org/obo/owl/ontology#ontology_nnnnnnn to http://purl.obolibrary.org/obo/ontology_nnnnnnn. Please make sure your input files are updated.
+The following terms do not have any related axioms in the source ontology:
+http://www.w3.org/2002/07/owl#Thing
+-->

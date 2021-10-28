@@ -5,17 +5,17 @@ cl.owl
 CL
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/CL_0000000 #cell
+
+http://purl.obolibrary.org/obo/CL_0000129
+includeAllChildren #microglial cell
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://purl.obolibrary.org/obo/CL_0000000 #cell
 
 [Source term retrieval setting]
 includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-includeAllAxioms
-inclueAllAxiomsRecursivey
 
 [Source annotation URIs to be excluded]

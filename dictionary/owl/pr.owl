@@ -41,8 +41,12 @@
 <!--
 Notice: All the OBO ontologies have changed the term URI format from http://purl.org/obo/owl/ontology#ontology_nnnnnnn to http://purl.obolibrary.org/obo/ontology_nnnnnnn. Please make sure your input files are updated.
 The following terms do not have any related axioms in the source ontology:
+http://purl.obolibrary.org/obo/PR_000000001
 http://purl.obolibrary.org/obo/PR_000005615
 http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=613
 http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=37
 http://purl.obolibrary.org/obo/PR_Q8IZY2
+http://purl.obolibrary.org/obo/PR_000010173
+http://purl.obolibrary.org/obo/PR_000026990
+http://purl.obolibrary.org/obo/PR_000025583
 -->

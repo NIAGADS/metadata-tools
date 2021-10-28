@@ -5,17 +5,15 @@ ncit.owl
 NCIT
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/NCIT_C18479 #Neuropathology
+
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://purl.obolibrary.org/obo/NCIT_C18479 #Neuropathology
 
 [Source term retrieval setting]
 includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-includeAllAxioms
-inclueAllAxiomsRecursivey
 
 [Source annotation URIs to be excluded]

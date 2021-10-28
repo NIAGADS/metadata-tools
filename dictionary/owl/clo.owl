@@ -22,8 +22,60 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+        <rdfs:label>具有相关联的公理（fol）</rdfs:label>
+        <rdfs:label>has associated axiom(fol)</rdfs:label>
+        <rdfs:label xml:lang="zh">具有相关联的公理（fol）</rdfs:label>
+        <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">has associated axiom(fol)</obo:IAO_0000111>
+        <obo:IAO_0000600 xml:lang="zh">使用CLIF语法在第一逻辑进行表达的公理</obo:IAO_0000600>
+        <obo:IAO_0000111 xml:lang="zh">具有相关联的公理（fol）</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <rdfs:label>具有相关联的公理（nl）</rdfs:label>
+        <rdfs:label>has associated axiom(nl)</rdfs:label>
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+        <rdfs:label xml:lang="zh">具有相关联的公理（nl）</rdfs:label>
+        <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
+        <obo:IAO_0000600 xml:lang="zh">与一个使用自然语言表达的术语相关的公理</obo:IAO_0000600>
+        <obo:IAO_0000111 xml:lang="zh">具有相关联的公理（nl）</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:label>说明</rdfs:label>
+        <rdfs:label>elucidation</rdfs:label>
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+        <rdfs:label xml:lang="zh">说明</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">Person:Barry Smith</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms</obo:IAO_0000600>
+        <obo:IAO_0000111 xml:lang="en">elucidation</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="zh">在最高级别的本体中的原始术语如BFO是对我们理解现实最基本，以至于无法以非循环的方式来定义它们的术语。对于这些，因此，我们只能提供说明，通过例子和公理进行补充</obo:IAO_0000600>
+        <obo:IAO_0000111 xml:lang="zh">说明</obo:IAO_0000111>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <rdfs:label>BFO OWL specification label</rdfs:label>
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+        <rdfs:label>BFO OWL规范标签</rdfs:label>
+        <rdfs:label xml:lang="zh">BFO OWL规范标签</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">BFO OWL specification label</obo:IAO_0000111>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">BFO OWL规范标签</obo:IAO_0000111>
+        <obo:IAO_0000232 xml:lang="zh">只对开发人员感兴趣</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="zh">将本体中的实体关联到用于在代码中表示它的变量的名称，这些代码从lispy规范生成BFO OWL 文件。</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/id"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -31,7 +83,16 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_metadata_tag"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/cellline/definition"/>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
+        <rdfs:label>在_子集</rdfs:label>
+        <rdfs:label>in_subset</rdfs:label>
+        <rdfs:label xml:lang="en">in_subset</rdfs:label>
+        <rdfs:label xml:lang="zh">在_子集</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
@@ -214,6 +275,21 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label>database_cross_reference</rdfs:label>
         <rdfs:label xml:lang="zh">数据库_交叉_引用</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <rdfs:label>BFO CLIF规范标签</rdfs:label>
+        <rdfs:label>BFO CLIF specification label</rdfs:label>
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+        <rdfs:label xml:lang="zh">BFO CLIF规范标签</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">BFO CLIF specification label</obo:IAO_0000111>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">BFO CLIF规范标签</obo:IAO_0000111>
+        <obo:IAO_0000232 xml:lang="zh">只对开发人员感兴趣</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="zh">将本体中的实体关联到用于在BFO2 CLIF规范中表示它的术语上。</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>用法示例</rdfs:label>
         <rdfs:label>example of usage</rdfs:label>
@@ -254,6 +330,33 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 xml:lang="zh">对于一类或属性的简洁的、有意义的、与人类友好的名称由本体开发商首选。 （美国英语）</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="zh">编辑首选术语</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="zh">编辑首选标签</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curator notes</rdfs:label>
+        <rdfs:label>curator notes</rdfs:label>
+        <rdfs:label>管理者注释</rdfs:label>
+        <rdfs:label>curator note</rdfs:label>
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <rdfs:label xml:lang="en">curator notes</rdfs:label>
+        <rdfs:label xml:lang="zh">管理者注释</rdfs:label>
+        <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000232</obo:hasDbXref>
+        <obo:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curator_notes</obo:shorthand>
+        <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curator_notes</obo:id>
+        <obo:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obo:is_metadata_tag>
+        <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</obo:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
+        <obo:hasDbXref xml:lang="en">IAO:0000232</obo:hasDbXref>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
+        <obo:shorthand xml:lang="en">curator_notes</obo:shorthand>
+        <obo:id xml:lang="en">curator_notes</obo:id>
+        <obo:hasOBONamespace xml:lang="en">uberon</obo:hasOBONamespace>
+        <obo:shorthand xml:lang="zh">管理者_注释</obo:shorthand>
+        <obo:id xml:lang="zh">管理者_注释</obo:id>
+        <obo:IAO_0000111 xml:lang="zh">管理者注释</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">管理者注释对管理者有用对用户无用</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
@@ -436,9 +539,9 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
         <obo:CLO_0000178>LCL-1971</obo:CLO_0000178>
         <rdfs:seeAlso>EFO: EFO_0003072</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: HTB-11</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307745</rdfs:seeAlso>
         <rdfs:seeAlso>CVCL: CVCL_0531</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307745</rdfs:seeAlso>
-        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307745</rdfs:seeAlso>
         <obo:IAO_0000118>SK-N-SH</obo:IAO_0000118>
         <rdfs:seeAlso xml:lang="en">ATCC: HTB-11</rdfs:seeAlso>
         <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0531</rdfs:seeAlso>
@@ -491,6 +594,15 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/U87</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

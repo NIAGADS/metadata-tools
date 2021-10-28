@@ -7,19 +7,19 @@ OBI
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000384 #male
 http://purl.obolibrary.org/obo/PATO_0000383 #female
-http://purl.obolibrary.org/obo/OBI_0000794 #transcription factor binding site includeAllChildren
-http://purl.obolibrary.org/obo/OGMS_0000073 #diagnosis
-http://purl.obolibrary.org/obo/OBI_0000905 #sequence feature annotation
+http://purl.obolibrary.org/obo/OBI_0000794 
+includeAllChildren #transcription factor binding site
+
+
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://purl.obolibrary.org/obo/OBI_0000905 #sequence feature annotation
+http://purl.obolibrary.org/obo/OGMS_0000073 #diagnosis
 
 [Source term retrieval setting]
 includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-includeAllAxioms
-inclueAllAxiomsRecursivey
 
 [Source annotation URIs to be excluded]

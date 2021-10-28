@@ -9,14 +9,13 @@ http://purl.obolibrary.org/obo/DOID_171 #neuroectodermal tumor
 
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://purl.obolibrary.org/obo/DOID_4 #disease
+http://purl.obolibrary.org/obo/DOID_162 #cancer
 
 [Source term retrieval setting]
 includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-includeAllAxioms
-inclueAllAxiomsRecursivey
 
 [Source annotation URIs to be excluded]

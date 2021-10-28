@@ -42,14 +42,6 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
@@ -89,33 +81,43 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLO_0000031</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/niagadsobo#CL_0000000 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#CL_0000000"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#CL_0000000">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL_0000000</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO_0000513</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genotype</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HANCESTRO_0004</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ancestry category</rdfs:label>
+    </owl:Class>
     
 
 
@@ -538,46 +540,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000150 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000150">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tau protein, a biomarker for Alzheimer&apos;s disease</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000150</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tau</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000151 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000151">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphorylated tau protein, a biomarker for Alzheimer&apos;s disease</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p-tau</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pTau</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000151</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pTau181</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000152 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000152">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-amyloid 1-42, a biomarker for Alzheimer&apos;s Disease</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AB42</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-amyloid 1-42</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000152</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aβ₄₂</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/niagadsobo#OBCS_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OBCS_0000040">
@@ -591,13 +553,21 @@
 
     <!-- http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000905</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence feature annotation</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/niagadsobo#OGMS_0000073 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OGMS_0000073"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OGMS_0000073">
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS_0000073</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

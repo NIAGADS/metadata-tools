@@ -5,36 +5,18 @@ hancestro.owl
 HANCESTRO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/HANCESTRO_0005 #European
-http://purl.obolibrary.org/obo/HANCESTRO_0014 #Hispanic or Latin American
-http://purl.obolibrary.org/obo/HANCESTRO_0019 #Japanese
-http://purl.obolibrary.org/obo/HANCESTRO_0568 #African American
-http://purl.obolibrary.org/obo/HANCESTRO_0016 #African American or Afro-Caribbean
-http://purl.obolibrary.org/obo/HANCESTRO_0009 #East Asian
-http://purl.obolibrary.org/obo/HANCESTRO_0007 #South East Asian
-http://purl.obolibrary.org/obo/HANCESTRO_0006 #South Asian
-http://purl.obolibrary.org/obo/HANCESTRO_0440 #Israeli
-http://purl.obolibrary.org/obo/HANCESTRO_0555 #Arab Israeli founder
-http://purl.obolibrary.org/obo/HANCESTRO_0588 #Jewish Israeli
-http://purl.obolibrary.org/obo/HANCESTRO_0596 #Arab
-http://purl.obolibrary.org/obo/HANCESTRO_0010 #African includeAllChildren
-http://purl.obolibrary.org/obo/HANCESTRO_0321 #Finnish
-http://purl.obolibrary.org/obo/HANCESTRO_0306 #admixed ancestry
-http://purl.obolibrary.org/obo/HANCESTRO_0463 #American
-http://purl.obolibrary.org/obo/HANCESTRO_0013 #Native American
-http://purl.obolibrary.org/obo/HANCESTRO_0316 #Amish
-http://purl.obolibrary.org/obo/HANCESTRO_0313 #Old Order Amish
-http://purl.obolibrary.org/obo/HANCESTRO_0004 #ancestry category
+http://purl.obolibrary.org/obo/HANCESTRO_0304
+includeAllChildren #ancestry status
+http://purl.obolibrary.org/obo/HANCESTRO_0004 
+includeAllChildren #ancestry category
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://www.w3.org/2002/07/owl#Thing #Thing
 
 [Source term retrieval setting]
-includeNoIntermediates
+includeAllIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-includeAllAxioms
-inclueAllAxiomsRecursivey
 
 [Source annotation URIs to be excluded]

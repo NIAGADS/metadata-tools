@@ -1,0 +1,4356 @@
+{
+  "graphs" : [ {
+    "nodes" : [ {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0001272",
+      "meta" : {
+        "definition" : {
+          "val" : "A maturity quality inhering in an individual by virtue of the individual having attained sexual maturity and full growth",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "MAT:0000403"
+        }, {
+          "val" : "NCIt:C17600"
+        }, {
+          "val" : "MeSH:D000328"
+        }, {
+          "val" : "NIFSTD:birnlex_228"
+        }, {
+          "val" : "SNOMEDCT:133936004"
+        }, {
+          "val" : "EV:0300070"
+        }, {
+          "val" : "EVM:2990028"
+        }, {
+          "val" : "NIFSTD:birnlex_681"
+        }, {
+          "val" : "XAO:1000009"
+        }, {
+          "val" : "WBls:0000041"
+        }, {
+          "val" : "FBdv:00005369"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "adult stage",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "James Malone"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "OntologyMappingImporter following MAT:0000403"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Tomasz Adamusiak"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "adult"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0007655",
+      "meta" : {
+        "definition" : {
+          "val" : "quantification of the amount of the glycoprotein clusterin in a sample. Clusterin is also known as apolipoprotein J and plays a role in several cellular processes including apoptosis, proliferation, and clearance of misfolded proteins",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "apolipoprotein J measurement",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "CLU measurement",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "clusterin measurement"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0555",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Israeli Arab",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Arab Israeli founder"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0313",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Old Order Amish"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0306",
+      "meta" : {
+        "definition" : {
+          "val" : "Ancestry which is an admixture of more than one defined ancestral population. The degree and type of admixture may vary within a population and the accuracy of classification requires well-defined reference samples",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "admixed ancestry"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CL_0000000",
+      "meta" : {
+        "definition" : {
+          "val" : "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one)." ],
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/ubprop#_upper_level" ],
+        "xrefs" : [ {
+          "val" : "KUPO:0000002"
+        }, {
+          "val" : "WBbt:0004017"
+        }, {
+          "val" : "CALOHA:TS-2035"
+        }, {
+          "val" : "FMA:68646"
+        }, {
+          "val" : "XAO:0003012"
+        }, {
+          "val" : "GO:0005623"
+        }, {
+          "val" : "VHOG:0001533"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "cell"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/cl.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#OBCS_0000040",
+      "meta" : {
+        "definition" : {
+          "val" : "a variable specification that specifies a variable used in statistical analysis to correct, adjust, or modify the values of a dependent variable; an independent variable not manipulated by the investigator",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "covariate specification"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "meta" : {
+        "definition" : {
+          "val" : "An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "IAO:0000116"
+        }, {
+          "val" : "IAO:0000116"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "editor_note"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/shorthand",
+          "val" : "editor_note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/shorthand",
+          "val" : "editor_note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/id",
+          "val" : "编辑_注释"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "editor_note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/id",
+          "val" : "editor_note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/shorthand",
+          "val" : "编辑_注释"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "editor note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/hasDbXref",
+          "val" : "IAO:0000116"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/hasDbXref",
+          "val" : "IAO:0000116"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/id",
+          "val" : "editor_note"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obofoundry.org/obo/obi>"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "编者注"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "1"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/hasOBONamespace",
+          "val" : "uberon"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "editor note"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "meta" : {
+        "definition" : {
+          "val" : "输入文件中术语编辑者的名称。术语编辑者是有关术语的信息交汇点。术语编辑者可以是，但并不总是，定义的作者，这可能是由几个人完成",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "20110707，MC：术语编辑和定义进行相应的修改。见http://code.google.com/p/information-artifact-ontology/issues/detail?id=115。"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "术语编辑者"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "term editor"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition editor"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115."
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "definition editor"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000048",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Non-Finnish European"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Melanie Courtot"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "OBI_0000281"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "有管理状态"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has curation status"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Bill Bug"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "有管理状态"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "meta" : {
+        "definition" : {
+          "val" : "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "DEFINITION",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "textual definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "textual definition"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "定义"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2012-04-05: \nBarry Smith\n\nOBI的官方定义解释了一个类或属性的含义：'应该是亚里士多德式的，形式化和规范化的。可以用口语定义'是糟糕的。\n\n您能解决这样的问题吗？\n\n解释关于类或属性的表达含义的必要和充分条件的陈述。\n\nAlan Ruttenberg\n\n您提出的定义是一个合理的备选，除非它很常见，没有给出必要和充分的条件。大多数情况下它们是必要的，偶尔是必要的，充分的或者仅仅仅充分的。它们通常使用不是自己定义的术语，因此它们实际上不能通过这些标准进行评估。\n\n关于拟议定义的具体内容：\n\n我们没有“含义”，或“表达”或“属性”的定义。对于在预期意义上的“参考”，我认为我们使用术语“指示”。对于'表达'，我认为我们和你的意思是符号，或标识符。对于“含义”，它不同于类和属性。对于类，我们希望文档能够让读者确定一个实体是否是该类的实例。对于属性，让我们的目标读者决定，给定一对潜在的关系，判断关系成立的断言正确与否。 “目标读者”部分表明我们也指定了我们期望的能够理解定义的人，并且概括了人类和计算机读者以包含文本和逻辑定义。\n\n就我个人而言，我更愿意削弱对文档的定义，并指出什么是可取的。\n\n我们还有一个悬而未决的问题，就是如何针对不同的受众定位不同的定义。临床读者阅读chebi需要来自受过化学训练的受众的不同类型的定义文档/定义，同样需要一个适合本体工作者的定义。 "
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "definition"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "meta" : {
+        "definition" : {
+          "val" : "短语描述一个类的名字应该如何使用。也可包括其他类型有助于直接理解类的语义的例子，如广为人知的类的原型子类或实例。虽然高水平的术语必不可少，对于低级别术语的示例（例如，Affymetrix HU133阵列）不",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "例子"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "example of usage"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "example"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "用法示例"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "example of usage"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_P207",
+      "meta" : {
+        "definition" : {
+          "val" : "A property representing the concept unique identifier (CUI) assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "UMLS_CUI",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P107",
+          "val" : "UMLS CUI"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "P207"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Conceptual Entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "UMLS_CUI"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "UMLS_CUI"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000047",
+      "meta" : {
+        "definition" : {
+          "val" : "ethnicity that does not unambiguously cluster with the major populations (e.g., EUR, EAS, AFR, SAS, AMR) in a principal components analysis",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Other ethnicity"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0003210",
+      "meta" : {
+        "definition" : {
+          "val" : "barrier in the choroid plexus located in the lateral, third, and fourth brain ventricles that controls the entrance of substances into the cerebrospinal fluid from the blood[MP].",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "blood-CSF barrier",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/uberon.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "blood-cerebrospinal fluid barrier"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0017276",
+      "meta" : {
+        "definition" : {
+          "val" : "Frontotemporal dementia (FTD) comprises a group of neurodegenerative disorders, characterized by progressive changes in behavior, executive dysfunction and language impairment, as a result of degeneration of the medial prefrontal and frontoinsular cortices. Four clinical subtypes have been identified: semantic dementia, progressive non-fluent aphasia, behavioral variant FTD and right temporal lobar atrophy.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_group_of_disorders" ],
+        "xrefs" : [ {
+          "val" : "Orphanet:282"
+        }, {
+          "val" : "MedDRA:10068968"
+        }, {
+          "val" : "UMLS:C0520716"
+        }, {
+          "val" : "UMLS:C0338451"
+        }, {
+          "val" : "MESH:D057180"
+        }, {
+          "val" : "ICD10:G31.0"
+        }, {
+          "val" : "DOID:9255"
+        }, {
+          "val" : "NCIT:C84719"
+        }, {
+          "val" : "GARD:0008436"
+        }, {
+          "val" : "COHD:4043378"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "multiple system tauopathy with presenile dementia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "MSTD",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "pallidopontonigral degeneration",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "FTD",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Wilhemsen-Lynch disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "frontotemporal lobe dementia (FLDEM)",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "frontotemporal lobar degeneration",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/mesh/C563003"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/meddra/10068968"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0338451"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/DOID_9255"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/42369001"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/mondo#excluded_subClassOf",
+          "val" : "http://purl.obolibrary.org/obo/MONDO_0003996"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0520716"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://www.orpha.net/ORDO/Orphanet_282"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/D057180"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C84719"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "frontotemporal dementia"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
+      "meta" : {
+        "definition" : {
+          "val" : "对于一类或属性的简洁的、有意义的、与人类友好的名称由本体开发商首选。 （美国英语）",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "editor preferred label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "editor preferred label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "编辑首选标签"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "编辑首选术语"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "editor preferred term"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "editor preferred term~editor preferred label"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "editor preferred term"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "编辑首选标签"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "IAO:0000232"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "curator_notes"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "curator notes"
+    }, {
+      "id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "meta" : {
+        "definition" : {
+          "val" : "Is defined by.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "rdfs:isDefinedBy"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HP_0100256",
+      "meta" : {
+        "definition" : {
+          "val" : "Senile plaques are extracellular deposits of amyloid in the gray matter of the brain.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "Senile plaques can be found in human and animal brains. From an age of 60 years (10%) to an age of 80 years (60%) the proportion of people with plaques increases approximately linearly. A small number of plaques can be due to the physiological process of aging. Women are slightly more likely to have plaques than males. The plaques occur commonly in the amygdoid nucleus and the sulci of the cortex of brain. The deposits are associated with degenerative neural structures and an abundance of microglia and astrocytes. Large numbers of senile plaques and neurofibrillary tangles are characteristic features of Alzheimers disease, and some of the abnormal neurites in senile plaques are composed primarily of paired helical filaments, a component of neurofibrillary tangles. In Alzheimer's disease they are primarily composed of amyloid beta peptides. These polypeptides tend to aggregate and are believed to be neurotoxic." ],
+        "xrefs" : [ {
+          "val" : "SNOMEDCT_US:38551001"
+        }, {
+          "val" : "UMLS:C0333463"
+        }, {
+          "val" : "MSH:D058225"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Braindruse",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Neuritic plaques",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Senile druse",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "human_phenotype"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hp.owl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-07-15T02:43:44Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "doelkens"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Senile plaques"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "meta" : {
+        "definition" : {
+          "val" : "An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "替代术语"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "alternative term"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "替代术语"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0000513",
+      "meta" : {
+        "definition" : {
+          "val" : "The total sum of the genetic information of an organism that is known and relevant to the experiment being performed, including chromosomal, plasmid, viral or other genetic material which has been introduced into the organism either prior to or during the experiment.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "Information, making the distinction between the actual physical material (e.g. a cell) and the information about the genetic content (genotype)." ],
+        "xrefs" : [ {
+          "val" : "NIFSTD:birnlex_2023"
+        }, {
+          "val" : "NCIt:C16631"
+        }, {
+          "val" : "MO:51"
+        }, {
+          "val" : "MeSH:D005838"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Tomasz Adamusiak"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Jie Zheng"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "James Malone"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "genotype"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "meta" : {
+        "definition" : {
+          "val" : "正式引用，例如在外部数据库中的标识符，用于表示/定义的属性源（S）。自由文本表示/为定义属性源（S）。实例：在2007年1月31日的作者姓名，URI，MeSH术语C04，PUBMEDID，维基uri",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "定义来源"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "论OBO-讨论邮件-列表，请参阅http://bit.ly/hgm99w"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "definition source"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Daniel Schober"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "definition_source"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000794",
+      "meta" : {
+        "comments" : [ "PLace_holder for sequence ontology term" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "SO:0000235"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "transcription factor binding site"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000002"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "transcription factor binding site"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0440",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Israeli"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0004670",
+      "meta" : {
+        "definition" : {
+          "val" : "Is the quantification of Beta-amyloid 1-42 in cerebrospinal fluid typically used as a biomarker for Alzheimer's Disease",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "CSF AB1-42 levels",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "CSF Aβ1-42 levels",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "amyloid-beta 1-42 measurement",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "beta-amyloid 1-42 measurement"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0321",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Finnish"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_C18479",
+      "meta" : {
+        "definition" : {
+          "val" : "The branch of pathology concerned with diseases and disorders of the nervous system.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Neuropathology",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P207",
+          "val" : "C0876934"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P366",
+          "val" : "Neuropathology"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Biomedical Occupation or Discipline"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ncit.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "C18479"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "Neuropathology"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Neuropathology"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0316",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Amish"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_1001870",
+      "meta" : {
+        "definition" : {
+          "val" : "This is the most common form of the disease, which happens to people age 65 and older. It may or may not run in families. So far, researchers haven’t found a particular gene that causes it. No one knows for sure why some people get it and others don’t.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer Type Senile Dementia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "late-onset Alzheimer's",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer Senile Dementia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Senile Dementia, Alzheimer Type",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Sirarat Sarntivijai"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/definition_citation",
+          "val" : "http://www.webmd.com/alzheimers/guide/alzheimers-types"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "late-onset Alzheimer's disease"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "late-onset Alzheimers disease"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000059",
+      "meta" : {
+        "definition" : {
+          "val" : "an individual who is a carrier for the APOEε4 allele",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "APOEε4 carrier"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_related_synonym"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_narrow_synonym"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000058",
+      "meta" : {
+        "definition" : {
+          "val" : "a material entity that has as part some molecular antigen that is recognized by an antibody",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "antibody target"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0000324",
+      "meta" : {
+        "definition" : {
+          "val" : "A cell type is a distinct morphological or functional form of cell.  Examples are epithelial, glial etc.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "MO:548"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "cell_type",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Tomasz Adamusiak"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "James Malone"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/branch_class",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "epithelial, glial."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Jie Zheng"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cell type"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HP_0100543",
+      "meta" : {
+        "definition" : {
+          "val" : "Abnormality in the process of thought including the ability to process information.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "SNOMEDCT_US:386806002"
+        }, {
+          "val" : "UMLS:C0683322"
+        }, {
+          "val" : "UMLS:C0338656"
+        }, {
+          "val" : "MSH:D060825"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Cognitive impairment",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Cognitive deficits",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Intellectual impairment",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Cognitive defects",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Abnormality of cognition",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Cognitive abnormality",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0002441"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0007211"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0002337"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "doelkens"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0006998"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2010-12-20T06:50:32Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0002302"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0002129"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0002128"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0006972"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "human_phenotype"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Cognitive impairment"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0005544",
+      "meta" : {
+        "definition" : {
+          "val" : "Age-related neuropathological condition with severe neuronal cell loss and gliosis in the hippocampus",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "EFO:0005678"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "hippocampal sclerosis of aging"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000019",
+      "meta" : {
+        "definition" : {
+          "val" : "stage 6 in the evolution of PD-related pathology: pathology of stage V plus lesions in first order sensory association areas of the neocortex and premotor areas, occasionally mild changes in primary sensory areas and the primary motor field; in Alzheimer's disease: pathology of stage V, plus lesions are visible even in the parastriate and striate areas of the occipital neocortex",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Stage VI"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0004975",
+      "meta" : {
+        "definition" : {
+          "val" : "A progressive, neurodegenerative disease characterized by loss of function and death of nerve cells in several areas of the brain leading to loss of cognitive function such as memory and language.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "COHD:378419"
+        }, {
+          "val" : "SCTID:142811000119104"
+        }, {
+          "val" : "UMLS:C0002395"
+        }, {
+          "val" : "HP:0002511"
+        }, {
+          "val" : "GARD:0000632"
+        }, {
+          "val" : "ICD9:331.0"
+        }, {
+          "val" : "ICD9:290.1"
+        }, {
+          "val" : "DOID:10652"
+        }, {
+          "val" : "ICD10:G30.9"
+        }, {
+          "val" : "NCIT:C2866"
+        }, {
+          "val" : "KEGG:05010"
+        }, {
+          "val" : "ICD10:G30"
+        }, {
+          "val" : "NIFSTD:birnlex_2092"
+        }, {
+          "val" : "MESH:D000544"
+        }, {
+          "val" : "EFO:0000249"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "AD",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer's dementia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimers dementia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer's disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer dementia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasNarrowSynonym",
+          "val" : "Alzheimer disease, familial",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimers disease",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/267688001"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check",
+          "val" : "http://purl.obolibrary.org/obo/mondo/sparql/qc/general/qc-single-child.sparql"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C2866"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C34524"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/D000544"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/73768007"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0276496"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/12348006"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0002395"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/26929004"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/154998003"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/DOID_10652"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/15662003"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C38778"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/snomedct/142811000119104"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Alzheimer disease"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000955",
+      "meta" : {
+        "definition" : {
+          "val" : "The brain is the center of the nervous system in all vertebrate, and most invertebrate, animals. Some primitive animals such as jellyfish and starfish have a decentralized nervous system without a brain, while sponges lack any nervous system at all. In vertebrates, the brain is located in the head, protected by the skull and close to the primary sensory apparatus of vision, hearing, balance, taste, and smell[WP].",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#major_organ", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#vertebrate_core", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#uberon_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#cumbo" ],
+        "xrefs" : [ {
+          "val" : "BAMS:Brain"
+        }, {
+          "val" : "UMLS:C0006104"
+        }, {
+          "val" : "BIRNLEX:796"
+        }, {
+          "val" : "EHDAA2:0000183"
+        }, {
+          "val" : "EHDAA:2641"
+        }, {
+          "val" : "HBA:4005"
+        }, {
+          "val" : "AAO:0010478"
+        }, {
+          "val" : "ZFA:0000008"
+        }, {
+          "val" : "MIAA:0000098"
+        }, {
+          "val" : "BAMS:Br"
+        }, {
+          "val" : "MA:0000168"
+        }, {
+          "val" : "EFO:0000302"
+        }, {
+          "val" : "ABA:Brain"
+        }, {
+          "val" : "CALOHA:TS-0095"
+        }, {
+          "val" : "UMLS:C1269537"
+        }, {
+          "val" : "PBA:3999"
+        }, {
+          "val" : "XAO:0000010"
+        }, {
+          "val" : "MESH:D001921"
+        }, {
+          "val" : "EV:0100164"
+        }, {
+          "val" : "http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=21"
+        }, {
+          "val" : "FMA:50801"
+        }, {
+          "val" : "OpenCyc:Mx4rvVjT65wpEbGdrcN5Y29ycA"
+        }, {
+          "val" : "MBA:8"
+        }, {
+          "val" : "BTO:0000142"
+        }, {
+          "val" : "VHOG:0000157"
+        }, {
+          "val" : "MBA:997"
+        }, {
+          "val" : "MAT:0000098"
+        }, {
+          "val" : "EHDAA:6485"
+        }, {
+          "val" : "GAID:571"
+        }, {
+          "val" : "galen:Brain"
+        }, {
+          "val" : "FBbt:00005095"
+        }, {
+          "val" : "NCIT:C12439"
+        }, {
+          "val" : "TAO:0000008"
+        }, {
+          "val" : "BILA:0000135"
+        }, {
+          "val" : "DHBA:10155"
+        }, {
+          "val" : "EMAPA:16894"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "the brain",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "suprasegmental levels of nervous system",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "suprasegmental structures",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "synganglion",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "encephalon",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "requires review for applicability to invertebrate structures, e.g. synganglion"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000001",
+          "val" : "The part of the central nervous system contained within the cranium, comprising the forebrain, midbrain, hindbrain, and metencephalon. It is derived from the anterior part of the embryonic neural tube (or the encephalon). Does not include retina. (CUMBO)"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://github.com/cmungall"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/uberon.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000003",
+          "val" : "(...) at some stage of its development, every chordate exhibits five uniquely derived characters or synapomorphies of the group: (...) (4) a single, tubular nerve cord that is located dorsal to the notochord (...) (reference 1); The neural tube is destined to differentiate into the brain and spinal cord (the central nervous system) (reference 2).[well established][VHOG]"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000001",
+          "val" : "Cavitated compound organ which is comprised of gray and white matter and surrounds the cerebral ventricular system.[TAO]"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000001",
+          "val" : "Part of the central nervous system situated within the cranium and composed of both nerve cell bodies and nerve fibers.[AAO]"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "brain"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0004760",
+      "meta" : {
+        "definition" : {
+          "val" : "Is a quantification of total tau protein, a biomarker for Alzheimer's disease.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Helen Parkinson"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "t-tau measurement"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0010",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals that either self-report or have been described as African, but there was not sufficient information to allow classification as African American, AfroCaribbean or Sub-Saharan African.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "African unspecified",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "African"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0016",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals who either self-report or have been described by authors as African American or Afro-Caribbean. This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap ACB or ASW populations. We note that there is likely to be significant admixture with European ancestry populations.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "African American or Afro-Caribbean"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0004763",
+      "meta" : {
+        "definition" : {
+          "val" : "Is a quantification of phosphorylated tau protein, used as a biomarker for Alzheimer's disease.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Helen Parkinson"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "p-tau measurement"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0013",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes indigenous individuals of North, Central and South America, descended from the original human migration into the Americas from Siberia. We note that there does not appear to be a suitable reference population for this category and efforts are required to fill this gap.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "American Indian",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Native American"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0014",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals who either self-report or are described by authors as Hispanic, Latino, Latin American or one of the sub-populations\nfrom this region. This category includes individuals with known admixture of primarily European, African and Native American ancestries, though some may have also a degree of Asian (e.g. Peru). We also note that the levels of admixture vary depending on the country, with Caribbean countries carrying higher levels of African admixture when compared to South American countries, for example. This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap CLM, MXL, PEL and PUR populations",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Joannella Morales"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Jackie MacArthur"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Hispanic or Latin American"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0009",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals who either self-report or have been described by authors as East Asian or one of the sub-populations from this region (e.g Chinese). This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap CDX, CHB, CHS and JPT populations.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "East Asian"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_P107",
+      "meta" : {
+        "definition" : {
+          "val" : "A property representing an alternative Preferred Name for use in some NCI systems.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Display Name",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Display_Name",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "P107"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P107",
+          "val" : "Display Name"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "Display_Name"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Conceptual Entity"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "Display_Name"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/definition_citation",
+      "meta" : {
+        "definition" : {
+          "val" : "A definition citation is a document, ontology class, person or organization from which the definition of the class is derived. It is used in the same sense as a citation in literature, in that the definition may have been derived from these sources or that this definition is related to these source.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "definition_citation"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000021",
+      "meta" : {
+        "definition" : {
+          "val" : "Braak stages I/II",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Group: transentorhinal"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0006",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals who either self-report or have been described by authors as South Asian or one of the sub-populations from this region (e.g Asian Indian). This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap\nBEB, GIH, ITU, PJL and STU populations.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "South Asian"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000383",
+      "meta" : {
+        "definition" : {
+          "val" : "A biological sex quality inhering in an individual or a population that only produces gametes that can be fertilised by male gametes.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "female"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "female"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_P106",
+      "meta" : {
+        "definition" : {
+          "val" : "A property that represents a description of the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Semantic_Type",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "P106"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P98",
+          "val" : "In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P107",
+          "val" : "Semantic Type"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "Semantic_Type"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Conceptual Entity"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "Semantic_Type"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0007",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals who either self-report or have been described by authors as South East Asian or one of the sub-populations from this region (e.g Vietnamese). This category also includes includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes KHV population. We note that East Asian and South East Asian populations are often conflated. However, recent studies indicate a unique genetic background for South East Asian populations.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "South East Asian"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000020",
+      "meta" : {
+        "definition" : {
+          "val" : "no neurofibrillary tangles",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Group: none"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CHEBI_59163",
+      "meta" : {
+        "definition" : {
+          "val" : "A substance used as an indicator of a biological state.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "NCIt:C16342"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "biological marker",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/efo/primary_source",
+          "val" : "CHEBI_59163"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "biomarker"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PATO_0000384",
+      "meta" : {
+        "definition" : {
+          "val" : "A biological sex quality inhering in an individual or a population whose sex organs contain only male gametes.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "male"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/pato.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "male"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "meta" : {
+        "definition" : {
+          "val" : "Name space of the ontology.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "disease_ontology" ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has_obo_namespace"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBPROP_0000007",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "UBPROP:0000007"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "has_relational_adjective"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Used to connect a class to an adjectival form of its label. For example, a class with label 'intestine' may have a relational adjective 'intestinal'."
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "has_relational_adjective"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion",
+      "type" : "PROPERTY",
+      "lbl" : "has_obo_format_version"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0019037",
+      "meta" : {
+        "definition" : {
+          "val" : "Progressive supranuclear palsy (PSP) is a rare late-onset neurodegenerative disease characterized by supranuclear gaze palsy, postural instability, progressive rigidity, and mild dementia.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_disease" ],
+        "xrefs" : [ {
+          "val" : "UMLS:C0038868"
+        }, {
+          "val" : "DOID:678"
+        }, {
+          "val" : "SCTID:28978003"
+        }, {
+          "val" : "NCIT:C85028"
+        }, {
+          "val" : "UMLS:CN205522"
+        }, {
+          "val" : "MedDRA:10036813"
+        }, {
+          "val" : "Orphanet:683"
+        }, {
+          "val" : "GARD:0007471"
+        }, {
+          "val" : "ICD9:333.0"
+        }, {
+          "val" : "MESH:D013494"
+        }, {
+          "val" : "ICD10:G23.1"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "familial progressive supranuclear palsy (type)",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "PSP syndrome",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Steele-Richardson-Olszewski syndrome",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "progressive supranuclear ophthalmoplegia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "supranuclear palsy, progressive",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/snomedct/28978003"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/meddra/10036813"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/CN205522"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/192975003"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C85028"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/D013494"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://www.orpha.net/ORDO/Orphanet_683"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0038868"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/192976002"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/DOID_678"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "progressive supranuclear palsy"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000026",
+      "meta" : {
+        "definition" : {
+          "val" : "Consortium to establish a Registry for Alzheimer's disease (CERAD) score for density of euritic plaques in the brain: none, sparse (A), moderate (B), frequent (C)",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "CERAD score"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+      "meta" : {
+        "definition" : {
+          "val" : "外部术语/类，术语引入的本体",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "imported from"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Melanie Courtot"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "引自"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON:Alan Ruttenberg"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "imported from"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBPROP_0000003",
+      "meta" : {
+        "definition" : {
+          "val" : "Notes on the homology status of this class.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "This annotation property may be replaced with an annotation property from an external ontology such as IAO" ],
+        "xrefs" : [ {
+          "val" : "UBPROP:0000003"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "homology_notes"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "homology_notes"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000023",
+      "meta" : {
+        "definition" : {
+          "val" : "Braak stages V/VI",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Group: isocortical"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBPROP_0000001",
+      "meta" : {
+        "definition" : {
+          "val" : "An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "This annotation property may be replaced with an annotation property from an external ontology such as IAO" ],
+        "xrefs" : [ {
+          "val" : "UBPROP:0000001"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "external_definition"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "external_definition"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_P108",
+      "meta" : {
+        "definition" : {
+          "val" : "A property representing the word or phrase that NCI uses by preference to refer to the concept.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Preferred Term",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Preferred_Name",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Preferred Name",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "Preferred_Name"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Conceptual Entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "P108"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P107",
+          "val" : "Preferred Name"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "Preferred_Name"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000022",
+      "meta" : {
+        "definition" : {
+          "val" : "Braak stages III/IV",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Group: limbic"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000025",
+      "meta" : {
+        "definition" : {
+          "val" : "stages marking evolution of Parkison's disease-related pathology and distribution of neurofibrillary tangles in the brain; later adapted for Alzheimer's disease-related pathology (Braak 1993: PMID 8121624)",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Stages"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000024",
+      "meta" : {
+        "definition" : {
+          "val" : "four category split of the Braak Stages: none: no neurofibrillary tangles; transentorhinal: Braak stages I/II; limbic: Braak stages III/IV; isocortical: Braak Stages V/VI",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Groups"
+    }, {
+      "id" : "http://www.orpha.net/ORDO/Orphanet_1020",
+      "meta" : {
+        "definition" : {
+          "val" : "Early-onset autosomal dominant Alzheimer disease (EOAD) is a progressive dementia with reduction of cognitive functions. EOAD presents the same phenotype as sporadic Alzheimer disease (AD) but has an early age of onset, usually before 60 years old.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/mondo#clingen", "http://purl.oboInOwllibrary.org/oboInOwl/mondo#gard_rare", "http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_disease" ],
+        "xrefs" : [ {
+          "val" : "OMIM:606187"
+        }, {
+          "val" : "OMIM:606889"
+        }, {
+          "val" : "MONDO:0015140"
+        }, {
+          "val" : "UMLS:CN043596"
+        }, {
+          "val" : "OMIM:607822"
+        }, {
+          "val" : "GARD:0012798"
+        }, {
+          "val" : "OMIM:602096"
+        }, {
+          "val" : "OMIM:609790"
+        }, {
+          "val" : "OMIM:608907"
+        }, {
+          "val" : "OMIM:104300"
+        }, {
+          "val" : "OMIM:605526"
+        }, {
+          "val" : "OMIM:104310"
+        }, {
+          "val" : "OMIM:611155"
+        }, {
+          "val" : "OMIM:611154"
+        }, {
+          "val" : "OMIM:611152"
+        }, {
+          "val" : "OMIM:609636"
+        }, {
+          "val" : "OMIM:605055"
+        }, {
+          "val" : "ICD10:G30.0"
+        }, {
+          "val" : "OMIM:611073"
+        }, {
+          "val" : "OMIM:607116"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Biparietal variant of Alzheimer's disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Familial Alzheimer disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Early-onset familial autosomal dominant Alzheimer disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "EOFAD",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "ADAD",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "early-onset, autosomal dominant Alzheimer disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "early-onset autosomal dominant Alzheimer disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Autosomal dominant AD",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "early-onset familial autosomal dominant Alzheimer disease",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/mondo#closeMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0276496"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/mondo#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/CN043596"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "val" : "Early-onset autosomal dominant Alzheimer's disease"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/mondo#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/Orphanet_1020"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/definition_citation",
+          "val" : "orphanet"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Early-onset autosomal dominant Alzheimer disease"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0001359",
+      "meta" : {
+        "definition" : {
+          "val" : "A clear, colorless, bodily fluid, that occupies the subarachnoid space and the ventricular system around and inside the brain and spinal cord.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#vertebrate_core", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#uberon_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim" ],
+        "xrefs" : [ {
+          "val" : "FMA:20935"
+        }, {
+          "val" : "GAID:1181"
+        }, {
+          "val" : "EV:0100311"
+        }, {
+          "val" : "EHDAA2:0004441"
+        }, {
+          "val" : "ENVO:02000029"
+        }, {
+          "val" : "ZFA:0001626"
+        }, {
+          "val" : "BTO:0000237"
+        }, {
+          "val" : "VHOG:0001278"
+        }, {
+          "val" : "CALOHA:TS-0130"
+        }, {
+          "val" : "MAT:0000499"
+        }, {
+          "val" : "UMLS:C0007806"
+        }, {
+          "val" : "MESH:A12.207.268"
+        }, {
+          "val" : "MA:0002503"
+        }, {
+          "val" : "EFO:0000329"
+        }, {
+          "val" : "TAO:0002184"
+        }, {
+          "val" : "NCIT:C12692"
+        }, {
+          "val" : "BIRNLEX:1798"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "spinal fluid",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "cerebral spinal fluid",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "liquor cerebrospinalis",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "CSF",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "many sources state the CP as sole producer of CSF, but this is disputed [DOI:10.1007/s11064-015-1581-6]"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000001",
+          "val" : "Portion of organism substance that is a clear fluid that occupies the subarachnoid space and the ventricular system around and inside the brain.[TAO]"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/uberon.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000003",
+          "val" : "In vertebrates, at early stages of Central Nervous System (CNS) development, the architecture of the brain primordium reveals the presence of the cavity of brain vesicles, which is filled by Embryonic Cerebro-Spinal Fluid (E-CSF). (...) Rat and chick E-CSF proteomes are similar, although rat is more complex in certain groups of proteins, e.g., apolipoproteins, which may be involved in the control of neural diversity, and has soluble enzymes present, just like adult human CSF, but unlike chick E-CSF, revealing phylogenetic brain differences between these groups of vertebrates.[uncertain][VHOG]"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000012",
+          "val" : "the FMA def states that this is subarachnoid spaces only. ZFA def states subarachnoid spaces and brain ventricles, but not SC (and has part_of to brain). Circulation: It circulates from the lateral ventricles to the foramen of Monro (Interventricular foramen), third ventricle, aqueduct of Sylvius (Cerebral aqueduct), fourth ventricle, foramen of Magendie (Median aperture) and foramina of Luschka (Lateral apertures), subarachnoid space over brain and spinal cord. It should be noted that the CSF moves in a pulsatile manner throughout the CSF system with nearly zero net flow. CSF is reabsorbed into venous sinus blood via arachnoid granulations."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000012",
+          "val" : "EHDAA2 models this as developing from CP, which is wrong"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cerebrospinal fluid"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0009268",
+      "meta" : {
+        "definition" : {
+          "val" : "A reported family history of Alzheimer’s disease in one or more family members.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "family history of Alzheimer disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer disease family history",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer’s disease family history",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "family history of Alzheimer’s disease"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000151",
+      "meta" : {
+        "definition" : {
+          "val" : "phosphorylated tau protein, a biomarker for Alzheimer's disease",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "p-tau",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "pTau",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "pTau181"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0019",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Japanese"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0005194",
+      "meta" : {
+        "definition" : {
+          "val" : "quantification of the amyloid-beta, either in a sample of cerebro-spinal fluid or via PET scan, used as a biomarker for Alzheimer's disease",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Ab measurement",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "cortical Ab measurement",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/definition_citation",
+          "val" : "https://en.wikipedia.org/wiki/Amyloid_beta"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "amyloid-beta measurement"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000150",
+      "meta" : {
+        "definition" : {
+          "val" : "tau protein, a biomarker for Alzheimer's disease",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "tau"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+      "meta" : {
+        "definition" : {
+          "val" : "A property representing a concept unique identifier within the NCI Enterprise Vocabulary Service's NCI Thesaurus.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "code",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://protege.stanford.edu/plugins/owl/protege#readOnly",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Conceptual Entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "NHC0"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "code"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "code"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000152",
+      "meta" : {
+        "definition" : {
+          "val" : "beta-amyloid 1-42, a biomarker for Alzheimer's Disease",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "AB42",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "beta-amyloid 1-42",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Aβ₄₂"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0000178",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition",
+          "val" : "表示细胞系的LINCS ID的注释属性。"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition_editor",
+          "val" : "Oliver He, Jiangan Xie"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition",
+          "val" : "An annotation property that represents an LINCS ID of a cell line."
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition_editor",
+          "val" : "Oliver He, Jiangan Xie, Jie Zheng"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition_editor",
+          "val" : "Oliver He, Jiangan Xie"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition",
+          "val" : "An annotation property that represents an ID used in the NIH LINCS project."
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "LINCS ID"
+    }, {
+      "id" : "http://www.w3.org/2000/01/rdf-schema#label",
+      "meta" : {
+        "definition" : {
+          "val" : "A human readable name for this class.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "label"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "label"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000037",
+      "meta" : {
+        "definition" : {
+          "val" : "A diagnosis that is generated by a diagnostic process occurring during the performance of an autopsy.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "autopsy-based diagnosis"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0037275",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition",
+          "val" : "An annotation property that describes the information of a problematic cell line."
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition",
+          "val" : "描述有问题的细胞系信息的注释属性。"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition",
+          "val" : "An annotation property that describes the information of a problematic cell line."
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition_editor",
+          "val" : "Yongqun He"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/cellline/definition_editor",
+          "val" : "Yongqun He"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "problematic cell line annotation"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000034",
+      "meta" : {
+        "definition" : {
+          "val" : "Human astrocytes-hippocampal",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Ha-h (ScienCell 1830)"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBPROP_0000012",
+      "meta" : {
+        "definition" : {
+          "val" : "Notes on how similar or equivalent classes are represented in other ontologies.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "UBPROP:0000012"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "external_ontology_notes"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "This annotation property may be replaced with an annotation property from an external ontology such as IAO"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "external_ontology_notes"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000033",
+      "meta" : {
+        "definition" : {
+          "val" : "Normal human astrocyte cell-line",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "NH-A (Lonza CC-2565)"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+      "type" : "PROPERTY",
+      "lbl" : "has_alternative_id"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000036",
+      "meta" : {
+        "definition" : {
+          "val" : "Medulloblastoma (aka D721), surgical resection from a patient with medulloblastoma as described by Darrell Bigner (1997)",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "D721"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "meta" : {
+        "definition" : {
+          "val" : "The preferred lexical label for a resource, in a given language.",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "The range of skos:prefLabel is the class of RDF plain literals. ", "skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise disjoint properties.", "A resource has no more than one value of skos:prefLabel per language tag. " ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "preferred label"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000035",
+      "meta" : {
+        "definition" : {
+          "val" : "Human astrocytes-spinal chord",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Ha-sp (ScienCell 1820)"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0001915",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: CRL-2268"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "BE(2)-C"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/clo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0000178",
+          "val" : "LCL-1963"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "BE(2)-C cell"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0596",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals with ethnic origins in the Semitic people populating the Arabian Peninsula and other countries in the Middle East and Northern Africa",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "PMID:28106113"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "PMID:27393651"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Arab"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0009752",
+      "meta" : {
+        "definition" : {
+          "val" : "Impairment of visuospatial functioning.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Laura Harris"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "visuospatial impairment"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#id",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "id"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0008425",
+      "meta" : {
+        "comments" : [ "disease: malignant primitive   neuroectodermal tumor" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CHEMBL: CHEMBL3308802"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/clo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0000178",
+          "val" : "LCL-1407"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: CRL-2060"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "PFSK-1"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ZN"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CVCL: CVCL_1642"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "EFO: EFO_0005234"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "PFSK-1 cell"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "lbl" : "in_subset"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_P366",
+      "meta" : {
+        "definition" : {
+          "val" : "A property representing a retired unique concept identifier created and stored as Concept Name by legacy EVS software. Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired. Legacy values are intended solely to help resolve and update earlier coding.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Legacy Concept Name",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Legacy_Concept_Name",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "Legacy Concept Name"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "P366"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Conceptual Entity"
+        }, {
+          "pred" : "http://protege.stanford.edu/plugins/owl/protege#readOnly",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "Legacy Concept Name"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000005",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence feature annotation for an enhancer region that is also transcribed.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "expressed enhancer"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000004",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence feature annotation for a region where a specific type of histone is found usually based on recognition by an antibody to a particular histone modification or variant.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "histone peak"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000007",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence feature annotation for an enhancer region that is transcribed and associated with a transcription start site.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "TSS-associated expressed enhancer"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000006",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence feature annotation for an enhancer region that is transcribed selectively in certain cell populations.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "specifically expressed enhancer"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000003",
+      "meta" : {
+        "definition" : {
+          "val" : "Sequence feature annotation for a region that is hypersensitive to DNase digestion when packaged as chromatin.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "DNAse hypersensitive region"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000009",
+      "meta" : {
+        "definition" : {
+          "val" : "Information about a gene feature.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "gene annotation"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000008",
+      "meta" : {
+        "definition" : {
+          "val" : "Information about a sequence feature associated with a known variant",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "variant annotation"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0000922",
+      "meta" : {
+        "definition" : {
+          "val" : "Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#uberon_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#vertebrate_core" ],
+        "xrefs" : [ {
+          "val" : "FBbt:00000052"
+        }, {
+          "val" : "OGEM:000001"
+        }, {
+          "val" : "EMAPA:16039"
+        }, {
+          "val" : "CALOHA:TS-0229"
+        }, {
+          "val" : "EFO:0001367"
+        }, {
+          "val" : "VHOG:0001766"
+        }, {
+          "val" : "GAID:963"
+        }, {
+          "val" : "MIAA:0000019"
+        }, {
+          "val" : "MESH:D004622"
+        }, {
+          "val" : "UMLS:C0013935"
+        }, {
+          "val" : "EHDAA2:0000002"
+        }, {
+          "val" : "BTO:0000379"
+        }, {
+          "val" : "NCIT:C28147"
+        }, {
+          "val" : "XAO:0000113"
+        }, {
+          "val" : "BSA:0000039"
+        }, {
+          "val" : "ZFA:0000103"
+        }, {
+          "val" : "MAT:0000226"
+        }, {
+          "val" : "AEO:0000169"
+        }, {
+          "val" : "EHDAA:38"
+        }, {
+          "val" : "FMA:69068"
+        }, {
+          "val" : "OpenCyc:Mx4rwP1ceZwpEbGdrcN5Y29ycA"
+        }, {
+          "val" : "BILA:0000056"
+        }, {
+          "val" : "EHDAA2_RETIRED:0003236"
+        }, {
+          "val" : "AAO:0011035"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "developmental tissue",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "embryonic organism",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "developing organism",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000007",
+          "val" : "embryonic"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "https://github.com/obophenotype/uberon/issues/503"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/uberon.owl"
+        }, {
+          "pred" : "http://xmlns.com/foaf/0.1/depicted_by",
+          "val" : "Wrinkledfrog:embryos.jpg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/UBPROP_0000012",
+          "val" : "Obsoleted in ZFA. Note that embryo is not classified as an embryonic structure - an embryonic structure is only the parts of an embryo"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "embryo"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0007433",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "OMIM:125320"
+        }, {
+          "val" : "MESH:C565115"
+        }, {
+          "val" : "UMLS:C1852223"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "dementia/parkinsonism with non-Alzheimer amyloid plaques",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/C565115"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/omim/125320"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C1852223"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "dementia/parkinsonism with non-Alzheimer amyloid plaques"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0004",
+      "meta" : {
+        "definition" : {
+          "val" : "Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "ancestral group",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "ancestry category"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0004874",
+      "meta" : {
+        "definition" : {
+          "val" : "Is a quantification of a subject's activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. Memory performance is typically assessed by some clinical memory test and is used in the diagnosis of diseases such as Alzheimer's disease.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "SNOMEDCT:363888004"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Helen Parkinson"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/definition_citation",
+          "val" : "http://purl.bioontology.org/ontology/SNOMEDCT/363888004"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "memory performance"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HP_0000726",
+      "meta" : {
+        "definition" : {
+          "val" : "A loss of global cognitive ability of sufficient amount to interfere with normal social or occupational function. Dementia represents a loss of previously present cognitive abilities, generally in adults, and can affect memory, thinking, language, judgment, and behavior.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "UMLS:C0497327"
+        }, {
+          "val" : "MSH:D003704"
+        }, {
+          "val" : "SNOMEDCT_US:52448006"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Dementia, progressive",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Dementia",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Progressive dementia",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0002274"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0007122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0007283"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0007150"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "human_phenotype"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Dementia"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0005",
+      "meta" : {
+        "definition" : {
+          "val" : "Includes individuals who either self-report or have been described by authors as\nEuropean, Caucasian, White or one of the sub-populations from this region (e.g Dutch). This category also includes individuals who genetically cluster with reference populations from this region, for example 1000 Genomes and/or HapMap CEU, FIN, GBR, IBS and TSI populations.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "white",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Caucasian",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "European"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000010",
+      "meta" : {
+        "definition" : {
+          "val" : "summary statistics from meta-analysis of related Genome-wide association studies",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "GWAS summary statistics"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0011401",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GARD:0007190"
+        }, {
+          "val" : "MESH:C566998"
+        }, {
+          "val" : "OMIM:604154"
+        }, {
+          "val" : "ICD10:G30"
+        }, {
+          "val" : "UMLS:C1858751"
+        }, {
+          "val" : "DOID:0110048"
+        }, {
+          "val" : "UMLS:C1970143"
+        }, {
+          "val" : "OMIM:611155"
+        }, {
+          "val" : "MESH:C536599"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Alzheimer's disease without neurofibrillary tangles",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer's disease type 15",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer disease without neurofibrillary tangles",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer's disease 15",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Alzheimer disease 15",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "AD15",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/omim/604154"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/omim/611155"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/DOID_0110048"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C1858751"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C1970143"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/C566998"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/C536599"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Alzheimer disease without neurofibrillary tangles"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCIT_P98",
+      "meta" : {
+        "definition" : {
+          "val" : "A property representing notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "DesignNote",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_NHC0",
+          "val" : "P98"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P106",
+          "val" : "Conceptual Entity"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P107",
+          "val" : "DesignNote"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/NCIT_P108",
+          "val" : "DesignNote"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "DesignNote"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0000031",
+      "meta" : {
+        "definition" : {
+          "val" : "A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture). ",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "当培养物经过有意的实验过程以建立更均匀和稳定的细胞群时（参见“建立细胞系”），使用术语“系”。这将需要一个或多次传代，但可能涉及额外的选择过程。通过这样的传代和/或选择过程，产生的'细胞系'达到一定水平的遗传稳定性和组成均一性，这在原代培养物中通常是不存在的。由于它们的相对同质性，“细胞系”能够在一段时间内被表征和稳定地增殖。一种新*型*细胞系不仅可以通过原代培养物的传代/选择建立，而且可以通过对现有系列的实验性修饰（例如永生化，稳定的遗传修饰，用于抗性子集的药物选择等）来建立。 \n\n这里提供的定义确立了符合细胞系特征的细胞群的“范围” - 特别是那些在培养中具有共同繁殖历史的细胞群。通过这种方式，“细胞系”类划分代表研究人员在科学实践中实际使用的细胞群 - 例如作为培养、实验和分享的投入。定义是这样的，细胞系将显示重要的属性。例如，它们将具有相对均匀的细胞类型组成，因为它们的连续共增殖而经历了类似的选择压力。此外，这些细胞群还可以通过传代数来表征，这也是由于它们共同的传代史。如此处所定义的，“细胞系”可以指活性培养物中，实验性应用的或以静止状态存储以备将来使用的细胞群。 \n", "The term 'line' is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see 'establishing cell line'). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting 'line' attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  \n\nThe definition provided here establishes the 'scale' of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the 'cell line' class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  'cell line' can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. \n", "The term 'line' is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see 'establishing cell line'). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting 'line' attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  \n\t\nThe definition provided here establishes the 'scale' of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the 'cell line' class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  'cell line' can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. \n" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "MB, SS, JZ, MAH, BP, CS, YH"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  \"为了评估APC的转录效应，我们研究了含有锌诱导型APC基因的人结直肠癌细胞系（HT29-APC）和含有类似诱导型lacZ基因的对照细胞系（HT29-β-Gal）\".  \n\n请注意，文献中的常见用法通常是“人类结直肠癌细胞系”的形式\",如上所见。 但是对\"一个细胞系\"研究的这种引用，指的是输入培养或实验的离散细胞群体，而不是整个细胞系。 我们将这些离散的群体称为'细胞系'。\n"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "细胞系"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "在2013年春季，由CLO，OBI，CL和ReO的领域专家和代表组成的工作组经过这些努力中建立了共识模型和培养细胞的定义。 这包括仔细描述术语“细胞系”应该如何定义和应用。 关于这项工作及其结果的说明可以在CLO wiki上找到：\nhttp://code.google.com/p/clo-ontology/wiki/Cell_Lines\n"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "In the spring of 2013, a working group comprised of domain experts and representatives from CLO, OBI, CL, and ReO worked to establish a consensus model and definitions of cultured cells across these efforts. This included a careful characterization of how the term 'cell line' should be defined and applied.  Notes about this work and its outcomes can be found on the CLO wiki here: \nhttp://code.google.com/p/clo-ontology/wiki/Cell_Lines\n"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "cell line"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  \"To evaluate the transcriptional effects of APC, we studied a human colorectal cancer cell line (HT29-APC) containing a zinc-inducible APC gene and a control cell line (HT29–β-Gal) containing an analogous inducible lacZ gene\". \n\nNote that common usage in the literature is often of the form \"a human colorectal cancer cell line\", as seen above. But such references to studies in \"a line\" refer to the fact that discrete populations of cells that are input into culturing or experiments, not an entire lineage of cells.  It is these discrete populations that we refer to as 'cell lines'.\n"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/clo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  \"To evaluate the transcriptional effects of APC, we studied a human colorectal cancer cell line (HT29-APC) containing a zinc-inducible APC gene and a control cell line (HT29–β-Gal) containing an analogous inducible lacZ gene\". \n\t\nNote that common usage in the literature is often of the form \"a human colorectal cancer cell line\", as seen above. But such references to studies in \"a line\" refer to the fact that discrete populations of cells that are input into culturing or experiments, not an entire lineage of cells.  It is these discrete populations that we refer to as 'cell lines'.\n"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "MB, SS, JZ, MAH, BP, CS, YH"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "细胞系"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000905",
+      "meta" : {
+        "definition" : {
+          "val" : "Information about a sequence region",
+          "xrefs" : [ ]
+        },
+        "comments" : [ "place holder for sequence ontology term" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Bjoern Peters"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Bjoern Peters"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "sequence feature annotation"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000120"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "sequence feature annotation"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000016",
+      "meta" : {
+        "definition" : {
+          "val" : "stage 3 in the evolution of Parkinson's disease-related pathology: pathology of stage II plus midbrain lesions, in particular in the pars compacta of the substantia nigra; in Alzheimer's disease: pathology of stage II plus, pathology in the outer and inner entorhinal and transentorhinal cellular layers worsens, and lesions extend into the adjoining neocortical association areas of the fusiform (occipito-temporal) gyrus",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Stage III"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000015",
+      "meta" : {
+        "definition" : {
+          "val" : "stage 2 in the evolution of Parkinson's disease-related pathology: pathology of stage I plus lesions in caudal raphe nuclei, gigantocellular reticular nucleus, and coeruleus-subcoeruleus complex; in Alzheimer's disease: pathology of stage I, plus tangle density increases and the pathology extends into the entorhinal region",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Stage II"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+      "type" : "PROPERTY",
+      "lbl" : "has_broad_synonym"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "excluded from QC check"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000018",
+      "meta" : {
+        "definition" : {
+          "val" : "stage 5 in the evolution of Parkinson's disease-related pathology: pathology of stage IV plus lesions in high order sensory association areas of the neocortex and prefrontal neocortex; in Alzheimer's disease: pathology of stage IV, plus lesions extend widely into the occipital lobe and appear in the peristriate region",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Stage V"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000017",
+      "meta" : {
+        "definition" : {
+          "val" : "stage 4 in the evolution of Parkinson's disease-related pathology: pathology of stage III plus prosencephalic lesions. Cortical involvement is confined to the temporal mesocortex (transentorhinal region) and allocortex (CA2-plexus). The neocortex is unaffected; in Alzheimer's disease: pathology of stage III, plus density of the lesions increases in both the entorhinal region and fusiform gyrus  with a gradual decrease of the pallid lines; neurofibrillary pathology now extends up to the medial temporal gyrus",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Stage IV"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000012",
+      "meta" : {
+        "definition" : {
+          "val" : "predicted effect of a variant on a genomic region",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "effect and predicted effect impact"
+    }, {
+      "id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "seeAlso"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "see also"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000011",
+      "meta" : {
+        "definition" : {
+          "val" : "sequence feature annotation reflecting disease susceptibility",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "disease susceptibility trait"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000014",
+      "meta" : {
+        "definition" : {
+          "val" : "stage 1 in the evolution of Parkinson's disease-related pathology: lesions in the dorsal IX/X motor nucleus and/or intermediate reticular zone; in Alzheimer's disease: neurofibrillary tangles are restricted to the transentorhinal region of the brain",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Braak Stage I"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HP_0002185",
+      "meta" : {
+        "definition" : {
+          "val" : "Pathological protein aggregates formed by hyperphosphorylation of a microtubule-associated protein known as tau, causing it to aggregate in an insoluble form.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "SNOMEDCT_US:85775002"
+        }, {
+          "val" : "UMLS:C0085400"
+        }, {
+          "val" : "MSH:D016874"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Paired helical filaments",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Neurofibrillary tangles composed of disordered microtubules in neurons",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "human_phenotype"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0007070"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "HP:0003132"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Neurofibrillary tangles"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000013",
+      "meta" : {
+        "definition" : {
+          "val" : "statistical adjustment for APOE e-4 allele status",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "APOE adjusted"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/UBERON_0001969",
+      "meta" : {
+        "definition" : {
+          "val" : "The liquid component of blood, in which erythrocytes are suspended.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#efo_slim", "http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#uberon_slim" ],
+        "xrefs" : [ {
+          "val" : "MIAA:0000052"
+        }, {
+          "val" : "NCIT:C13356"
+        }, {
+          "val" : "EFO:0001905"
+        }, {
+          "val" : "FMA:62970"
+        }, {
+          "val" : "EMAPA:35690"
+        }, {
+          "val" : "MESH:D010949"
+        }, {
+          "val" : "MA:0002501"
+        }, {
+          "val" : "MAT:0000052"
+        }, {
+          "val" : "BTO:0000131"
+        }, {
+          "val" : "CALOHA:TS-0800"
+        }, {
+          "val" : "OpenCyc:Mx4rEg4ZYrIbEduAAAAOpmP6tw"
+        }, {
+          "val" : "GAID:1178"
+        }, {
+          "val" : "UMLS:C0032105"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "portion of blood plasma",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "blood plasm",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasBroadSynonym",
+          "val" : "plasma",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasBroadSynonym",
+          "val" : "portion of plasma",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/uberon.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "blood plasma"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "meta" : {
+        "definition" : {
+          "val" : "Exact synonym.",
+          "xrefs" : [ ]
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "FULL_SYN",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Synonym with Source Data",
+          "xrefs" : [ ]
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "alternative_term"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0005621",
+      "meta" : {
+        "definition" : {
+          "val" : "Damage to the blood vessels of the brain",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "MESH:D020214"
+        }, {
+          "val" : "EFO:0006791"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Vascular Brain injury",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Brain Vascular trauma",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "injury, Vascular Brain",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "injury, Vascular, Brain",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Vascular Brain Injuries",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "injury, Brain Vascular",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Brain injury, Vascular",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Vascular injury, Brain",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "trauma, Brain Vascular",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Vascular trauma, Brain",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "trauma, cerebrovascular",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Brain Vascular injury",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Vascular Traumas, Brain",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/D020214"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/mondo#excluded_from_qc_check",
+          "val" : "http://purl.obolibrary.org/obo/mondo/sparql/qc/general/qc-single-child.sparql"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "vascular brain injury"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "meta" : {
+        "definition" : {
+          "val" : "Reference database or publication source.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "database_cross_reference"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0007798",
+      "meta" : {
+        "definition" : {
+          "val" : "quantification of an individual's linguistic error rate, generally through the administration of standardised tests or the analysis of language samples by a specialist",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "linguistic error measurement"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0005620",
+      "meta" : {
+        "definition" : {
+          "val" : "Hereditary cerebral hemorrhage with amyloidosis (HCHWA) describes a group of rare familial central nervous system disorders characterized by amyloid deposition in the cerebral blood vessels leading to hemorrhagic and non-hemorrhagic strokes, focal neurological deficits, and progressive cognitive decline eventually leading to dementia.",
+          "xrefs" : [ ]
+        },
+        "subsets" : [ "http://purl.oboInOwllibrary.org/oboInOwl/mondo#ordo_disease" ],
+        "xrefs" : [ {
+          "val" : "Orphanet:85458"
+        }, {
+          "val" : "MESH:D016657"
+        }, {
+          "val" : "GARD:0010266"
+        }, {
+          "val" : "ICD10:I68.0"
+        }, {
+          "val" : "COHD:4045749"
+        }, {
+          "val" : "EFO:0006790"
+        }, {
+          "val" : "ICD9:277.39"
+        }, {
+          "val" : "SCTID:230724001"
+        }, {
+          "val" : "ICD10:E85.4+"
+        }, {
+          "val" : "DOID:9246"
+        }, {
+          "val" : "ICD10:I68.0*"
+        }, {
+          "val" : "NCIT:C84625"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "hereditary cerebral haemorrhage with amyloidosis - Dutch type",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "cerebral amyloid angiopathy, genetic",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "cerebral amyloid angiopathy, familial",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "dutch hereditary cerebral amyloid angiopathy",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "CAA, familial",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "HCHWA",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/snomedct/230724001"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/DOID_9246"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C84625"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://www.orpha.net/ORDO/Orphanet_85458"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0085220"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C1510489"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/D016657"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "cerebral amyloid angiopathy"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0007488",
+      "meta" : {
+        "definition" : {
+          "val" : "A progressive form of dementia characterized by the presence of protein deposits called Lewy bodies in the midbrain and cerebral cortex, and loss of cholinergic and dopaminergic neurons. The signs and symptoms overlap with Alzheimer and Parkinson disease.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "COHD:380701"
+        }, {
+          "val" : "OMIM:127750"
+        }, {
+          "val" : "ICD10:G31.83"
+        }, {
+          "val" : "EFO:0006792"
+        }, {
+          "val" : "DOID:12217"
+        }, {
+          "val" : "SCTID:312991009"
+        }, {
+          "val" : "NCIT:C84826"
+        }, {
+          "val" : "ICD9:331.82"
+        }, {
+          "val" : "GARD:0003243"
+        }, {
+          "val" : "UMLS:C0752347"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
+          "val" : "diffuse Lewy body disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Lewy body disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Senile dementia of the Lewy body type",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "DLB",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "diffuse Lewy body disease with gaze palsy",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "dementia with Lewy bodies",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "Lewy body variant of Alzheimer disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "dementia, Lewy body",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "Lewy body dementia",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/80098002"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C1851958"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C1851957"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/230276003"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0752347"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C84826"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/snomedct/312991009"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/mesh/D020961"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/192808003"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/230275004"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://www.orpha.net/ORDO/Orphanet_1648"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/230277007"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/DOID_12217"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/omim/127750"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Lewy body dementia"
+    }, {
+      "id" : "http://xmlns.com/foaf/0.1/depicted_by",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "depicted_by"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "depicted by"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000063",
+      "meta" : {
+        "definition" : {
+          "val" : "non-Hispanic (a person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race) subset of Caucasian (person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White)",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Non-Hispanic White"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MONDO_0005180",
+      "meta" : {
+        "definition" : {
+          "val" : "A progressive degenerative disorder of the central nervous system characterized by loss of dopamine producing neurons in the substantia nigra and the presence of Lewy bodies in the substantia nigra and locus coeruleus. Signs and symptoms include tremor which is most pronounced during rest, muscle rigidity, slowing of the voluntary movements, a tendency to fall back, and a mask-like facial expression.",
+          "xrefs" : [ ]
+        },
+        "xrefs" : [ {
+          "val" : "COHD:381270"
+        }, {
+          "val" : "NCIT:C26845"
+        }, {
+          "val" : "ICD9:332"
+        }, {
+          "val" : "SCTID:49049000"
+        }, {
+          "val" : "ICD10:G20"
+        }, {
+          "val" : "EFO:0002508"
+        }, {
+          "val" : "UMLS:C0030567"
+        }, {
+          "val" : "OMIMPS:168600"
+        }, {
+          "val" : "ICD9:332.0"
+        }, {
+          "val" : "KEGG:05012"
+        }, {
+          "val" : "DOID:14330"
+        }, {
+          "val" : "MESH:D010300"
+        }, {
+          "val" : "NIFSTD:birnlex_2098"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Parkinson's disease",
+          "xrefs" : [ ]
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "paralysis agitans",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/mondo#should_conform_to",
+          "val" : "http://purl.obolibrary.org/obo/mondo/patterns/OMIM_phenotypic_series.yaml"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/NCIT_C26845"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/192831003"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/154999006"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/mesh/D010300"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/155002003"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/mondo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://identifiers.org/snomedct/49049000"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://purl.obolibrary.org/obo/DOID_14330"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/155000006"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#closeMatch",
+          "val" : "http://identifiers.org/snomedct/192825001"
+        }, {
+          "pred" : "http://www.w3.org/2004/02/skos/core#exactMatch",
+          "val" : "http://linkedlifedata.com/resource/umls/id/C0030567"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Parkinson disease"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000064",
+      "meta" : {
+        "definition" : {
+          "val" : "hispanic ancestry; specifically from the Caribbean",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Caribbean Hispanic"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+      "type" : "PROPERTY",
+      "lbl" : "shorthand"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0568",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "African American"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0009058",
+      "meta" : {
+        "comments" : [ "疾病：神经上皮瘤（大脑）", "disease: neuroepithelioma   (brain primary)", "disease: neuroepithelioma   (brain primary)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: HTB-10"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "SK-N-MC"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: HTB-10"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "SK-N-MC"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/clo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "SK-N-MC 细胞"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0009059",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "SK-N-SH"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CHEMBL: CHEMBL3307745"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: HTB-11"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0000178",
+          "val" : "LCL-1971"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/clo.owl"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: HTB-11"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "EFO: EFO_0003072"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "SK-N-SH"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0000178",
+          "val" : "LCL-1971"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CHEMBL: CHEMBL3307745"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CVCL: CVCL_0531"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "EFO: EFO_0003072"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CVCL: CVCL_0531"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "SK-N-SH 细胞"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000060",
+      "meta" : {
+        "definition" : {
+          "val" : "an individual who is not a carrier for the APOEε4 allele",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "NIAGADS"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "APOEε4 non-carrier"
+    }, {
+      "id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+      "meta" : {
+        "definition" : {
+          "val" : "Comment.",
+          "xrefs" : [ ]
+        }
+      },
+      "type" : "PROPERTY",
+      "lbl" : "comment"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/mondo#excluded_subClassOf",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "excluded subClassOf"
+    }, {
+      "id" : "http://www.ebi.ac.uk/efo/EFO_0006514",
+      "meta" : {
+        "definition" : {
+          "val" : "Alzheimer's disease biomarkers are used as indicators for Alzheimer's disease screening and as predictors for therapeutic responses and prognoses in Alzheimer patients",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://www.ebi.ac.uk/efo/efo.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Dani Welter"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/gwas_trait",
+          "val" : "true"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Alzheimer's disease biomarker measurement"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0463",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "American"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HANCESTRO_0588",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/hancestro.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "Jewish Israeli"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OGMS_0000073",
+      "meta" : {
+        "definition" : {
+          "val" : "The representation of a conclusion of a diagnostic process.",
+          "xrefs" : [ ]
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "diagnosis"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ogms.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "diagnosis"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/DOID_171",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "UMLS_CUI:C0206093"
+        }, {
+          "val" : "SNOMEDCT_US_2020_09_01:73676002"
+        }, {
+          "val" : "MESH:D017599"
+        } ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "primitive Neuroectodermal neoplasm",
+          "xrefs" : [ ]
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "disease_ontology"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/doid.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "neuroectodermal tumor"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/CLO_0009464",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://en.wikipedia.org/wiki/U87"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U87"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U87"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "HyperCLDB: cl5280"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0037275",
+          "val" : "Contaminated/misidentified. This cell line is not the original glioblastoma cell line established in 1968 at the University of Uppsala. As described in PubMed=27582061 it is most probably also a glioblastoma cell line but whose origin is unknow. See U-87MG Uppsala (CVCL_GP63) for the original U-87MG cell line. See more: http://web.expasy.org/cellosaurus/CVCL_0022."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "U-87MG"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "87MG"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U87 MG"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "87 MG"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CHEMBL: CHEMBL3307575"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "CHEMBL: CHEMBL3307575"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: HTB-14"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "U87MG"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0000178",
+          "val" : "LCL-1364"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U87 MG"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0037275",
+          "val" : "Contaminated/misidentified. This cell line is not the original glioblastoma cell line established in 1968 at the University of Uppsala. As described in PubMed=27582061 it is most probably also a glioblastoma cell line but whose origin is unknow. See U-87MG Uppsala (CVCL_GP63) for the original U-87MG cell line. See more: http://web.expasy.org/cellosaurus/CVCL_0022."
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "87 MG"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "EFO: EFO_0001256"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U-87"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0000178",
+          "val" : "LCL-1364"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "HyperCLDB: cl5280"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "RRID:CVCL_0022"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "U-87MG"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "ATCC: HTB-14"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U87-MG"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "RRID:CVCL_0022"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/CLO_0037275",
+          "val" : "污染/鉴定错误。 该细胞系不是1968年在乌发萨拉大学建立的原始胶质母细胞瘤细胞系。 如PubMed = 27582061中所述，它最可能也是胶质母细胞瘤细胞系，但其起源是未知的。 参见原始U-87MG细胞系的U-87MG Uppsala（CVCL_GP63）。 查看更多：http://web.expasy.org/cellosaurus/CVCL_0022."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "https://en.wikipedia.org/wiki/U87"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "EFO: EFO_0001256"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U-87"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "U87MG"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "87MG"
+        }, {
+          "pred" : "http://www.ebi.ac.uk/efo/alternative_term",
+          "val" : "U87-MG"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/clo.owl"
+        } ]
+      },
+      "type" : "CLASS",
+      "lbl" : "U-87 MG 细胞"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "uberon"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "dc-contributor"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+          "val" : "true"
+        } ]
+      },
+      "type" : "PROPERTY",
+      "lbl" : "contributor"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000059",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000151",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000150",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000152",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#CHEBI_59163"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000048",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000060",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000036",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000035",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#CL_0000000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000037",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OGMS_0000073"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000008",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000047",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000033",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000034",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#CL_0000000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000064",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/niagadsobo#NO_0000063",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"
+    } ],
+    "id" : "http://purl.obolibrary.org/niagads/niagads_ontology_sources.owl",
+    "meta" : {
+      "subsets" : [ ],
+      "xrefs" : [ ],
+      "basicPropertyValues" : [ ]
+    },
+    "equivalentNodesSets" : [ ],
+    "logicalDefinitionAxioms" : [ ],
+    "domainRangeAxioms" : [ ],
+    "propertyChainAxioms" : [ ]
+  } ]
+}
