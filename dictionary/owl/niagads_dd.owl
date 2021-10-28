@@ -640,10 +640,13 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CLO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line</rdfs:label>
         <rdfs:label xml:lang="en">cell line</rdfs:label>
         <rdfs:label xml:lang="zh">细胞系</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  
 </obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLO:CLO_0000031</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLO_0000031</oboInOwl:id>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  &quot;To evaluate the transcriptional effects of APC, we studied a human colorectal cancer cell line (HT29-APC) containing a zinc-inducible APC gene and a control cell line (HT29–β-Gal) containing an analogous inducible lacZ gene&quot;. 
 
 Note that common usage in the literature is often of the form &quot;a human colorectal cancer cell line&quot;, as seen above. But such references to studies in &quot;a line&quot; refer to the fact that discrete populations of cells that are input into culturing or experiments, not an entire lineage of cells.  It is these discrete populations that we refer to as &apos;cell lines&apos;.
@@ -651,6 +654,7 @@ Note that common usage in the literature is often of the form &quot;a human colo
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the spring of 2013, a working group comprised of domain experts and representatives from CLO, OBI, CL, and ReO worked to establish a consensus model and definitions of cultured cells across these efforts. This included a careful characterization of how the term &apos;cell line&apos; should be defined and applied.  Notes about this work and its outcomes can be found on the CLO wiki here: 
 http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 </obo:IAO_0000116>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &apos;line&apos; is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see &apos;establishing cell line&apos;). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting &apos;line&apos; attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  
 
 The definition provided here establishes the &apos;scale&apos; of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the &apos;cell line&apos; class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  &apos;cell line&apos; can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. 
@@ -665,15 +669,15 @@ Note that common usage in the literature is often of the form &quot;a human colo
 </obo:IAO_0000112>
         <obo:IAO_0000115>A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  
 </obo:IAO_0000115>
-        <obo:IAO_0000117>MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
-        <obo:IAO_0000116>在2013年春季，由CLO，OBI，CL和ReO的领域专家和代表组成的工作组经过这些努力中建立了共识模型和培养细胞的定义。 这包括仔细描述术语“细胞系”应该如何定义和应用。 关于这项工作及其结果的说明可以在CLO wiki上找到：
-http://code.google.com/p/clo-ontology/wiki/Cell_Lines
-</obo:IAO_0000116>
         <obo:IAO_0000116>In the spring of 2013, a working group comprised of domain experts and representatives from CLO, OBI, CL, and ReO worked to establish a consensus model and definitions of cultured cells across these efforts. This included a careful characterization of how the term &apos;cell line&apos; should be defined and applied.  Notes about this work and its outcomes can be found on the CLO wiki here: 
 http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 </obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture). </obo:IAO_0000115>
+        <obo:IAO_0000117>MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
+        <obo:IAO_0000116>在2013年春季，由CLO，OBI，CL和ReO的领域专家和代表组成的工作组经过这些努力中建立了共识模型和培养细胞的定义。 这包括仔细描述术语“细胞系”应该如何定义和应用。 关于这项工作及其结果的说明可以在CLO wiki上找到：
+http://code.google.com/p/clo-ontology/wiki/Cell_Lines
+</obo:IAO_0000116>
         <rdfs:comment>The term &apos;line&apos; is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see &apos;establishing cell line&apos;). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting &apos;line&apos; attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  
 	
 The definition provided here establishes the &apos;scale&apos; of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the &apos;cell line&apos; class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  &apos;cell line&apos; can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. 
@@ -814,9 +818,12 @@ The definition provided here establishes the &apos;scale&apos; of cell populatio
         <rdfs:label xml:lang="en">cell</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-2035</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:CL_0000000</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL_0000000</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:68646</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005623</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUPO:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one).</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001533</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WBbt:0004017</oboInOwl:hasDbXref>
@@ -948,11 +955,26 @@ The definition provided here establishes the &apos;scale&apos; of cell populatio
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EFO_0000513 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EFO_0000513">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genotype</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:EFO_0000513</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO_0000513</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HANCESTRO_0004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HANCESTRO_0004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ancestry category</rdfs:label>
         <rdfs:label>ancestry category</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HANCESTRO:HANCESTRO_0004</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HANCESTRO_0004</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115>Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>ancestral group</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/hancestro.owl"/>
@@ -5964,6 +5986,436 @@ Australian Aboriginal. These are expected to be descendents of early human migra
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000003">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNAse hypersensitive region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000003</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for a region that is hypersensitive to DNase digestion when packaged as chromatin.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histone peak</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000004</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for a region where a specific type of histone is found usually based on recognition by an antibody to a particular histone modification or variant.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000005">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expressed enhancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000005</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for an enhancer region that is also transcribed.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000006">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specifically expressed enhancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000006</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for an enhancer region that is transcribed selectively in certain cell populations.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000007">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSS-associated expressed enhancer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000007</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for an enhancer region that is transcribed and associated with a transcription start site.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000008">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variant annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about a sequence feature associated with a known variant</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000008</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000009">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about a gene feature.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000009</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000010">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GWAS summary statistics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000010</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">summary statistics from meta-analysis of related Genome-wide association studies</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000011">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease susceptibility trait</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000011</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence feature annotation reflecting disease susceptibility</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000012">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effect and predicted effect impact</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000905"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000012</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predicted effect of a variant on a genomic region</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000013">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APOE adjusted</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000013</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistical adjustment for APOE e-4 allele status</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000014">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage I</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000014</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 1 in the evolution of Parkinson&apos;s disease-related pathology: lesions in the dorsal IX/X motor nucleus and/or intermediate reticular zone; in Alzheimer&apos;s disease: neurofibrillary tangles are restricted to the transentorhinal region of the brain</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000015">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage II</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000015</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 2 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage I plus lesions in caudal raphe nuclei, gigantocellular reticular nucleus, and coeruleus-subcoeruleus complex; in Alzheimer&apos;s disease: pathology of stage I, plus tangle density increases and the pathology extends into the entorhinal region</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000016">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage III</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000016</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 3 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage II plus midbrain lesions, in particular in the pars compacta of the substantia nigra; in Alzheimer&apos;s disease: pathology of stage II plus, pathology in the outer and inner entorhinal and transentorhinal cellular layers worsens, and lesions extend into the adjoining neocortical association areas of the fusiform (occipito-temporal) gyrus</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000017">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage IV</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000017</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 4 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage III plus prosencephalic lesions. Cortical involvement is confined to the temporal mesocortex (transentorhinal region) and allocortex (CA2-plexus). The neocortex is unaffected; in Alzheimer&apos;s disease: pathology of stage III, plus density of the lesions increases in both the entorhinal region and fusiform gyrus  with a gradual decrease of the pallid lines; neurofibrillary pathology now extends up to the medial temporal gyrus</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000018">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage V</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000018</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 5 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage IV plus lesions in high order sensory association areas of the neocortex and prefrontal neocortex; in Alzheimer&apos;s disease: pathology of stage IV, plus lesions extend widely into the occipital lobe and appear in the peristriate region</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000019">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage VI</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000019</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 6 in the evolution of PD-related pathology: pathology of stage V plus lesions in first order sensory association areas of the neocortex and premotor areas, occasionally mild changes in primary sensory areas and the primary motor field; in Alzheimer&apos;s disease: pathology of stage V, plus lesions are visible even in the parastriate and striate areas of the occipital neocortex</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000020">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: none</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000020</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no neurofibrillary tangles</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000021">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: transentorhinal</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak stages I/II</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000021</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000022">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: limbic</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak stages III/IV</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000022</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000023">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: isocortical</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak stages V/VI</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000023</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000024">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Groups</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000024</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">four category split of the Braak Stages: none: no neurofibrillary tangles; transentorhinal: Braak stages I/II; limbic: Braak stages III/IV; isocortical: Braak Stages V/VI</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000025">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stages</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000025</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stages marking evolution of Parkison&apos;s disease-related pathology and distribution of neurofibrillary tangles in the brain; later adapted for Alzheimer&apos;s disease-related pathology (Braak 1993: PMID 8121624)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000026">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD score</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consortium to establish a Registry for Alzheimer&apos;s disease (CERAD) score for density of euritic plaques in the brain: none, sparse (A), moderate (B), frequent (C)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000026</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000033">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NH-A (Lonza CC-2565)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000033</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Normal human astrocyte cell-line</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000034">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ha-h (ScienCell 1830)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human astrocytes-hippocampal</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000034</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000035">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ha-sp (ScienCell 1820)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human astrocytes-spinal chord</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000035</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000036">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D721</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medulloblastoma (aka D721), surgical resection from a patient with medulloblastoma as described by Darrell Bigner (1997)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000036</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000037">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autopsy-based diagnosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A diagnosis that is generated by a diagnostic process occurring during the performance of an autopsy.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000037</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000047">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ethnicity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000047</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnicity that does not unambiguously cluster with the major populations (e.g., EUR, EAS, AFR, SAS, AMR) in a principal components analysis</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000048">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Finnish European</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000048</oboInOwl:id>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000058">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody target</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000058</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a material entity that has as part some molecular antigen that is recognized by an antibody</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000059">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APOEε4 carrier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0000513"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000059</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an individual who is a carrier for the APOEε4 allele</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000060">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APOEε4 non-carrier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EFO_0000513"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000060</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an individual who is not a carrier for the APOEε4 allele</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000063 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000063">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Hispanic White</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000063</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hispanic (a person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race) subset of Caucasian (person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NO_0000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NO_0000064">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caribbean Hispanic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HANCESTRO_0004"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000064</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hispanic ancestry; specifically from the Caribbean</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000040">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">covariate specification</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBCS_0000040</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a variable specification that specifies a variable used in statistical analysis to correct, adjust, or modify the values of a dependent variable; an independent variable not manipulated by the investigator</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000794 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000794">
@@ -5985,6 +6437,9 @@ Australian Aboriginal. These are expected to be descendents of early human migra
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about a sequence region</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:OBI_0000905</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000905</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">place holder for sequence ontology term</rdfs:comment>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence feature annotation</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -5996,7 +6451,10 @@ Australian Aboriginal. These are expected to be descendents of early human migra
     <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000073">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis</rdfs:label>
         <rdfs:label>diagnosis</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS_0000073</oboInOwl:id>
         <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of a diagnostic process.</obo:IAO_0000115>
         <obo:IAO_0000111>diagnosis</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
@@ -6238,496 +6696,6 @@ Australian Aboriginal. These are expected to be descendents of early human migra
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/uberon/core#pheno_slim"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line</rdfs:label>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLO_0000031</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#CL_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#CL_0000000">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</rdfs:label>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL_0000000</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genotype</rdfs:label>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO_0000513</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ancestry category</rdfs:label>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HANCESTRO_0004</oboInOwl:id>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000003">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNAse hypersensitive region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000003</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for a region that is hypersensitive to DNase digestion when packaged as chromatin.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000004">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histone peak</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000004</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for a region where a specific type of histone is found usually based on recognition by an antibody to a particular histone modification or variant.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000005">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expressed enhancer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000005</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for an enhancer region that is also transcribed.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000006">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specifically expressed enhancer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000006</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for an enhancer region that is transcribed selectively in certain cell populations.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000007">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TSS-associated expressed enhancer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000007</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence feature annotation for an enhancer region that is transcribed and associated with a transcription start site.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variant annotation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about a sequence feature associated with a known variant</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000008</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000009 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene annotation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Information about a gene feature.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000009</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000010">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GWAS summary statistics</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#NO_0000008"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000010</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">summary statistics from meta-analysis of related Genome-wide association studies</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000011">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease susceptibility trait</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#NO_0000008"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000011</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence feature annotation reflecting disease susceptibility</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000012">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effect and predicted effect impact</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#NO_0000008"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000012</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predicted effect of a variant on a genomic region</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000013 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000013">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APOE adjusted</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000013</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">statistical adjustment for APOE e-4 allele status</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000014">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage I</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000014</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 1 in the evolution of Parkinson&apos;s disease-related pathology: lesions in the dorsal IX/X motor nucleus and/or intermediate reticular zone; in Alzheimer&apos;s disease: neurofibrillary tangles are restricted to the transentorhinal region of the brain</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000015">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage II</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000015</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 2 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage I plus lesions in caudal raphe nuclei, gigantocellular reticular nucleus, and coeruleus-subcoeruleus complex; in Alzheimer&apos;s disease: pathology of stage I, plus tangle density increases and the pathology extends into the entorhinal region</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000016">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage III</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000016</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 3 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage II plus midbrain lesions, in particular in the pars compacta of the substantia nigra; in Alzheimer&apos;s disease: pathology of stage II plus, pathology in the outer and inner entorhinal and transentorhinal cellular layers worsens, and lesions extend into the adjoining neocortical association areas of the fusiform (occipito-temporal) gyrus</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000017">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage IV</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000017</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 4 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage III plus prosencephalic lesions. Cortical involvement is confined to the temporal mesocortex (transentorhinal region) and allocortex (CA2-plexus). The neocortex is unaffected; in Alzheimer&apos;s disease: pathology of stage III, plus density of the lesions increases in both the entorhinal region and fusiform gyrus  with a gradual decrease of the pallid lines; neurofibrillary pathology now extends up to the medial temporal gyrus</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000018 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000018">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage V</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000018</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 5 in the evolution of Parkinson&apos;s disease-related pathology: pathology of stage IV plus lesions in high order sensory association areas of the neocortex and prefrontal neocortex; in Alzheimer&apos;s disease: pathology of stage IV, plus lesions extend widely into the occipital lobe and appear in the peristriate region</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000019 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stage VI</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000019</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage 6 in the evolution of PD-related pathology: pathology of stage V plus lesions in first order sensory association areas of the neocortex and premotor areas, occasionally mild changes in primary sensory areas and the primary motor field; in Alzheimer&apos;s disease: pathology of stage V, plus lesions are visible even in the parastriate and striate areas of the occipital neocortex</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000020">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: none</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000020</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no neurofibrillary tangles</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000021">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: transentorhinal</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak stages I/II</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000021</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000022 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000022">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: limbic</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak stages III/IV</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000022</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000023">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Group: isocortical</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak stages V/VI</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000023</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000024">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Groups</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000024</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">four category split of the Braak Stages: none: no neurofibrillary tangles; transentorhinal: Braak stages I/II; limbic: Braak stages III/IV; isocortical: Braak Stages V/VI</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Braak Stages</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000025</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stages marking evolution of Parkison&apos;s disease-related pathology and distribution of neurofibrillary tangles in the brain; later adapted for Alzheimer&apos;s disease-related pathology (Braak 1993: PMID 8121624)</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000026">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CERAD score</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consortium to establish a Registry for Alzheimer&apos;s disease (CERAD) score for density of euritic plaques in the brain: none, sparse (A), moderate (B), frequent (C)</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000026</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000033">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NH-A (Lonza CC-2565)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000033</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Normal human astrocyte cell-line</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000034">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ha-h (ScienCell 1830)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#CL_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human astrocytes-hippocampal</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000034</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000035 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000035">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ha-sp (ScienCell 1820)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#CL_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human astrocytes-spinal chord</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000035</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000036 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000036">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D721</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#CLO_0000031"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medulloblastoma (aka D721), surgical resection from a patient with medulloblastoma as described by Darrell Bigner (1997)</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000036</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000037 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000037">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autopsy-based diagnosis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#OGMS_0000073"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A diagnosis that is generated by a diagnostic process occurring during the performance of an autopsy.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000037</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000047 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000047">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other ethnicity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000047</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethnicity that does not unambiguously cluster with the major populations (e.g., EUR, EAS, AFR, SAS, AMR) in a principal components analysis</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000048">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Finnish European</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000048</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000058 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000058">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antibody target</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000058</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a material entity that has as part some molecular antigen that is recognized by an antibody</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000059 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000059">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APOEε4 carrier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000059</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an individual who is a carrier for the APOEε4 allele</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000060">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APOEε4 non-carrier</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#EFO_0000513"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000060</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an individual who is not a carrier for the APOEε4 allele</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000063 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000063">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non-Hispanic White</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000063</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-Hispanic (a person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race) subset of Caucasian (person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White)</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#NO_0000064 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#NO_0000064">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caribbean Hispanic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/niagadsobo#HANCESTRO_0004"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NO_0000064</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hispanic ancestry; specifically from the Caribbean</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#OBCS_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OBCS_0000040">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">covariate specification</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBCS_0000040</oboInOwl:id>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a variable specification that specifies a variable used in statistical analysis to correct, adjust, or modify the values of a dependent variable; an independent variable not manipulated by the investigator</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OBI_0000905">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence feature annotation</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000905</oboInOwl:id>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/niagadsobo#OGMS_0000073 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/niagadsobo#OGMS_0000073">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis</rdfs:label>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIAGADS</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OGMS_0000073</oboInOwl:id>
     </owl:Class>
     
 

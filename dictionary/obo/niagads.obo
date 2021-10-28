@@ -16,9 +16,6 @@ name: histone peak
 def: "Sequence feature annotation for a region where a specific type of histone is found usually based on recognition by an antibody to a particular histone modification or variant."
 is_a: OBI_0000905 ! sequence feature annotation
 
-[Term]
-id: OBI_0000905
-name: sequence feature annotation
 
 [Term]
 id: NO_0000005
@@ -166,15 +163,6 @@ name: D721
 def: "Medulloblastoma (aka D721), surgical resection from a patient with medulloblastoma as described by Darrell Bigner (1997)"
 is_a: CLO_0000031 ! cell line
 
-
-[Term]
-id: CLO_0000031
-name: cell line
-
-[Term]
-id: CL_0000000
-name: cell
-
 [Term]
 id: NO_0000037
 name: autopsy-based diagnosis
@@ -215,9 +203,6 @@ name: APOEε4 non-carrier
 def: "an individual who is not a carrier for the APOEε4 allele"
 is_a: EFO_0000513  ! genotype
 
-[Term]
-id:  EFO_0000513
-name: genotype
 
 [Term]
 id: NO_0000063
@@ -239,5 +224,24 @@ is_a: HANCESTRO_0004 ! ancestry category
 [Term]
 id: HANCESTRO_0004 
 name: ancestry category
+xref: HANCESTRO:HANCESTRO_0004
 
+[Term]
+id: CLO_0000031
+name: cell line
+xref: CLO:CLO_0000031
 
+[Term]
+id: CL_0000000
+name: cell
+xref: CL:CL_0000000
+
+[Term]
+id:  EFO_0000513
+name: genotype
+xref: EFO:EFO_0000513
+
+[Term]
+id: OBI_0000905
+name: sequence feature annotation
+xref: OBI:OBI_0000905
