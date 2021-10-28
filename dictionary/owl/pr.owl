@@ -3,6 +3,7 @@
      xml:base="file:/data/var/www/html/ontofox/userfiles/pr.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
@@ -18,8 +19,32 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_broad_synonym</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -32,21 +57,146 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA, and any derivatives thereof.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000000001</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The definition above excludes protein complexes, which some also consider a protein. Those who wish to refer to a class representing both senses of the word are directed to CHEBI:36080. Note that the definition allows for experimentally-manipulated genes, and allows for artifically-produced derivatives that mimic those found naturally. Proteins (in the sense defined here) that descended from a common ancestor can be classified into families and superfamilies composed of products of evolutionarily-related genes. The domain architecture of a protein is described by the order of its constituent domains. Proteins with the same domains in the same order are defined as homeomorphic [PRO:WCB].</rdfs:comment>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">native protein</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural protein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000005615 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000005615">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clusterin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein that is a translation product of the human CLU gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAG4</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APOJ</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLU</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category=gene.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUB1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ku70-binding protein 1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Msgp-2</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NA1/NA2</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000005615</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SGP-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRPM-2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aging-associated gene 4 protein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apo-J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apolipoprotein J</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clustrin</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complement cytolysis inhibitor</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complement-associated protein SP-40,40</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfated glycoprotein 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testosterone-repressed prostate message 2</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000010173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000010173">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microtubule-associated protein tau</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein that is a translation product of the human MAPT gene or a 1:1 ortholog thereof.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category=gene. Requested by=Alzforum.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAPT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAPTL</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MTBT1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mtapt</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHF-tau</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000010173</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAU</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neurofibrillary tangle protein</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paired helical filament-tau</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000025583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025583">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-amyloid protein 42</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APP-42</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abeta(1-42)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abeta42</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An amyloid beta peptide that corresponds residues 1-42 of C99. Example: UniProtKB:P05067-1, 672-713.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category=modification. Requested by=Alzforum.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000025583</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-APP42</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_000026990 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000026990">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microtubule-associated protein tau phosphorylated 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000010173"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A microtubule-associated protein tau phosphorylated form in which the phosphorylation occurs at the Thr in the motif RTPPKS. Example: UniProtKB:P10636-1, Thr-498, MOD:00047.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category=modification. Requested by=Alzforum. The canonical sequence for UniProtKB human tau is based on isoform PNS-tau, while much of the literature uses numbering based on isoform hTau40.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MAPT/Phos:1</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:000026990</oboInOwl:id>
+        <oboInOwl:hasBroadSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pTau181</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PR_Q8IZY2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_Q8IZY2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phospholipid-transporting ATPase ABCA7 (human)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A phospholipid-transporting ATPase ABCA7 that is encoded in the genome of human.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCA-SSN (human)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCA7</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP-binding cassette sub-family A member 7 (human)</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category=organism-gene.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PR:Q8IZY2</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reactome:R-HSA-382529</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProtKB:Q8IZY2</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autoantigen SS-N (human)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hABCA7</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macrophage ABC transporter (human)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pr.owl"/>
+    </owl:Class>
 </rdf:RDF>
 
 
 
 <!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
 
-<!--
-Notice: All the OBO ontologies have changed the term URI format from http://purl.org/obo/owl/ontology#ontology_nnnnnnn to http://purl.obolibrary.org/obo/ontology_nnnnnnn. Please make sure your input files are updated.
-The following terms do not have any related axioms in the source ontology:
-http://purl.obolibrary.org/obo/PR_000000001
-http://purl.obolibrary.org/obo/PR_000005615
-http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=613
-http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=37
-http://purl.obolibrary.org/obo/PR_Q8IZY2
-http://purl.obolibrary.org/obo/PR_000010173
-http://purl.obolibrary.org/obo/PR_000026990
-http://purl.obolibrary.org/obo/PR_000025583
--->
