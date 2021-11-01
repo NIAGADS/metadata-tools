@@ -18,7 +18,6 @@ includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-includeAllAxioms
-inclueAllAxiomsRecursivey
+
 
 [Source annotation URIs to be excluded]
