@@ -6,6 +6,12 @@ DOID
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/DOID_171 #neuroectodermal tumor
+http://purl.obolibrary.org/obo/DOID_0070004 #Myeloma
+http://purl.obolibrary.org/obo/DOID_1040 #chronic lymphocytic leukemia
+http://purl.obolibrary.org/obo/DOID_9970 #obesity
+http://purl.obolibrary.org/obo/DOID_0080832 #mild cognitive impairment
+http://purl.obolibrary.org/obo/DOID_1793 #pancreatic cancer
+http://purl.obolibrary.org/obo/DOID_219 #colon cancer
 
 
 [Top level source term URIs and target direct superclass URIs]

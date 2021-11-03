@@ -21,11 +21,35 @@ http://purl.obolibrary.org/obo/MONDO_0005620 #cerebral amyloid angiopathy
 http://purl.obolibrary.org/obo/MONDO_0005544 #hippocampal sclerosis of aging
 http://purl.obolibrary.org/obo/HP_0002185 #Neurofibrillary tangles
 http://purl.obolibrary.org/obo/MONDO_0011401 #Alzheimer disease without neurofibrillary tangles
+http://purl.obolibrary.org/obo/MONDO_0004648 #vascular dementia
+http://purl.obolibrary.org/obo/MONDO_0004976 #amyotrophic lateral sclerosis
+http://purl.obolibrary.org/obo/MONDO_0005148 #type 2 diabetes mellitus
+http://purl.obolibrary.org/obo/MONDO_0007803 #multiple system atrophy
+http://purl.obolibrary.org/obo/MONDO_0021042 #Glioma
+http://purl.obolibrary.org/obo/MONDO_0022308 #corticobasal degeneration disorder
+http://purl.obolibrary.org/obo/MONDO_0005059
+includeAllChildren #Leukemia
+http://purl.obolibrary.org/obo/MONDO_0003306 #Atypical Neurofibroma
+http://purl.obolibrary.org/obo/MONDO_0008315 #prostrate cancer
+http://purl.obolibrary.org/obo/MONDO_0001657 #brain cancer
+http://purl.obolibrary.org/obo/MONDO_0008903 #lung cancer
+http://purl.obolibrary.org/obo/MONDO_0002009 #major depressive disorder
+http://purl.obolibrary.org/obo/MONDO_0008170 #ovarian cancer
+http://purl.obolibrary.org/obo/MONDO_0004993 #carcinoma
+http://purl.obolibrary.org/obo/MONDO_0016642 #meningioma
+http://purl.obolibrary.org/obo/MONDO_0002898 #skin cancer
+http://purl.obolibrary.org/obo/MONDO_0004970 #adenocarcinoma
+http://purl.obolibrary.org/obo/MONDO_0005105 #melanoma
+http://purl.obolibrary.org/obo/MONDO_0016642 #meningioma
+http://purl.obolibrary.org/obo/MONDO_0018177 #glioblastoma
+http://purl.obolibrary.org/obo/MONDO_0004985 #bipolar disorder
+
 
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/MONDO_0002039 #cognitive disorder
 http://purl.obolibrary.org/obo/MONDO_0001627 #dementia (disease)
+http://purl.obolibrary.org/obo/MONDO_0004992 #cancer
 
 [Source term retrieval setting]
 includeNoIntermediates

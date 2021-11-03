@@ -8,6 +8,23 @@ CL
 
 http://purl.obolibrary.org/obo/CL_0000129
 includeAllChildren #microglial cell
+http://purl.obolibrary.org/obo/CL_2000095 #cord blood hematopoietic stem cell
+http://purl.obolibrary.org/obo/CL_0000128 #oligodendrocyte
+http://purl.obolibrary.org/obo/CL_0002375 #Schwann cell precusor
+http://purl.obolibrary.org/obo/CL_0000540
+includeAllChildren #neuron
+http://purl.obolibrary.org/obo/CL_0002322 #embryonic stem cells
+http://purl.obolibrary.org/obo/CL_2000001 #peripheral blood mononuclear cell
+http://purl.obolibrary.org/obo/CL_0002573 #Schwann cell
+http://purl.obolibrary.org/obo/CL_0000057 #fibroblast
+http://purl.obolibrary.org/obo/CL_0000127 #astrocyte
+http://purl.obolibrary.org/obo/CL_0000235 #macrophage
+http://purl.obolibrary.org/obo/CL_2000074 #splenocyte
+http://purl.obolibrary.org/obo/CL_0000066 #epithelial
+http://purl.obolibrary.org/obo/CL_0000945 #lymphocyte of B lineage
+http://purl.obolibrary.org/obo/CL_0000576 #monocyte
+http://purl.obolibrary.org/obo/CL_0011005 #GABAergic neurons
+
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CL_0000000 #cell

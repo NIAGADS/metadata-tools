@@ -21,6 +21,9 @@
        <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/obi.owl"/>
        <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/pr.owl"/>
        <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/uberon.owl"/>
+       <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/ero.owl"/>
+       <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/chebi.owl"/>
+       <owl:imports rdf:resource="file:/data/var/www/html/ontofox/userfiles/chmo.owl"/>
        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/niagadsobo.owl"/>
     </owl:Ontology>
 </rdf:RDF>

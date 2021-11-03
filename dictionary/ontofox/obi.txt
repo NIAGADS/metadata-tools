@@ -9,12 +9,38 @@ http://purl.obolibrary.org/obo/PATO_0000384 #male
 http://purl.obolibrary.org/obo/PATO_0000383 #female
 http://purl.obolibrary.org/obo/OBI_0000794 
 includeAllChildren #transcription factor binding site
-
+http://purl.obolibrary.org/obo/OBI_0002588 #supervised machine learning
+http://purl.obolibrary.org/obo/OBI_0001418 #dose response design
+http://purl.obolibrary.org/obo/OGMS_0000015 #clinical history
+http://purl.obolibrary.org/obo/OBI_0500001 #clinical study design
+http://purl.obolibrary.org/obo/OBI_0001910 #primary cell culture
+http://purl.obolibrary.org/obo/OBI_0000716 #ChIP-seq assay
+http://purl.obolibrary.org/obo/OBI_0002020
+includeAllChildren #epigenetic modification assay
+http://purl.obolibrary.org/obo/OBI_0001204 #SNP microarray
+http://purl.obolibrary.org/obo/OBI_0000424
+includeAllChildren #transcription profiling assay
+http://purl.obolibrary.org/obo/OBI_0001852 #paired-end library preparation
+http://purl.obolibrary.org/obo/OBI_0001986 #immunohistochemistry
+http://purl.obolibrary.org/obo/OBI_0002039
+incudeAllChildren #assay for transposase-accessible chromatin using sequencing
+http://purl.obolibrary.org/obo/OBI_0001271
+includeAllChildren #RNA-seq assay
+http://purl.obolibrary.org/obo/OBI_0000626
+includeAllChildren #DNA Sequencing assay
+http://purl.obolibrary.org/obo/OBI_0002763 #16s ribosomal gene sequencing assay
+http://purl.obolibrary.org/obo/OBI_0001926 #microRNA profiling assay
+http://purl.obolibrary.org/obo/IAO_0000064
+includeAllChildren #algorithm
 
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OBI_0000905 #sequence feature annotation
 http://purl.obolibrary.org/obo/OGMS_0000073 #diagnosis
+http://purl.obolibrary.org/obo/OBI_0000070 #assay
+http://purl.obolibrary.org/obo/OBI_0500000
+includeAllChildren #study design
+
 
 [Source term retrieval setting]
 includeNoIntermediates
