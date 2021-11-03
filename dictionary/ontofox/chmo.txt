@@ -1,0 +1,23 @@
+[URI of the OWL(RDF/XML) output file]
+chmo.owl
+
+[Source ontology]
+CHMO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHMO_0000104 #bright-field microscopy
+http://purl.obolibrary.org/obo/CHMO_0000113 #atomic force microscopy
+http://purl.obolibrary.org/obo/CHMO_0000524 #liquid chromatography-mass spectrometry
+http://purl.obolibrary.org/obo/CHMO_0000701 #liquid chromatography-tandem mass spectrometry
+http://purl.obolibrary.org/obo/CHMO_0001746 #liquid chromatography-electrochemical detection
+http://purl.obolibrary.org/obo/CHMO_0002719 #quadrupole time-of-flight mass spectrometry
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+
+[Source annotation URIs to be excluded]

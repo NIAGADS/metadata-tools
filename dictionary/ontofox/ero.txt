@@ -1,0 +1,26 @@
+[URI of the OWL(RDF/XML) output file]
+ero.owl
+
+[Source ontology]
+ERO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/ERO_0001726 #small molecule screening
+http://purl.obolibrary.org/obo/ERO_0001686 #compound library screening
+http://purl.obolibrary.org/obo/ERO_0001688 #RNAi screening
+http://purl.obolibrary.org/obo/ERO_0002175 #TMT quantitation
+http://purl.obolibrary.org/obo/ERO_0002178 #functional magnetic resonance imaging
+http://purl.obolibrary.org/obo/ERO_0001362 #immunoassay
+http://purl.obolibrary.org/obo/ERO_0001830 #Positron Emission Tomography
+http://purl.obolibrary.org/obo/ERO_0000657 #metagenomics analysis
+
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

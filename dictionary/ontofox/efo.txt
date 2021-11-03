@@ -21,6 +21,8 @@ includeAllChildre #beta-amyloid 1-42 measurement
 http://www.ebi.ac.uk/efo/EFO_0007655
 includeAllChildren #clusterin measurement 
 http://www.ebi.ac.uk/efo/EFO_0001272 #adult
+http://www.ebi.ac.uk/efo/EFO_0005292 #lymphoblastoid cell line
+http://www.ebi.ac.uk/efo/EFO_0000572 #lymphoblast
 
 
 [Top level source term URIs and target direct superclass URIs]

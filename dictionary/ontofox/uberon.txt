@@ -5,10 +5,78 @@ uberon.owl
 UBERON
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/UBERON_0000922 #embryo
+http://purl.obolibrary.org/obo/UBERON_0000178 #blood
+http://purl.obolibrary.org/obo/UBERON_0002371 #bone marrow
+http://purl.obolibrary.org/obo/UBERON_0000310 #breast
 http://purl.obolibrary.org/obo/UBERON_0001359 #cerebrospinal fluid
-http://purl.obolibrary.org/obo/UBERON_0003210 #blood-cerebrospinal fluid barrier
+http://purl.obolibrary.org/obo/UBERON_0001155 #colon
+http://purl.obolibrary.org/obo/UBERON_0000059 #large intestine
+http://purl.obolibrary.org/obo/UBERON_0002048 #lung
+http://purl.obolibrary.org/obo/UBERON_0001021 #nerve
+http://purl.obolibrary.org/obo/UBERON_0000992 #ovary
+http://purl.obolibrary.org/obo/UBERON_0001264 #pancreas
+http://purl.obolibrary.org/obo/UBERON_0001003 #skin epidermis
+http://purl.obolibrary.org/obo/UBERON_0002106 #spleen
+http://purl.obolibrary.org/obo/UBERON_0002626 #head of caudate nucleus
+http://purl.obolibrary.org/obo/UBERON_0001871 #temporal lobe
+http://purl.obolibrary.org/obo/UBERON_0001872 #parietal lobe
+http://purl.obolibrary.org/obo/UBERON_0002113 #kidney
+http://purl.obolibrary.org/obo/UBERON_0000044 #dorsal root ganglion
+http://purl.obolibrary.org/obo/UBERON_0006956 #buccal mucosa
+http://purl.obolibrary.org/obo/UBERON_0000029 #lymph node
 http://purl.obolibrary.org/obo/UBERON_0001969 #blood plasma
+http://purl.obolibrary.org/obo/UBERON_0001869 #left cerebral hemisphere
+http://purl.obolibrary.org/obo/UBERON_0001869 #right cerebral hemisphere
+http://purl.obolibrary.org/obo/UBERON_0001870 #frontal cortex
+http://purl.obolibrary.org/obo/UBERON_0001891 #midbrain
+http://purl.obolibrary.org/obo/UBERON_0001911 #mammary gland
+http://purl.obolibrary.org/obo/UBERON_0002107 #liver
+http://purl.obolibrary.org/obo/UBERON_0002702 #middle frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002739 #medial dorsal nucleus of thalamus
+http://purl.obolibrary.org/obo/UBERON_0002766 #fusiform gyrus
+http://purl.obolibrary.org/obo/UBERON_0004024 #medial ganglionic eminence
+http://purl.obolibrary.org/obo/UBERON_0005291 #embryonic tissue
+http://purl.obolibrary.org/obo/UBERON_0005343 #cortical plate
+http://purl.obolibrary.org/obo/UBERON_0014740 #dorsal pallium
+http://purl.obolibrary.org/obo/UBERON_0016530 #parietal cortex
+http://purl.obolibrary.org/obo/UBERON_0034891 #insular cortex
+http://purl.obolibrary.org/obo/UBERON_0022352 #medial orbital frontal cortex
+http://purl.obolibrary.org/obo/UBERON_0002129 #cerebellar cortex
+http://purl.obolibrary.org/obo/UBERON_0001876 #amygdala
+http://purl.obolibrary.org/obo/UBERON_0002362 #arachnoid mater
+http://purl.obolibrary.org/obo/UBERON_0002021
+includeAllChildren #occipital lobe
+http://purl.obolibrary.org/obo/UBERON_0000956
+includeAllChildren #cerebral cortex
+http://purl.obolibrary.org/obo/UBERON_0001873 #caudate nucleus
+http://purl.obolibrary.org/obo/UBERON_0001874 #putamen
+http://purl.obolibrary.org/obo/UBERON_0001882 #nucleus accumbens
+http://purl.obolibrary.org/obo/UBERON_0001890 #forebrain
+http://purl.obolibrary.org/obo/UBERON_0001977 #blood serum
+http://purl.obolibrary.org/obo/UBERON_0002037 #cerebellum
+http://purl.obolibrary.org/obo/UBERON_0002435 #striatum
+http://purl.obolibrary.org/obo/UBERON_0002436 #primary visual cortex
+http://purl.obolibrary.org/obo/UBERON_0002576 #temporal pole
+http://purl.obolibrary.org/obo/UBERON_0002703 #precentral gyrus
+http://purl.obolibrary.org/obo/UBERON_0002751 #inferior temporal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002769 #superior temporal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002771 #middle temporal gyrus
+http://purl.obolibrary.org/obo/UBERON_0002795 #frontal pole
+http://purl.obolibrary.org/obo/UBERON_0002998 #inferior frontal gyrus
+http://purl.obolibrary.org/obo/UBERON_0003714 #neural tissue
+http://purl.obolibrary.org/obo/UBERON_0004167 #orbitofrontal cortex
+http://purl.obolibrary.org/obo/UBERON_0009834 #dorsolateral prefrontal cortex
+http://purl.obolibrary.org/obo/UBERON_0016525 #frontal lobe
+http://purl.obolibrary.org/obo/UBERON_0016530
+incudeAllChildren #parietal cortex
+http://purl.obolibrary.org/obo/UBERON_0016538 #temporal cortex
+http://purl.obolibrary.org/obo/UBERON_0022353 #posterior cingulate cortex
+http://purl.obolibrary.org/obo/UBERON_0001872
+includeAllChildren #parietal lobe
+http://purl.obolibrary.org/obo/UBERON_0034751 #primary auditory cortex
+http://purl.obolibrary.org/obo/UBERON_0000922 #embryo
+http://purl.obolibrary.org/obo/UBERON_0003210 #blood-cerebrospinal fluid barrier
+
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000955 #brain

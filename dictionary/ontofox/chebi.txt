@@ -1,0 +1,24 @@
+[URI of the OWL(RDF/XML) output file]
+chebi.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_47778 #acylglycerols
+http://purl.obolibrary.org/obo/CHEBI_16113 #cholesterol
+http://purl.obolibrary.org/obo/CHEBI_3098 #bile acids
+http://purl.obolibrary.org/obo/CHEBI_3766 #clozapine
+http://purl.obolibrary.org/obo/CHEBI_5613 #haloperidol
+http://purl.obolibrary.org/obo/CHEBI_60479 #lysophosphatidylcholine
+http://purl.obolibrary.org/obo/CHEBI_6437 #levetiracetam
+http://purl.obolibrary.org/obo/CHEBI_64482 #phosphatidylcholine
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+
+[Source annotation URIs to be excluded]
