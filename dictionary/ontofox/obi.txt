@@ -32,14 +32,13 @@ http://purl.obolibrary.org/obo/OBI_0002763 #16s ribosomal gene sequencing assay
 http://purl.obolibrary.org/obo/OBI_0001926 #microRNA profiling assay
 http://purl.obolibrary.org/obo/IAO_0000064
 includeAllChildren #algorithm
-
+http://purl.obolibrary.org/obo/OBI_0500000
+includeAllChildren #study design
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OBI_0000905 #sequence feature annotation
 http://purl.obolibrary.org/obo/OGMS_0000073 #diagnosis
 http://purl.obolibrary.org/obo/OBI_0000070 #assay
-http://purl.obolibrary.org/obo/OBI_0500000
-includeAllChildren #study design
 
 
 [Source term retrieval setting]

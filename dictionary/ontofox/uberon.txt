@@ -80,6 +80,11 @@ http://purl.obolibrary.org/obo/UBERON_0003210 #blood-cerebrospinal fluid barrier
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000955 #brain
+http://purl.obolibrary.org/obo/UBERON_0000061 #anatomical structure
+http://purl.obolibrary.org/obo/UBERON_0000467 #anatomical system
+http://purl.obolibrary.org/obo/UBERON_0001016 #nervous system
+http://purl.obolibrary.org/obo/UBERON_0002390 #hematopoietic system
+http://purl.obolibrary.org/obo/UBERON_0000949 #endocrine system
 
 [Source term retrieval setting]
 includeNoIntermediates
