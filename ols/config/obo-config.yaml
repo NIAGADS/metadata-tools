@@ -11,6 +11,7 @@ author:
 ontologies:
 - activity_status: active
   id: chebi
+  ontology_purl: http://purl.obolibrary.org/obo/chebi.owl
   in_foundry_order: 1
   alternatePrefix: ChEBI
   title: Chemical Entities of Biological Interest
@@ -66,6 +67,7 @@ ontologies:
 
 - activity_status: active
   id: chmo
+  ontology_purl: http://purl.obolibrary.org/obo/chmo.owl
   license:
     url: http://creativecommons.org/licenses/by/4.0/
     label: CC BY 4.0
@@ -86,6 +88,7 @@ ontologies:
 
 - activity_status: active
   id: cl
+  ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   label: Cell Ontology
   title: Cell Ontology
   homepage: https://obophenotype.github.io/cell-ontology/
@@ -161,6 +164,7 @@ ontologies:
 
 - activity_status: active
   id: clo
+  ontology_purl: http://purl.obolibrary.org/obo/clo.owl
   contact:
     email: siiraa@umich.edu
     label: Sirarat Sarntivijai
@@ -183,6 +187,7 @@ ontologies:
 
 - activity_status: active
   id: doid
+  ontology_purl: http://purl.obolibrary.org/obo/doid.owl
   in_foundry_order: 1
   contact:
     email: lynn.schriml@gmail.com
@@ -246,6 +251,7 @@ ontologies:
 
 - activity_status: active
   id: ncit
+  ontology_purl: http://purl.obolibrary.org/obo/ncit.owl
   title: NCI Thesaurus OBO Edition
   contact:
     email: haendel@ohsu.edu
@@ -277,6 +283,7 @@ ontologies:
 
 - activity_status: inactive
   id: ero
+  ontology_purl: http://purl.obolibrary.org/obo/ero.owl
   contact:
     email: Marc_Ciriello@hms.harvard.edu
     label: Marc Ciriello
@@ -296,6 +303,7 @@ ontologies:
 
 - activity_status: active
   id: hancestro
+  ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
   contact:
     email: danielle.welter@uni.lu
     label: Danielle Welter
@@ -335,6 +343,7 @@ ontologies:
 
 - activity_status: active
   id: hp
+  ontology_purl: http://purl.obolibrary.org/obo/hp.owl
   alternativePrefix: HPO
   description: A structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
   domain: phenotype
@@ -392,6 +401,7 @@ ontologies:
 
 - activity_status: active
   id: mondo
+  ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
   label: Mondo
   title: Mondo Disease Ontology
   description: A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.
@@ -467,6 +477,7 @@ ontologies:
 
 - activity_status: active
   id: pr
+  ontology_purl: http://purl.obolibrary.org/obo/pr.owl
   in_foundry_order: 1
   contact:
     email: dan5@georgetown.edu
@@ -524,6 +535,7 @@ ontologies:
 
 - activity_status: active
   id: obi
+  ontology_purl: http://purl.obolibrary.org/obo/obi.owl
   in_foundry_order: 1
   title: Ontology for Biomedical Investigations
   review:
@@ -580,6 +592,7 @@ ontologies:
 
 - activity_status: active
   id: uberon
+  ontology_purl: http://purl.obolibrary.org/obo/uberon.owl
   type: owl:Ontology
   label: Uberon
   title: Uberon multi-species anatomy ontology
@@ -764,6 +777,7 @@ ontologies:
 
 - activity_status: active
   id: obcs
+  ontology_purl: http://purl.obolibrary.org/obo/obcs.owl
   in_foundry: false
   title: Ontology of Biological and Clinical Statistics
   description: A biomedical ontology in the domain of biological and clinical statistics.
@@ -783,6 +797,7 @@ ontologies:
 
 - activity_status: active
   id: stato
+  ontology_purl: http://purl.obolibrary.org/obo/stato.owl
   in_foundry: false
   title: The Statistical Methods Ontology
   description: STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.
@@ -803,6 +818,7 @@ ontologies:
 
 - activity_status: active
   id: go
+  ontology_purl: http://purl.obolibrary.org/obo/go.owl
   in_foundry_order: 1
   contact:
     email: suzia@stanford.edu
@@ -929,8 +945,10 @@ ontologies:
   repository: https://github.com/geneontology/go-ontology
   preferredPrefix: GO
 
+
 - activity_status: active
   id: so
+  ontology_purl: http://purl.obolibrary.org/obo/chebi.owl
   contact:
     email: keilbeck@genetics.utah.edu
     label: Karen Eilbeck
