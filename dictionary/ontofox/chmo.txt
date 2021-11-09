@@ -12,6 +12,10 @@ http://purl.obolibrary.org/obo/CHMO_0000701 #liquid chromatography-tandem mass s
 http://purl.obolibrary.org/obo/CHMO_0001746 #liquid chromatography-electrochemical detection
 http://purl.obolibrary.org/obo/CHMO_0002719 #quadrupole time-of-flight mass spectrometry
 
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHMO_0002719 # mass spectrometry
+http://purl.obolibrary.org/obo/OBI_0000185  # imaging assay
+
 
 [Source term retrieval setting]
 includeNoIntermediates

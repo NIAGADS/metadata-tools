@@ -14,6 +14,8 @@ http://purl.obolibrary.org/obo/CHEBI_60479 #lysophosphatidylcholine
 http://purl.obolibrary.org/obo/CHEBI_6437 #levetiracetam
 http://purl.obolibrary.org/obo/CHEBI_64482 #phosphatidylcholine
 
+[Top level source term URIs and target direct superclass URIs]
+
 [Source term retrieval setting]
 includeNoIntermediates
 
