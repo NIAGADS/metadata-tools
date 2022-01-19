@@ -16,16 +16,19 @@ class OntologyValidator(object):
         self._requestUrl = url
         self._setType(lookupType)
         self._dict = None
+        
 
-    def setMap(self, map):
+    def setHash(self, userHash):
         ''' set dict lookup for ontology terms '''
-        self._dict = map
+        self._dict = userHash
+        
 
     def _setType(self, lookupType):
         ''' set lookup type / throw errror if not exists '''
         if lookupType not in LOOKUP_TYPES:
             raise LookupError("Invalid validation type: " + type)
         self._type = lookupType
+        
 
     def query(self, term, termSourceId):
         ''' validate term against resource '''
@@ -45,6 +48,7 @@ class OntologyValidator(object):
     def query_ontology_lookup_service(self, term, sourceId):
         ''' query the NIAGADS OLS '''
         raise NotImplementedError("OLS Query not yet implemented")
+    
 
     def query_hash(self, term, termSourceId):
         ''' query a user-supplied hash '''
