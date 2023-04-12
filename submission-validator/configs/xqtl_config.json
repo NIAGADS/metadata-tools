@@ -1,0 +1,506 @@
+{
+    "contact": {
+        "allow_user_fields": false,
+        "fields": [
+            {
+                "name": "name",
+                "required": true
+            },
+            {
+                "name": "email",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "email"
+                    }
+                ]
+            },
+            {
+                "name": "affiliation",
+                "required": true
+            },
+            {
+                "name": "role",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "list",
+                        "values": [
+                            "principal investigator",
+                            "PI",
+                            "submitter",
+                            "primary contact"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "study": {
+        "allow_user_fields": false,
+        "fields": [
+            {
+                "name": "grant_number",
+                "required": true
+            },
+            {
+                "name": "publication",
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "DOI"
+                    },
+                    {
+                        "type": "regexp",
+                        "value": "PMID"
+                    }
+                ],
+                "warn_if_missing": true,
+                "messages": {
+                    "missing": "Are the data being submitted published? Please provide a PubMed ID or DOI.  Preprint DOI can also be provided."
+                }
+            },
+            {
+                "name": "acknowledgment",
+                "type": "clob"
+            },
+            {
+                "name": "study_name",
+                "required": true
+            },
+            {
+                "name": "study_description",
+                "required": true
+            },
+            {
+                "name": "dataset_name",
+                "required": true
+            },
+            {
+                "name": "dataset_description",
+                "required": true
+            },
+            {
+                "name": "disease",
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "delimiter"
+                    }
+                ],
+                "warn_if_missing": true
+            },
+            {
+                "name": "data_citation"
+            },
+            {
+                "name": "website"
+            },
+            {
+                "name": "logo"
+            },
+            {
+                "name": "additional_study_information"
+            }
+        ]
+    },
+    "cohort": {
+        "allow_user_fields": false,
+        "fields": [
+            {
+                "name": "name",
+                "required": true
+            },
+            {
+                "name": "consent_level",
+                "required": true
+            },
+            {
+                "name": "description"
+            }
+        ]
+    },
+    "phenotype": {
+        "allow_user_fields": true,
+        "fields": [
+            {
+                "name": "subjectid_submitter",
+                "required": true
+            },
+            {
+                "name": "cohort",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "field_match",
+                        "value": "cohort|name"
+                    }
+                ]
+            },
+            {
+                "name": "sex",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "list",
+                        "value": [
+                            "male",
+                            "female",
+                            "not available",
+                            "not reported"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "disease",
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "disease"
+                    }
+                ],
+                "warn_if_missing": true
+            },
+            {
+                "name": "case_control_status",
+                "validator": {
+                    "type": "list",
+                    "value": [
+                        "case",
+                        "control"
+                    ]
+                },
+                "depends_on": "disease",
+                "required": true
+            },
+            {
+                "name": "age_at_diagnosis",
+                "units": "years",
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "age"
+                    }
+                ],
+                "warn_if_missing": true,
+                "messages": {
+                    "missing": "if this is information is available, it is the preferred variable for reported age"
+                }
+            },
+            {
+                "name": "age_at_onset",
+                "units": "years",
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "age"
+                    }
+                ]
+            },
+            {
+                "name": "age_at_last_exam",
+                "units": "years",
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "age"
+                    }
+                ]
+            },
+            {
+                "name": "age_at_death",
+                "units": "years",
+                "validator": [
+                    {
+                        "type": "age"
+                    }
+                ],
+                "depends_on": "autopsy",
+                "required": "true"
+            },
+            {
+                "name": "ethnicity",
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "ethnicity"
+                    }
+                ]
+            },
+            {
+                "name": "race",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "race"
+                    }
+                ]
+            },
+            {
+                "name": "ancestry",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "ancestry"
+                    }
+                ]
+            },
+            {
+                "name": "apoe_allele",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "genotype"
+                    }
+                ]
+            },
+            {
+                "name": "autoposy",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "list",
+                        "values": [
+                            "yes",
+                            "no",
+                            "not reported",
+                            "not available",
+                            "not applicable"
+                        ]
+                    }
+                ],
+                "warn_if_missing": true,
+                "messages": {
+                    "missing": "Please specify if samples were extracted from subjects during autopsy.  If `yes`, please also provide the `Age at Death` and any relevant information the autopsy in the `Autopsy_info` field"
+                }
+            },
+            {
+                "name": "autoposy_info",
+                "depends_on": "autopsy",
+                "type": "clob"
+            },
+            {
+                "name": "additional_information",
+                "type": "clob"
+            }
+        ]
+    },
+    "sample_and_experimental_information": {
+        "allow_user_fields": true,
+        "fields": [
+            {
+                "name": "subjectid_submitter",
+                "validator": [
+                    {
+                        "type": "field_match",
+                        "value": "phenotype|subjectid_submitter"
+                    }
+                ],
+                "required": true,
+                "depends_on": "sheet:phenotype"
+            },
+            {
+                "name": "sampleid_submitter",
+                "required": true
+            },
+            {
+                "name": "datasource_publication",
+                "warn_if_missing": true,
+                "messages": {
+                    "missing": "If experimental input is a pre-existing, published dataset please provide the PubMedID or DOI of the source publication"
+                },
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "DOI"
+                    },
+                    {
+                        "type": "regexp",
+                        "value": "PMID"
+                    }
+                ]
+            },
+            {
+                "name": "datasource_accession",
+                "warn_if_missing": true,
+                "messages": {
+                    "missing": "If experimental input is a pre-existing dataset pulled from a data repository, please provide the repository (REP) and accession number (ACCN) in the format REP|ACCN"
+                },
+                "validator": [
+                    {
+                        "type": "regexp",
+                        "value": "accession"
+                    }
+                ]
+            },
+            {
+                "name": "datasource_fileid",
+                "warn_if_missing": true,
+                "messages": {
+                    "missing": "If experimental input is a pre-existing dataset pulled from a repository or publication and has been assigned an unique file identifier, please provide the file ID"
+                }
+            },
+            {
+                "name": "organism",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "organism"
+                    }
+                ]
+            },
+            {
+                "name": "biosample_type",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "list",
+                        "value": [
+                            "cell",
+                            "cell line",
+                            "tissue"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "biosample",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "cell"
+                    },
+                    {
+                        "type": "data_dictionary",
+                        "value": "cell line"
+                    },
+                    {
+                        "type": "data_dictionary",
+                        "value": "tissue"
+                    }
+                ]
+            },
+            {
+                "name": "sample_description",
+                "type": "clob"
+            },
+            {
+                "name": "material_type",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "material_type"
+                    }
+                ]
+            },
+            {
+                "name": "assay",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "assay"
+                    }
+                ]
+            },
+            {
+                "name": "antibody",
+                "depends_on": "test",
+                "test": {
+                    "field": "assay",
+                    "values": [
+                        "ChIP-Seq",
+                        "etc"
+                    ]
+                },
+                "warn_if_missing": true,
+                "messages": {
+                    "missing": "Does the experiment involve specifying an antibody target? If so, please provide"
+                }
+            },
+            {
+                "name": "platform",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "options": {
+                            "allow_user_terms": true
+                        },
+                        "value": "platform"
+                    }
+                ]
+            },
+            {
+                "name": "life_stage",
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "value": "life stage"
+                    }
+                ]
+            },
+            {
+                "name": "treatment"
+            },
+            {
+                "name": "extraction_brief"
+            },
+            {
+                "name": "experiment_description",
+                "required": true
+            }
+        ]
+    },
+    "files_and_data_processing_steps": {
+        "allow_user_fields": true,
+        "fields": [
+            {
+                "name": "sampleid_submitter",
+                "validator": [
+                    {
+                        "type": "field_match",
+                        "value": "sample|subjectid_submitter"
+                    }
+                ],
+                "required": true,
+                "depends_on": "sheet:sample"
+            },
+            {
+                "name": "raw_or_processed",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "list",
+                        "value": [
+                            "raw",
+                            "processed"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "file_format",
+                "required": true,
+                "validator": [
+                    {
+                        "type": "data_dictionary",
+                        "options": {
+                            "allow_user_terms": true
+                        },
+                        "value": "file format"
+                    }
+                ]
+            }
+
+        ]
+    }
+}
