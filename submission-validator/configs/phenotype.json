@@ -1,0 +1,169 @@
+{
+    "allow_user_fields": true,
+    "fields": [
+        {
+            "name": "subjectid_submitter",
+            "required": true
+        },
+        {
+            "name": "cohort",
+            "required": true,
+            "validator": [
+                {
+                    "type": "field_match",
+                    "value": "cohort|name"
+                }
+            ]
+        },
+        {
+            "name": "sex",
+            "required": true,
+            "validator": [
+                {
+                    "type": "list",
+                    "value": [
+                        "male",
+                        "female",
+                        "not available",
+                        "not reported"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "disease",
+            "validator": [
+                {
+                    "type": "data_dictionary",
+                    "value": "disease"
+                }
+            ],
+            "warn_if_missing": true
+        },
+        {
+            "name": "case_control_status",
+            "validator": {
+                "type": "list",
+                "value": [
+                    "case",
+                    "control"
+                ]
+            },
+            "depends_on": "disease",
+            "required": true
+        },
+        {
+            "name": "age_at_diagnosis",
+            "units": "years",
+            "validator": [
+                {
+                    "type": "regexp",
+                    "value": "age"
+                }
+            ],
+            "warn_if_missing": true,
+            "messages": {
+                "missing": "if this is information is available, it is the preferred variable for reported age"
+            }
+        },
+        {
+            "name": "age_at_onset",
+            "units": "years",
+            "validator": [
+                {
+                    "type": "regexp",
+                    "value": "age"
+                }
+            ]
+        },
+        {
+            "name": "age_at_last_exam",
+            "units": "years",
+            "validator": [
+                {
+                    "type": "regexp",
+                    "value": "age"
+                }
+            ]
+        },
+        {
+            "name": "age_at_death",
+            "units": "years",
+            "validator": [
+                {
+                    "type": "age"
+                }
+            ],
+            "depends_on": "autopsy",
+            "required": "true"
+        },
+        {
+            "name": "ethnicity",
+            "validator": [
+                {
+                    "type": "data_dictionary",
+                    "value": "ethnicity"
+                }
+            ]
+        },
+        {
+            "name": "race",
+            "required": true,
+            "validator": [
+                {
+                    "type": "data_dictionary",
+                    "value": "race"
+                }
+            ]
+        },
+        {
+            "name": "ancestry",
+            "required": true,
+            "validator": [
+                {
+                    "type": "data_dictionary",
+                    "value": "ancestry"
+                }
+            ]
+        },
+        {
+            "name": "apoe_allele",
+            "required": true,
+            "validator": [
+                {
+                    "type": "data_dictionary",
+                    "value": "genotype"
+                }
+            ]
+        },
+        {
+            "name": "autoposy",
+            "required": true,
+            "validator": [
+                {
+                    "type": "list",
+                    "values": [
+                        "yes",
+                        "no",
+                        "not reported",
+                        "not available",
+                        "not applicable"
+                    ]
+                }
+            ],
+            "warn_if_missing": true,
+            "messages": {
+                "missing": "Please specify if samples were extracted from subjects during autopsy.  If `yes`, please also provide the `Age at Death` and any relevant information the autopsy in the `Autopsy_info` field"
+            }
+        },
+        {
+            "name": "autoposy_info",
+            "depends_on": "autopsy",
+            "type": "clob"
+        },
+        {
+            "name": "additional_information",
+            "type": "clob"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "allow_user_fields": false,
+    "fields": [
+        {
+            "name": "name",
+            "required": true
+        },
+        {
+            "name": "consent_level",
+            "required": true
+        },
+        {
+            "name": "description"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "allow_user_fields": false,
+    "fields": [
+        {
+            "name": "grant_number",
+            "required": true
+        },
+        {
+            "name": "publication",
+            "validator": [
+                {
+                    "type": "regexp",
+                    "value": "DOI"
+                },
+                {
+                    "type": "regexp",
+                    "value": "PMID"
+                }
+            ],
+            "warn_if_missing": true,
+            "messages": {
+                "missing": "Are the data being submitted published? Please provide a PubMed ID or DOI.  Preprint DOI can also be provided."
+            }
+        },
+        {
+            "name": "acknowledgment",
+            "type": "clob"
+        },
+        {
+            "name": "study_name",
+            "required": true
+        },
+        {
+            "name": "study_description",
+            "required": true
+        },
+        {
+            "name": "dataset_name",
+            "required": true
+        },
+        {
+            "name": "dataset_description",
+            "required": true
+        },
+        {
+            "name": "disease",
+            "validator": [
+                {
+                    "type": "regexp",
+                    "value": "delimiter"
+                }
+            ],
+            "warn_if_missing": true
+        },
+        {
+            "name": "data_citation"
+        },
+        {
+            "name": "website"
+        },
+        {
+            "name": "logo"
+        },
+        {
+            "name": "additional_study_information"
+        }
+    ]
+}

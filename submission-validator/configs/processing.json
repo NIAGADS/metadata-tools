@@ -1,0 +1,43 @@
+"files_and_data_processing_steps": {
+    "allow_user_fields": true,
+    "fields": [
+        {
+            "name": "sampleid_submitter",
+            "validator": [
+                {
+                    "type": "field_match",
+                    "value": "sample|subjectid_submitter"
+                }
+            ],
+            "required": true,
+            "depends_on": "sheet:sample"
+        },
+        {
+            "name": "raw_or_processed",
+            "required": true,
+            "validator": [
+                {
+                    "type": "list",
+                    "value": [
+                        "raw",
+                        "processed"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "file_format",
+            "required": true,
+            "validator": [
+                {
+                    "type": "data_dictionary",
+                    "options": {
+                        "allow_user_terms": true
+                    },
+                    "value": "file format"
+                }
+            ]
+        }
+
+    ]
+}

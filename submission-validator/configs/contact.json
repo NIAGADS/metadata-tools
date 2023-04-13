@@ -1,0 +1,38 @@
+{
+    "allow_user_fields": false,
+    "fields": [
+        {
+            "name": "name",
+            "required": true
+        },
+        {
+            "name": "email",
+            "required": true,
+            "validator": [
+                {
+                    "type": "regexp",
+                    "value": "email"
+                }
+            ]
+        },
+        {
+            "name": "affiliation",
+            "required": true
+        },
+        {
+            "name": "role",
+            "required": true,
+            "validator": [
+                {
+                    "type": "list",
+                    "values": [
+                        "principal investigator",
+                        "PI",
+                        "submitter",
+                        "primary contact"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+   "extends": "generic_assay",
+   "ignore_fields": [],
+   "additional_fields": []
+}
