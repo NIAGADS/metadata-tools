@@ -1,0 +1,29 @@
+{
+   "name": "sequencing_assay", 
+   "extends": "generic_assay",
+    "omit_fields": [],
+    "fields": [
+       {
+          "name": "run_type",
+          "required": true,
+          "validator": {
+             "type": "list",
+             "values": [
+                "single",
+                "paired end",
+                "not applicable"
+             ]
+          }
+       },
+       {
+          "name": "read_length",
+          "required": true,
+          "type": "integer"
+       },
+       {
+          "name": "library_info_brief",
+          "required": true,
+          "type": "clob"
+       }
+    ]
+ }

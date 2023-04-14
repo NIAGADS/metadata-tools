@@ -3,9 +3,8 @@
    "omit_fields": [],
    "fields": [
       {
-         "name": "rin",
-         "required": true,
-         "type": "number"
+         "name": "antibody",
+         "required": true
       }
    ]
 }

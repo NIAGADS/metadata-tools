@@ -1,16 +1,23 @@
-"files_and_data_processing_steps": {
+{
     "allow_user_fields": true,
     "fields": [
         {
             "name": "sampleid_submitter",
             "validator": [
                 {
+                    "type": "depends_on",
+                    "value": "column",
+                    "options": {
+                        "sheet": "sample",
+                        "field": "subjectid_submitter"
+                    }
+                },
+                {
                     "type": "field_match",
                     "value": "sample|subjectid_submitter"
                 }
             ],
-            "required": true,
-            "depends_on": "sheet:sample"
+            "required": true
         },
         {
             "name": "raw_or_processed",
@@ -37,7 +44,54 @@
                     "value": "file format"
                 }
             ]
+        },
+        {
+            "name": "file_name",
+            "required": true
+        },
+        {
+            "name": "file_contents",
+            "required": true,
+            "type": "clob"
+        },
+        {
+            "name": "genome_build",
+            "required": true,
+            "validator": [
+                {
+                    "type": "data_dictionary",
+                    "value": "genome build"
+                }
+            ]
+        },
+        {
+            "name": "number_of_cases",
+            "warn_if_missing": true,
+            "type": "integer"
+        },
+        {
+            "name": "number_of_controls",
+            "warn_if_missing": true,
+            "type": "integer"
+        },
+        {
+            "name": "processed_date",
+            "warn_if_missing": true,
+            "messages": {
+                "missing": "If submitting processed data files, please provide the date when this file was 'processed' or generated"
+            },
+            "type": "date",
+            "validator": [
+                {
+                    "type": "depends_on",
+                    "options": {
+                        "test"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "pipeline_info",
         }
-
     ]
 }

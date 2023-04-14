@@ -57,8 +57,7 @@
             "units": "years",
             "validator": [
                 {
-                    "type": "regexp",
-                    "value": "age"
+                    "type": "age"
                 }
             ],
             "warn_if_missing": true,
@@ -71,8 +70,7 @@
             "units": "years",
             "validator": [
                 {
-                    "type": "regexp",
-                    "value": "age"
+                    "type": "age"
                 }
             ]
         },
@@ -81,8 +79,7 @@
             "units": "years",
             "validator": [
                 {
-                    "type": "regexp",
-                    "value": "age"
+                    "type": "age"
                 }
             ]
         },
@@ -95,7 +92,7 @@
                 }
             ],
             "depends_on": "autopsy",
-            "required": "true"
+            "required": true
         },
         {
             "name": "ethnicity",
