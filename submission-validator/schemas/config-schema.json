@@ -1,0 +1,127 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Field": {
+            "properties": {
+                "name": {
+                    "description": "name of metadata field",
+                    "type": "string"
+                },
+                "required": {
+                    "default": false,
+                    "description": "flag indicating whether the field is required",
+                    "type": "boolean"
+                },
+                "type": {
+                    "default": "string",
+                    "description": "data type of the field;",
+                    "type": "string"
+                },
+                "validators": {
+                    "description": "list of field validators",
+                    "items": {
+                        "$ref": "#/definitions/FieldValidator"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "type": "object"
+        },
+        "FieldDataType": {
+            "enum": [
+                "boolean",
+                "clob",
+                "float",
+                "integer",
+                "string"
+            ],
+            "type": "string"
+        },
+        "FieldValidator": {
+            "properties": {
+                "options": {
+                    "additionalProperties": {
+                        "anyOf": [
+                            {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "description": "options for the validator",
+                    "type": "object"
+                },
+                "type": {
+                    "$ref": "#/definitions/ValidatorType",
+                    "description": "type of validator"
+                }
+            },
+            "required": [
+                "options",
+                "type"
+            ],
+            "type": "object"
+        },
+        "MetadataFile": {
+            "properties": {
+                "allow_user_fields": {
+                    "default": false,
+                    "description": "flag indicating whether user-defined fields are allowed",
+                    "type": "boolean"
+                },
+                "extends": {
+                    "description": "to support inheritence; parent sheet type (e.g., `rnaseq_assay` extends `sequencing_assay`)",
+                    "type": "string"
+                },
+                "fields": {
+                    "description": "list of expected fields in the sheet",
+                    "items": {
+                        "$ref": "#/definitions/Field"
+                    },
+                    "minItems": 1,
+                    "type": "array",
+                    "uniqueItems": true
+                },
+                "name": {
+                    "description": "name of the sheet",
+                    "type": "string"
+                },
+                "omit_fields": {
+                    "description": "to support inheritence; any fields from the parent that should be omitted (ignored)",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 0,
+                    "type": "array",
+                    "uniqueItems": true
+                }
+            },
+            "required": [
+                "fields",
+                "name"
+            ],
+            "type": "object"
+        },
+        "ValidatorType": {
+            "enum": [
+                "age",
+                "data_dictionary",
+                "depends_on",
+                "list",
+                "regexp",
+                "units",
+                "warn_if_missing"
+            ],
+            "type": "string"
+        }
+    }
+}
+
