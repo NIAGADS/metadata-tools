@@ -1,24 +1,13 @@
-/* 
-config schema typescript
-convert to json-schema using typescript-json-schema npm package 
-(must be installed globally)
-as follows:
+// config schema typescript
+// To convert to JSON schema: typescript-json-schema schemas/config-schema.ts "*" --out <full_path_to_output_file> --required
 
-typescript-json-schema schemas/config-schema.ts "*" --out <full_path_to_output_file> --required
-
-*/
-
-/* NOTES: make 
-warn_if_missing a type of validator 
-depends_on also a validator
-units
-*/
-
-// map number to json-schema integer
-// type integer = number;
 type ValidatorType = "warn_if_missing" | "age" | "regexp" | "units" | "depends_on" | "data_dictionary" | "list";
 type FieldDataType = "string" | "integer" | "clob" | "float" | "boolean";
 
+/**
+ * Validator specification
+ * @additionalProperties false
+ */
 export interface FieldValidator {
     /**
      * type of validator
@@ -27,10 +16,16 @@ export interface FieldValidator {
 
     /**
      * options for the validator; a basic object
+     * @additionalProperties false
      */
-    options: {[key: string]: string | string[]};     
+    options: {[key: string]: string};     
+    values: string[];
 }
 
+/**
+ * Metadata File Field Specification
+ * @additionalProperties false
+ */
 export interface Field {
      /**
      * name of metadata field
@@ -62,7 +57,15 @@ export interface Field {
     validators?: FieldValidator[];
 }
 
+
+/**
+ * Metadata File Validator Configuration
+ * @additionalProperties false
+ */
+
 export interface MetadataFile {
+
+
     /**
      * name of the sheet
      * 

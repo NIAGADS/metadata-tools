@@ -6,12 +6,16 @@ assembly of preliminary NIAGADS Ontology/Data Dictionary
 
 ## isa
 
-POC for processing customized ISA-based tab-delimited meta-data files
+POC for processing customized ISA-based tab-delimited meta-data files; defunct
 
-### dependencies
+# ols
 
-* Python 3.5+
-* `isatools` - install w/pip
+Custom EBI-Ontology Lookup Service
 
-### usage 
-* coming soon
+# ontology-validator
+
+POC validator against GenomicsDB API for ontology terms
+
+# submission-validator
+
+Validator for submitted meta-datafiles
