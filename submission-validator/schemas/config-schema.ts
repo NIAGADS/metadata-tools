@@ -1,32 +1,41 @@
 // config schema typescript
-// To convert to JSON schema: typescript-json-schema schemas/config-schema.ts "*" --out <full_path_to_output_file> --required
+// To convert to JSON schema: 
+// typescript-json-schema schemas/config-schema.ts "sheet" --out schemas/config-schema.json --required --topRef --titles --noExtraProps
 
-type ValidatorType = "warn_if_missing" | "age" | "regexp" | "units" | "depends_on" | "data_dictionary" | "list";
-type FieldDataType = "string" | "integer" | "clob" | "float" | "boolean";
+type validator_type = "warn_if_missing" | "age" | "regexp" | "units" | "depends_on" | "data_dictionary" | "list" | "delimiter";
+type field_data_type = "string" | "integer" | "clob" | "float" | "boolean";
+type test_type = "null" | "match";
 
 /**
  * Validator specification
  * @additionalProperties false
  */
-export interface FieldValidator {
+export interface field_validator {
     /**
      * type of validator
      */
-    type: ValidatorType;
+    type: validator_type;
 
     /**
      * options for the validator; a basic object
      * @additionalProperties false
      */
-    options: {[key: string]: string};     
-    values: string[];
+    options?: {[key: string]: string };     
+
+    /**
+     * 
+     * validator value (may be a list of items or a test)
+     * @uniqueItems true
+     * @minItems 1
+     */
+    value?: string | string[];
 }
 
 /**
  * Metadata File Field Specification
  * @additionalProperties false
  */
-export interface Field {
+export interface field {
      /**
      * name of metadata field
      * 
@@ -41,7 +50,7 @@ export interface Field {
      * @default string
      */
 
-    type?: FieldDataType;
+    type?: field_data_type;
 
     /**
      * flag indicating whether the field is required
@@ -54,24 +63,22 @@ export interface Field {
     /**
      * list of field validators
      */
-    validators?: FieldValidator[];
+    validator?: field_validator[];
 }
 
 
 /**
- * Metadata File Validator Configuration
+ * Metadata File (Sheet) Validator Configuration
  * @additionalProperties false
  */
 
-export interface MetadataFile {
-
-
+export interface sheet {
     /**
      * name of the sheet
      * 
      * @TJS-type string
      */
-    name: string;
+    sheet_name?: string;
 
     /**
      * flag indicating whether user-defined fields are allowed
@@ -86,7 +93,7 @@ export interface MetadataFile {
      * @uniqueItems true
      * @minItems 1
      */
-    fields: Field[]
+    fields: field[]
 
     /**
      * to support inheritence; parent sheet type (e.g., `rnaseq_assay` extends `sequencing_assay`)
