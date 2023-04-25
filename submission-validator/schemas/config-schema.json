@@ -1,98 +1,108 @@
 {
+    "$ref": "#/definitions/sheet",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "definitions": {
-        "Field": {
+        "field": {
+            "additionalProperties": false,
+            "description": "Metadata File Field Specification",
             "properties": {
                 "name": {
                     "description": "name of metadata field",
+                    "title": "name",
                     "type": "string"
                 },
                 "required": {
                     "default": false,
                     "description": "flag indicating whether the field is required",
+                    "title": "required",
                     "type": "boolean"
                 },
                 "type": {
                     "default": "string",
                     "description": "data type of the field;",
+                    "title": "type",
                     "type": "string"
                 },
-                "validators": {
+                "validator": {
                     "description": "list of field validators",
                     "items": {
-                        "$ref": "#/definitions/FieldValidator"
+                        "$ref": "#/definitions/field_validator"
                     },
+                    "title": "validator",
                     "type": "array"
                 }
             },
             "required": [
                 "name"
             ],
+            "title": "field",
             "type": "object"
         },
-        "FieldDataType": {
-            "enum": [
-                "boolean",
-                "clob",
-                "float",
-                "integer",
-                "string"
-            ],
-            "type": "string"
-        },
-        "FieldValidator": {
+        "field_validator": {
+            "additionalProperties": false,
+            "description": "Validator specification",
             "properties": {
                 "options": {
                     "additionalProperties": {
-                        "anyOf": [
-                            {
-                                "items": {
-                                    "type": "string"
-                                },
-                                "type": "array"
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ]
+                        "type": "string"
                     },
-                    "description": "options for the validator",
+                    "description": "options for the validator; a basic object",
+                    "title": "options",
                     "type": "object"
                 },
                 "type": {
-                    "$ref": "#/definitions/ValidatorType",
-                    "description": "type of validator"
+                    "$ref": "#/definitions/validator_type",
+                    "description": "type of validator",
+                    "title": "type"
+                },
+                "value": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "description": "validator value (may be a list of items or a test)",
+                    "minItems": 1,
+                    "title": "value",
+                    "uniqueItems": true
                 }
             },
             "required": [
-                "options",
                 "type"
             ],
+            "title": "field_validator",
             "type": "object"
         },
-        "MetadataFile": {
+        "sheet": {
+            "additionalProperties": false,
+            "description": "Metadata File (Sheet) Validator Configuration",
             "properties": {
                 "allow_user_fields": {
                     "default": false,
                     "description": "flag indicating whether user-defined fields are allowed",
+                    "title": "allow_user_fields",
                     "type": "boolean"
                 },
                 "extends": {
                     "description": "to support inheritence; parent sheet type (e.g., `rnaseq_assay` extends `sequencing_assay`)",
+                    "title": "extends",
                     "type": "string"
                 },
                 "fields": {
                     "description": "list of expected fields in the sheet",
                     "items": {
-                        "$ref": "#/definitions/Field"
+                        "$ref": "#/definitions/field"
                     },
                     "minItems": 1,
+                    "title": "fields",
                     "type": "array",
                     "uniqueItems": true
-                },
-                "name": {
-                    "description": "name of the sheet",
-                    "type": "string"
                 },
                 "omit_fields": {
                     "description": "to support inheritence; any fields from the parent that should be omitted (ignored)",
@@ -100,26 +110,34 @@
                         "type": "string"
                     },
                     "minItems": 0,
+                    "title": "omit_fields",
                     "type": "array",
                     "uniqueItems": true
+                },
+                "sheet_name": {
+                    "description": "name of the sheet",
+                    "title": "sheet_name",
+                    "type": "string"
                 }
             },
             "required": [
-                "fields",
-                "name"
+                "fields"
             ],
+            "title": "sheet",
             "type": "object"
         },
-        "ValidatorType": {
+        "validator_type": {
             "enum": [
                 "age",
                 "data_dictionary",
+                "delimiter",
                 "depends_on",
                 "list",
                 "regexp",
                 "units",
                 "warn_if_missing"
             ],
+            "title": "validator_type",
             "type": "string"
         }
     }

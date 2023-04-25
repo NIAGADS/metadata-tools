@@ -1,5 +1,4 @@
 {
-   "name": "sequencing_assay", 
    "extends": "generic_assay",
     "omit_fields": [],
     "fields": [

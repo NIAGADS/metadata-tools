@@ -26,21 +26,4 @@ if __name__ == "__main__":
     schema = load_json_from_file(args.schemaFile, True)
     config = load_json_from_file(args.configFile, True)
     
-    # print(json.dumps(schema, indent=2))
-
-    schema = {
-        "additionalProperties": False,
-        "description": "Validator specification",
-        "properties": {
-            "type": {
-                "description": "type of validator",
-                "type": "string"
-            },
-        },
-        "required": [
-            "type"
-        ],
-        "type": "object"
-    }
-    
     validate(instance=config, schema=schema)

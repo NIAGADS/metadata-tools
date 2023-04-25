@@ -85,13 +85,13 @@
                 {
                     "type": "depends_on",
                     "options": {
-                        "test"
+                        "test":"test"
                     }
                 }
             ]
         },
         {
-            "name": "pipeline_info",
+            "name": "pipeline_info"
         }
     ]
 }

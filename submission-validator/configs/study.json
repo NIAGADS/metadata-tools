@@ -1,4 +1,5 @@
 {
+    "sheet_name": "study",
     "allow_user_fields": false,
     "fields": [
         {
@@ -10,17 +11,23 @@
             "validator": [
                 {
                     "type": "regexp",
-                    "value": "DOI"
+                    "options": {
+                        "pattern": "/^10.\\d{4,9}/[-._;()/:A-Z0-9]+$/i"
+                    }
                 },
                 {
                     "type": "regexp",
-                    "value": "PMID"
+                    "options": {
+                        "pattern": "/PMID:\\d+/"
+                    }
+                },
+                {
+                    "type": "warn_if_missing",
+                    "options": {
+                        "message": "Are the data being submitted published? Please provide a PubMed ID or DOI.  Preprint DOI can also be provided."
+                    }
                 }
-            ],
-            "warn_if_missing": true,
-            "messages": {
-                "missing": "Are the data being submitted published? Please provide a PubMed ID or DOI.  Preprint DOI can also be provided."
-            }
+            ]
         },
         {
             "name": "acknowledgment",
@@ -40,23 +47,40 @@
         },
         {
             "name": "dataset_description",
-            "required": true
+            "required": true,
+            "type": "clob"
         },
         {
             "name": "disease",
             "validator": [
                 {
-                    "type": "regexp",
-                    "value": "delimiter"
+                    "type": "delimiter",
+                    "value": "//"
+                },
+                {
+                    "type": "warn_if_missing"
                 }
-            ],
-            "warn_if_missing": true
+            ]
         },
         {
-            "name": "data_citation"
+            "name": "data_citation",
+            "validator": [
+                {
+                    "type": "delimiter",
+                    "value": "//"
+                }
+            ]
         },
         {
-            "name": "website"
+            "name": "website",
+            "validator": [
+                {
+                    "type": "regexp",
+                    "options": {
+                        "pattern": "/^https?:\/\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\/=]*)$/"
+                    }
+                }
+            ]
         },
         {
             "name": "logo"

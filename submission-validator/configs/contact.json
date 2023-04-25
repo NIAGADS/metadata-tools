@@ -1,4 +1,5 @@
 {
+    "sheet_name": "contacts",
     "allow_user_fields": false,
     "fields": [
         {
@@ -11,7 +12,7 @@
             "validator": [
                 {
                     "type": "regexp",
-                    "value": "email"
+                    "options": {"pattern":"\\A[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[A-Z0-9-]+\\.)+[A-Z]{2,6}\\Z"}
                 }
             ]
         },
@@ -25,7 +26,7 @@
             "validator": [
                 {
                     "type": "list",
-                    "values": [
+                    "value": [
                         "principal investigator",
                         "PI",
                         "submitter",
