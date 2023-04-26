@@ -53,9 +53,9 @@
                         "test": {
                             "type": "field_exists",
                             "field": "case_control_status"
-                        },
-                        "message": "`Disease` was specified; please include `Case Control Status` to indicate whether each sample was a case or control."
-                    }
+                        }
+                    },
+                    "message": "`Disease` was specified; please include `Case Control Status` to indicate whether each sample was a case or control."
                 }
             ]
         },
@@ -75,9 +75,9 @@
                         "test": {
                             "type": "field_exists",
                             "field": "disease"
-                        },
-                        "message": "`Case Control Status` is provided; please add the field `Disease` to indicate the disease for each subject, even if a `Disease` field was specified in the `Study` sheet"
-                    }
+                        }
+                    },
+                    "message": "`Case Control Status` is provided; please add the field `Disease` to indicate the disease for each subject, even if a `Disease` field was specified in the `Study` sheet"
                 }
             ],
             "required": true
@@ -94,9 +94,7 @@
                 },
                 {
                     "type": "warn_if_missing",
-                    "options": {
-                        "message": "If `Age at Diagnosis` is available, it is the preferred variable for reported age."
-                    }
+                    "message": "If `Age at Diagnosis` is available, it is the preferred variable for reported age."
                 }
             ]
         },
@@ -141,9 +139,9 @@
                             "type": "value_matches",
                             "value": true,
                             "field": "autopsy"
-                        },
-                        "message": "Some samples are reported taken at autopsy.  Please include the `Age at Death`"
-                    }
+                        }
+                    },
+                    "message": "Some samples are reported taken at autopsy.  Please include the `Age at Death`"
                 }
             ],
             "required": true
@@ -203,9 +201,7 @@
                 },
                 {
                     "type": "warn_if_missing",
-                    "options": {
-                        "message": "Please specify if samples were extracted from subjects during autopsy.  Can leave off if not relevant to the samples/subjects. If any values are `yes`, please also provide the `Age at Death` and any relevant information the autopsy in the `Autopsy_info` field"
-                    }
+                    "message": "Please specify if samples were extracted from subjects during autopsy.  Can leave off if not relevant to the samples/subjects. If any values are `yes`, please also provide the `Age at Death` and any relevant information the autopsy in the `Autopsy_info` field"
                 }
             ]
         },
@@ -218,9 +214,9 @@
                         "test": {
                             "type": "field_exists",
                             "field": "autopsy"
-                        },
-                        "message": "The `Autoposy_info` field was provided, but you did not specify if samples were extracted from subjects during autoposy.  Please include the `Autopsy` and `Age at Death` fields"
-                    }
+                        }
+                    },
+                    "message": "The `Autoposy_info` field was provided, but you did not specify if samples were extracted from subjects during autoposy.  Please include the `Autopsy` and `Age at Death` fields"
                 }
             ],
             "type": "clob"

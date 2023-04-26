@@ -17,9 +17,7 @@
                 },
                 {
                     "type": "warn_if_missing",
-                    "options": {
-                        "message": "Are the data being submitted published? Please provide a PubMed ID or DOI.  Preprint DOI can also be provided."
-                    }
+                    "message": "Are the data being submitted published? Please provide a PubMed ID or DOI.  Preprint DOI can also be provided."
                 }
             ]
         },
