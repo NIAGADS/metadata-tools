@@ -13,10 +13,6 @@
                             "field": "subjectid_submitter"
                         }
                     }
-                },
-                {
-                    "type": "field_match",
-                    "value": "sample|subjectid_submitter"
                 }
             ],
             "required": true
@@ -68,27 +64,78 @@
         },
         {
             "name": "number_of_cases",
-            "warn_if_missing": true,
-            "type": "integer"
+            "type": "integer",
+            "validator": [
+                {
+                    "type": "test",
+                    "options": {
+                        "test": {
+                            "sheet": "phenotype",
+                            "field": [
+                                "case_control_status",
+                                "disease"
+                            ],
+                            "type": "all_fields_exist"
+                        }
+                    },
+                    "message": "`Number of Cases` was specified; please include `Disease` and `Case Control Status` in the `Phenotype` sheet for each subject"
+                },
+                {
+                    "type": "test",
+                    "options": {
+                        "test": {
+                            "field": "number_of_controls",
+                            "type": "all_fields_exist"
+                        }
+                    },
+                    "message": "`Number of Cases` was specified; please also include the `Number of Controls`"
+                }
+            ]
         },
         {
             "name": "number_of_controls",
-            "warn_if_missing": true,
-            "type": "integer"
+            "type": "integer",
+            "validator": [
+                {
+                    "type": "test",
+                    "options": {
+                        "test": {
+                            "sheet": "phenotype",
+                            "field": [
+                                "case_control_status",
+                                "disease"
+                            ],
+                            "type": "all_fields_exist"
+                        }
+                    },
+                    "message": "`Number of Controls` was specified; please include `Disease` and `Case Control Status` in the `Phenotype` sheet for each subject"
+                },
+                {
+                    "type": "test",
+                    "options": {
+                        "test": {
+                            "field": "number_of_cases",
+                            "type": "all_fields_exist"
+                        }
+                    },
+                    "message": "`Number of Controls` was specified; please also include the `Number of Cases`"
+                }
+            ]
         },
         {
             "name": "processed_date",
-            "warn_if_missing": true,
-            "messages": {
-                "missing": "If submitting processed data files, please provide the date when this file was 'processed' or generated"
-            },
             "type": "date",
             "validator": [
                 {
                     "type": "test",
                     "options": {
-                        "test": "test"
-                    }
+                        "test": {
+                            "type": "value_matches",
+                            "value": "processed",
+                            "field": "raw_or_processed"
+                        }
+                    },
+                    "message": "Some files indicated that processed data are being submitted, please include the field `Processed Date` to provide the date when the processed file was generated"
                 }
             ]
         },

@@ -56,6 +56,17 @@
                         }
                     },
                     "message": "`Disease` was specified; please include `Case Control Status` to indicate whether each sample was a case or control."
+                },
+                {
+                    "type":"test",
+                    "options": {
+                        "test": {
+                            "sheet": "processing",
+                            "field": ["number_of_cases", "number_of_controls"],
+                            "type": "all_fields_exist"
+                        },
+                        "message": "`Disease` was specified; `Number of Cases` and `Number of Controls` fields must be included in the `Files and Processing` sheet and specified for each result"
+                    }
                 }
             ]
         },

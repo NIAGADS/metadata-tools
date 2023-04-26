@@ -51,6 +51,28 @@
                 },
                 {
                     "type": "warn_if_missing"
+                },
+                {
+                    "type":"test",
+                    "options": {
+                        "test": {
+                            "sheet": "phenotype",
+                            "field": ["disease", "case_control_status"],
+                            "type": "all_fields_exist"
+                        },
+                        "message": "A disease has been associated with the submission (`Disease` column is present); `Disease` and `Case Control Status` fields must be included in the `Phenotype` sheet and specified for each subject"
+                    }
+                },
+                {
+                    "type":"test",
+                    "options": {
+                        "test": {
+                            "sheet": "processing",
+                            "field": ["number_of_cases", "number_of_controls"],
+                            "type": "all_fields_exist"
+                        },
+                        "message": "A disease has been associated with the submission (`Disease` column is present); `Number of Cases` and `Number of Controls` fields must be included in the `Files and Processing` sheet and specified for each result"
+                    }
                 }
             ]
         },
