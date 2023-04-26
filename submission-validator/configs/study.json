@@ -12,13 +12,7 @@
                 {
                     "type": "regexp",
                     "options": {
-                        "pattern": "/^10.\\d{4,9}/[-._;()/:A-Z0-9]+$/i"
-                    }
-                },
-                {
-                    "type": "regexp",
-                    "options": {
-                        "pattern": "/PMID:\\d+/"
+                        "pattern": "publication"
                     }
                 },
                 {
@@ -77,7 +71,7 @@
                 {
                     "type": "regexp",
                     "options": {
-                        "pattern": "/^https?:\/\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\/=]*)$/"
+                        "pattern": "URL"
                     }
                 }
             ]

@@ -12,7 +12,9 @@
             "validator": [
                 {
                     "type": "regexp",
-                    "options": {"pattern":"\\A[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[A-Z0-9-]+\\.)+[A-Z]{2,6}\\Z"}
+                    "options": {
+                        "pattern": "email"
+                    }
                 }
             ]
         },
