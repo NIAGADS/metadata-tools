@@ -5,12 +5,17 @@
             "name": "subjectid_submitter",
             "validator": [
                 {
-                    "type": "field_match",
-                    "value": "phenotype|subjectid_submitter"
+                    "type": "dependency",
+                    "options": {
+                        "test": {
+                            "type": "value_exists",
+                            "sheet": "phenotype",
+                            "field": "subjectid_submitter"
+                        }
+                    }
                 }
             ],
-            "required": true,
-            "depends_on": "sheet:phenotype"
+            "required": true
         },
         {
             "name": "sampleid_submitter",
@@ -18,68 +23,77 @@
         },
         {
             "name": "datasource_publication",
-            "warn_if_missing": true,
-            "messages": {
-                "missing": "If experimental input is a pre-existing, published dataset please provide the PubMed ID or DOI of the source publication",
-                "fail_test": "A data citation is provided in the Study sheet.  If the pre-existing dataset was published, please provide the PubMed ID or DOI of the source publication for each relevant sample, so that we can accurrately track the source of each sample."
-            },
             "validator": [
                 {
-                    "type": "depends_on",
-                    "value": "null_test",
+                    "type": "warn_if_missing",
+                    "message": "If experimental input is a pre-existing, published dataset please provide the PubMed ID or DOI of the source publication"
+                },
+                {
+                    "type": "requires",
                     "options": {
                         "test": {
-                            "field": "study:data_citation"
+                            "type": "all_fields_exist",
+                            "sheet": "study",
+                            "field": "data_citation",
+                            "warn_if_fail": true
                         }
+                    },
+                    "message": "A data citation is provided in the Study sheet.  If the pre-existing dataset was published, please provide the PubMed ID or DOI of the source publication for each relevant sample, so that we can accurrately track the source of each sample."
+                },
+                {
+                    "type": "regexp",
+                    "options": {
+                        "pattern": "publication"
                     }
-                },
-                {
-                    "type": "regexp",
-                    "value": "DOI"
-                },
-                {
-                    "type": "regexp",
-                    "value": "PMID"
                 }
             ]
         },
         {
             "name": "datasource_accession",
-            "warn_if_missing": true,
-            "messages": {
-                "missing": "If experimental input is a pre-existing dataset pulled from a data repository, please provide the repository (REP) and accession number (ACCN) in the format REP|ACCN",
-                "fail_test": "A data citation is provided in the Study sheet.  If the pre-existing dataset was pulled from a data repository, please provide the repository (REP) and accession number (ACCN) in the format REP|ACCN for each relevant sample, so that we can accurrately track the source of each sample."
-            },
             "validator": [
                 {
-                    "type": "regexp",
-                    "value": "accession"
+                    "type": "warn_if_missing",
+                    "message": "If experimental input is a pre-existing dataset pulled from a data repository, please provide the repository (REP) and accession number (ACCN) in the format REP|ACCN"
                 },
                 {
-                    "type": "depends_on",
-                    "value": "null_test",
+                    "type": "regexp",
+                    "options": {
+                        "pattern": "custom",
+                        "comment": "/\\S+\\|\\S+/"
+                    }
+                },
+                {
+                    "type": "requires",
                     "options": {
                         "test": {
-                            "field": "study:data_citation"
+                            "type": "all_fields_exist",
+                            "sheet": "study",
+                            "field": "data_citation",
+                            "warn_if_fail": true
                         }
-                    }
+                    },
+                    "message": "A data citation is provided in the Study sheet.  If the pre-existing dataset was pulled from a data repository, please provide the repository (REP) and accession number (ACCN) in the format REP|ACCN for each relevant sample, so that we can accurrately track the source of each sample."
                 }
             ]
         },
         {
             "name": "datasource_fileid",
-            "warn_if_missing": true,
-            "messages": {
-                "missing": "If experimental input is a pre-existing dataset pulled from a repository or publication and has been assigned an unique file identifier, please provide the file ID",
-                "fail_test": "A data citation is provided in the Study sheet.  If the pre-existing dataset was pulled from a repository or publication and has been assigned an unique file identifier, please provide the file ID for each relevant sample, so that we can accurrately track the source of each sample."
-            },
             "validator": [
                 {
-                    "type": "depends_on",
-                    "value": "null_test",
-                    "test": {
-                        "field": "study:data_citation"
-                    }
+                    "type": "warn_if_missing",
+                    "message": "If experimental input is a pre-existing dataset pulled from a repository or publication and has been assigned an unique file identifier, please provide the file ID"
+                },
+                {
+                    "type": "dependency",
+                    "options": {
+                        "test": {
+                            "type": "all_fields_exist",
+                            "sheet": "study",
+                            "field": "data_citation",
+                            "warn_if_fail": true
+                        }
+                    },
+                    "message": "A data citation is provided in the Study sheet.  If the pre-existing dataset was pulled from a repository or publication and has been assigned an unique file identifier, please provide the file ID for each relevant sample, so that we can accurrately track the source of each sample."
                 }
             ]
         },
@@ -151,18 +165,21 @@
         },
         {
             "name": "antibody",
-            "depends_on": "test",
-            "test": {
-                "field": "assay",
-                "values": [
-                    "ChIP-Seq",
-                    "etc"
-                ]
-            },
-            "warn_if_missing": true,
-            "messages": {
-                "missing": "Does the experiment involve specifying an antibody target? If so, please provide"
-            }
+            "validator": [
+                {
+                    "type": "dependency",
+                    "options": {
+                        "test": {
+                            "type": "value_matches",
+                            "field": "assay",
+                            "value": [
+                                "ChIP-Seq"
+                            ]
+                        }
+                    },
+                    "message": "Does the experiment involve specifying an antibody/type or target? If so, please include the `Antibody` field to provide the target or antibody type"
+                }
+            ]
         },
         {
             "name": "platform",

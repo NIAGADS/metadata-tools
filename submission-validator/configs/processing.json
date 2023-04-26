@@ -5,7 +5,7 @@
             "name": "sampleid_submitter",
             "validator": [
                 {
-                    "type": "depends_on",
+                    "type": "dependency",
                     "value": "column",
                     "options": {
                         "sheet": "sample",
@@ -83,7 +83,7 @@
             "type": "date",
             "validator": [
                 {
-                    "type": "depends_on",
+                    "type": "dependency",
                     "options": {
                         "test":"test"
                     }

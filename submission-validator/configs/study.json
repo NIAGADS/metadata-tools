@@ -60,6 +60,21 @@
                 {
                     "type": "delimiter",
                     "value": "//"
+                },
+                {
+                    "type": "requires",
+                    "options": {
+                        "test": {
+                            "type": "any_fields_exist",
+                            "sheet": "sample_assay",
+                            "field": [
+                                "datasource_publication",
+                                "datasource_accession",
+                                "datasource_fileid"
+                            ]
+                        }
+                    },
+                    "message": "A data citation is provided in the Study sheet. Please include one or more of the following: `Datasource Publication`, `Datasource Accession`, `Datasource FileID` in the sample/assay sheet"
                 }
             ]
         },

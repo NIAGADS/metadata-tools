@@ -11,7 +11,7 @@
             "required": true,
             "validator": [
                 {
-                    "type": "depends_on",
+                    "type": "dependency",
                     "options": {
                         "test": {
                             "type": "value_exists",
@@ -48,10 +48,10 @@
                     "type": "warn_if_missing"
                 },
                 {
-                    "type": "depends_on",
+                    "type": "requires",
                     "options": {
                         "test": {
-                            "type": "field_exists",
+                            "type": "all_fields_exist",
                             "field": "case_control_status"
                         }
                     },
@@ -70,10 +70,10 @@
                     ]
                 },
                 {
-                    "type": "depends_on",
+                    "type": "requires",
                     "options": {
                         "test": {
-                            "type": "field_exists",
+                            "type": "all_fields_exist",
                             "field": "disease"
                         }
                     },
@@ -133,7 +133,7 @@
                     "value": "years"
                 },
                 {
-                    "type": "depends_on",
+                    "type": "dependency",
                     "options": {
                         "test": {
                             "type": "value_matches",
@@ -209,10 +209,10 @@
             "name": "autoposy_info",
             "validator": [
                 {
-                    "type": "depends_on",
+                    "type": "requires",
                     "options": {
                         "test": {
-                            "type": "field_exists",
+                            "type": "all_fields_exist",
                             "field": "autopsy"
                         }
                     },
