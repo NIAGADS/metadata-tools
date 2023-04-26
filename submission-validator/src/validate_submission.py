@@ -68,5 +68,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     validate_args()
-    load_configs()
+    # load_configs()
     
