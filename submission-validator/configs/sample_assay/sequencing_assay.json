@@ -5,14 +5,14 @@
        {
           "name": "run_type",
           "required": true,
-          "validator": {
+          "validator": [{
              "type": "list",
-             "values": [
+             "value": [
                 "single",
                 "paired end",
                 "not applicable"
              ]
-          }
+          }]
        },
        {
           "name": "read_length",

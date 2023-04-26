@@ -26,7 +26,7 @@
                 "validator": {
                     "description": "list of field validators",
                     "items": {
-                        "$ref": "#/definitions/field_validator"
+                        "$ref": "#/definitions/validator"
                     },
                     "title": "validator",
                     "type": "array"
@@ -38,46 +38,15 @@
             "title": "field",
             "type": "object"
         },
-        "field_validator": {
-            "additionalProperties": false,
-            "description": "Validator specification",
-            "properties": {
-                "options": {
-                    "additionalProperties": {
-                        "type": "string"
-                    },
-                    "description": "options for the validator; a basic object",
-                    "title": "options",
-                    "type": "object"
-                },
-                "type": {
-                    "$ref": "#/definitions/validator_type",
-                    "description": "type of validator",
-                    "title": "type"
-                },
-                "value": {
-                    "anyOf": [
-                        {
-                            "items": {
-                                "type": "string"
-                            },
-                            "type": "array"
-                        },
-                        {
-                            "type": "string"
-                        }
-                    ],
-                    "description": "validator value (may be a list of items or a test)",
-                    "minItems": 1,
-                    "title": "value",
-                    "uniqueItems": true
-                }
-            },
-            "required": [
-                "type"
+        "pattern_type": {
+            "enum": [
+                "URL",
+                "custom",
+                "email",
+                "publication"
             ],
-            "title": "field_validator",
-            "type": "object"
+            "title": "pattern_type",
+            "type": "string"
         },
         "sheet": {
             "additionalProperties": false,
@@ -126,14 +95,159 @@
             "title": "sheet",
             "type": "object"
         },
+        "test": {
+            "additionalProperties": false,
+            "description": "Details about a depends_on (test-involving) validation",
+            "properties": {
+                "field": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "description": "the field(s) on which the validation is dependent; assumes same sheet if `sheet` is not supplied",
+                    "title": "field"
+                },
+                "sheet": {
+                    "description": "sheet name if not same as field being validated",
+                    "title": "sheet",
+                    "type": "string"
+                },
+                "type": {
+                    "$ref": "#/definitions/test_type",
+                    "description": "the type of the test",
+                    "title": "type"
+                },
+                "value": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": [
+                                "string",
+                                "number",
+                                "boolean"
+                            ]
+                        }
+                    ],
+                    "description": "field value(s) on which dependency is conditioned; Y/N should be specified as boolean",
+                    "title": "value"
+                },
+                "warn_if_fail": {
+                    "default": false,
+                    "description": "flag indicating whether a warning instead of an error should be provided if the test fails",
+                    "title": "warn_if_fail",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "field",
+                "type"
+            ],
+            "title": "test",
+            "type": "object"
+        },
+        "test_type": {
+            "enum": [
+                "all_fields_exist",
+                "any_fields_exist",
+                "value_exists",
+                "value_matches"
+            ],
+            "title": "test_type",
+            "type": "string"
+        },
+        "validator": {
+            "additionalProperties": false,
+            "description": "Validator specification; validators can be provided for fields or sheets",
+            "properties": {
+                "message": {
+                    "description": "message if validation fails or warning conditions are met",
+                    "title": "message",
+                    "type": "string"
+                },
+                "options": {
+                    "$ref": "#/definitions/validator_options",
+                    "description": "options for the validator",
+                    "title": "options"
+                },
+                "type": {
+                    "$ref": "#/definitions/validator_type",
+                    "description": "type of validator",
+                    "title": "type"
+                },
+                "value": {
+                    "anyOf": [
+                        {
+                            "items": {
+                                "type": "string"
+                            },
+                            "type": "array"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "description": "validator value (may be a list of items or a test)",
+                    "minItems": 1,
+                    "title": "value",
+                    "uniqueItems": true
+                }
+            },
+            "required": [
+                "type"
+            ],
+            "title": "validator",
+            "type": "object"
+        },
+        "validator_options": {
+            "additionalProperties": false,
+            "description": "Validator options",
+            "properties": {
+                "allow_user_terms": {
+                    "default": false,
+                    "description": "allow free text; for data dictionary validation",
+                    "title": "allow_user_terms",
+                    "type": "boolean"
+                },
+                "comment": {
+                    "description": "catch all to allow additional comments or qualifiersoptions for now, but still allow schema validation by not allowing additionalProperties",
+                    "title": "comment",
+                    "type": "string"
+                },
+                "pattern": {
+                    "$ref": "#/definitions/pattern_type",
+                    "description": "regexp pattern type; for custom pattern specifiy `custom` and then provide\nthe actual pattern in the \"other\"",
+                    "title": "pattern"
+                },
+                "test": {
+                    "$ref": "#/definitions/test",
+                    "description": "if depends on is specified, provide type of dependency test",
+                    "title": "test"
+                }
+            },
+            "title": "validator_options",
+            "type": "object"
+        },
         "validator_type": {
             "enum": [
                 "age",
                 "data_dictionary",
                 "delimiter",
-                "depends_on",
+                "dependency",
                 "list",
                 "regexp",
+                "requires",
                 "units",
                 "warn_if_missing"
             ],
