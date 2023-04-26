@@ -62,7 +62,7 @@
                     "value": "//"
                 },
                 {
-                    "type": "requires",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "any_fields_exist",

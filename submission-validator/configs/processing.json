@@ -5,11 +5,13 @@
             "name": "sampleid_submitter",
             "validator": [
                 {
-                    "type": "dependency",
-                    "value": "column",
+                    "type": "test",
                     "options": {
-                        "sheet": "sample",
-                        "field": "subjectid_submitter"
+                        "test": {
+                            "type": "value_exists",
+                            "sheet": "sample",
+                            "field": "subjectid_submitter"
+                        }
                     }
                 },
                 {
@@ -83,9 +85,9 @@
             "type": "date",
             "validator": [
                 {
-                    "type": "dependency",
+                    "type": "test",
                     "options": {
-                        "test":"test"
+                        "test": "test"
                     }
                 }
             ]

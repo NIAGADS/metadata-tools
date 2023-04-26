@@ -7,8 +7,7 @@ type validator_type =
   | "age"
   | "regexp"
   | "units"
-  | "dependency" // use when one field depends on the values in another field (same or different sheet)
-  | "requires" // use when the presence of one field necessiates the presence of another (same or different sheet) 
+  | "test" // use when one field depends on the values in or existence of another field (same or different sheet)
   | "data_dictionary"
   | "list"
   | "delimiter"
@@ -22,10 +21,10 @@ type pattern_type =
   | "URL"
   | "custom"; // supply custom pattern in the validator `value` field
 
-type test_type = "value_exists" // (dependency) all values in the dependent field must exist in the independent field
-  | "value_matches" // (dependency) a value in the independent field matches the test value
-  | "all_fields_exist" // (requires) require all fields in the set to be present
-  | "any_fields_exist" // (requires) require at least one field in the set to be present
+type test_type = "value_exists" // (test) all values in the dependent field must exist in the independent field
+  | "value_matches" // (test) a value in the independent field matches the test value
+  | "all_fields_exist" // (test) require all fields in the set to be present
+  | "any_fields_exist" // (test) require at least one field in the set to be present
   ; 
   
 
@@ -73,7 +72,7 @@ export interface test {
 
 export interface validator_options {
   /**
-   * if depends on is specified, provide type of dependency test
+   * if type of validation is a test, provide the details
    */
   test?: test;
 

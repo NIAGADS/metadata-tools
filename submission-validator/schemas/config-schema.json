@@ -232,7 +232,7 @@
                 },
                 "test": {
                     "$ref": "#/definitions/test",
-                    "description": "if depends on is specified, provide type of dependency test",
+                    "description": "if type of validation is a test, provide the details",
                     "title": "test"
                 }
             },
@@ -244,10 +244,9 @@
                 "age",
                 "data_dictionary",
                 "delimiter",
-                "dependency",
                 "list",
                 "regexp",
-                "requires",
+                "test",
                 "units",
                 "warn_if_missing"
             ],

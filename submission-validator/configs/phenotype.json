@@ -11,7 +11,7 @@
             "required": true,
             "validator": [
                 {
-                    "type": "dependency",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "value_exists",
@@ -48,7 +48,7 @@
                     "type": "warn_if_missing"
                 },
                 {
-                    "type": "requires",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "all_fields_exist",
@@ -70,7 +70,7 @@
                     ]
                 },
                 {
-                    "type": "requires",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "all_fields_exist",
@@ -133,7 +133,7 @@
                     "value": "years"
                 },
                 {
-                    "type": "dependency",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "value_matches",
@@ -209,7 +209,7 @@
             "name": "autoposy_info",
             "validator": [
                 {
-                    "type": "requires",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "all_fields_exist",

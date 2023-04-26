@@ -5,7 +5,7 @@
             "name": "subjectid_submitter",
             "validator": [
                 {
-                    "type": "dependency",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "value_exists",
@@ -29,7 +29,7 @@
                     "message": "If experimental input is a pre-existing, published dataset please provide the PubMed ID or DOI of the source publication"
                 },
                 {
-                    "type": "requires",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "all_fields_exist",
@@ -63,7 +63,7 @@
                     }
                 },
                 {
-                    "type": "requires",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "all_fields_exist",
@@ -84,7 +84,7 @@
                     "message": "If experimental input is a pre-existing dataset pulled from a repository or publication and has been assigned an unique file identifier, please provide the file ID"
                 },
                 {
-                    "type": "dependency",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "all_fields_exist",
@@ -167,7 +167,7 @@
             "name": "antibody",
             "validator": [
                 {
-                    "type": "dependency",
+                    "type": "test",
                     "options": {
                         "test": {
                             "type": "value_matches",
