@@ -7,9 +7,28 @@ import pandas as pd
 import json
 
 from sys import stderr, stdout, exit
+from os import path
 from datetime import datetime
 
 ASSAY_TYPES = ["generic", "sequencing","rna_seq", "chipseq"]
+SHEETS = ["contact", "study", "cohort", "phenotype", "sample_assay", "processing"]
+
+
+def get_config(sheet):
+    ''' load and return config file for specified sheet'''
+    config = None
+    with open(path.join(args.configDir, sheet + ".json"), 'r') as fh:
+        config = fh.read()        
+    return json.loads(config)
+
+
+def load_metadata_from_xlsx():
+    ''' loads metadata from EXCEL file and returns as list structure '''
+    1
+
+def validate_sheet(metadata, targetSheet, targetSheetConfig):
+    ''' run sheet validator '''
+    1
 
 def validate_args():
     ''' validate command line arguments '''
@@ -31,11 +50,15 @@ def validate_args():
         message = "Output directory (--ouputDir) missing.  Outputting validation messages to STDOUT"
         messageJson.append({"WARNING": message})
         
+    if args.sheetMap:
+        raise NotImplementedError("Handling of sheet name mappings (--sheetMap) is not yet implemented")
+        
     if notValid:
         print("ERROR - ", "Invalid arguments/values provided.")
         [ print(next(iter(message.values()))) for message in messageJson if 'ERROR' in next(iter(message.items())) ]
         print("Exiting")
         exit(1)
+        
         
     else:
         print("WARNING - ")
@@ -64,9 +87,22 @@ if __name__ == "__main__":
     parser.add_argument('-s', '--sheet', 
                         help="for validating a single sheet, supply sheet name" 
                             + "in the EXCEL file, or file name if loading sheet from --inputDir") 
+    parser.add_argument('--sheetMap', help="""mapping of actual sheet names to expected in JSON format; e.g., 
+                        '{"study": "my_study_sheet_name", "sample_assay":"dataset2_assay"}'
+                        sheets that can be mapped are "contact", "study", "cohort", "phenotype", "sample_assay", "processing"
+                        "" and "" from the metadata template will be mapped automatically to "sample_assay" and "processing", respectively
+                        """)
 
     args = parser.parse_args()
     
+    if args.sheet:
+        raise NotImplementedError("Validating single sheets has not yet been implmented; use --excelFile to validate an XLSX file contain all sheets in the metadata template")
+    
+    if args.inputDir:
+        raise NotImplementedError("Validation from .tab or .txt tab-delimited files has not yet been implemented; use --excelFile to validate an XLSX file")
+    
     validate_args()
-    # load_configs()
+    
+    # read in EXCEL file and check for unicode/unprintable characters
+    # validate sheets in order
     
