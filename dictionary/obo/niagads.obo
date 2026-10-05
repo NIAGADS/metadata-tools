@@ -273,3 +273,15 @@ id: NIAGADS:0000069
 name: technical variables
 def: "Variables describing technical aspects of data generation, processing, or quality control."
 is_a: OBCS:0000040 ! covariate specification
+
+
+[Term]
+id: UMLS:C5772801
+name: LATE-NC
+def: "Neuropathologic change characterized by abnormal TDP-43 accumulation predominantly in limbic brain regions in older adults."
+is_a: HP:0002180 ! Neurodegeneration
+
+id: NIAGADS:0000070
+name: amyloid-beta plaques
+def: "Extracellular deposits of amyloid-beta in brain tissue, encompassing diffuse and neuritic plaques."
+synonym: "amyloid-β plaques" EXACT []
