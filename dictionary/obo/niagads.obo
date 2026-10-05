@@ -205,7 +205,7 @@ is_a: EFO_0000513  ! genotype
 id: NIAGADS:0000061
 name: APOEε4 carrier status or allele number
 def: "(covariate) status of an individual a carrier of a specific APOEε4 allele"
-is_a: EFO_0000513  ! genotype
+is_a: OBCS:0000040 ! covariate specification
 
 
 [Term]
@@ -261,3 +261,15 @@ name: single-variant association test summary statistics
 def: "Summary statistics from single-variant association tests."
 is_a: OBI_0000905 ! sequence feature annotation
 is_a: NIAGADS:0000008 ! variant annotation
+
+[Term]
+id: NIAGADS:0000068
+name: sequencing center
+def: "The laboratory or facility responsible for generating sequencing data."
+is_a: OBCS:0000040 ! covariate specification
+
+[Term]
+id: NIAGADS:0000069
+name: technical variables
+def: "Variables describing technical aspects of data generation, processing, or quality control."
+is_a: OBCS:0000040 ! covariate specification
