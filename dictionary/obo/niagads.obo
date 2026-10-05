@@ -201,6 +201,12 @@ name: APOEε4 non-carrier
 def: "an individual who is not a carrier for the APOEε4 allele"
 is_a: EFO_0000513  ! genotype
 
+[Term]
+id: NIAGADS:0000061
+name: APOEε4 carrier status or allele number
+def: "(covariate) status of an individual a carrier of a specific APOEε4 allele"
+is_a: EFO_0000513  ! genotype
+
 
 [Term]
 id: NIAGADS:0000063
