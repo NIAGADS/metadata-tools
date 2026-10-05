@@ -5,216 +5,216 @@ remark: custom ontology for niagads resources
 ontology: niagadsobo
 
 [Term]
-id: NO:0000003
+id: NIAGADS:0000003
 name: DNAse hypersensitive region
 def: "Sequence feature annotation for a region that is hypersensitive to DNase digestion when packaged as chromatin."
 is_a: OBI_0000905 ! sequence feature annotation
 
 [Term]
-id: NO:0000004
+id: NIAGADS:0000004
 name: histone peak
 def: "Sequence feature annotation for a region where a specific type of histone is found usually based on recognition by an antibody to a particular histone modification or variant."
 is_a: OBI_0000905 ! sequence feature annotation
 
 
 [Term]
-id: NO:0000005
+id: NIAGADS:0000005
 name: expressed enhancer
 def: "Sequence feature annotation for an enhancer region that is also transcribed."
 is_a: OBI_0000905 ! sequence feature annotation
 
 [Term]
-id: NO:0000006
+id: NIAGADS:0000006
 name: specifically expressed enhancer
 def: "Sequence feature annotation for an enhancer region that is transcribed selectively in certain cell populations."
 is_a: OBI_0000905 ! sequence feature annotation
 
 [Term]
-id: NO:0000007
+id: NIAGADS:0000007
 name: TSS-associated expressed enhancer
 def: "Sequence feature annotation for an enhancer region that is transcribed and associated with a transcription start site."
 is_a: OBI_0000905 ! sequence feature annotation
 
 [Term]
-id: NO:0000008
+id: NIAGADS:0000008
 name: variant annotation
 def: "Information about a sequence feature associated with a known variant"
 is_a: OBI_0000905 ! sequence feature annotation
 
 [Term]
-id: NO:0000009
+id: NIAGADS:0000009
 name: gene annotation
 def: "Information about a gene feature."
 is_a: OBI_0000905 ! sequence feature annotation
 
 [Term]
-id: NO:0000010
+id: NIAGADS:0000010
 name: GWAS summary statistics
 def: "summary statistics from meta-analysis of related Genome-wide association studies"
 is_a: OBI_0000905 ! sequence feature annotation
-is_a: NO:0000008 ! variant annotation
+is_a: NIAGADS:0000008 ! variant annotation
 
 [Term]
-id: NO:0000011
+id: NIAGADS:0000011
 name: disease susceptibility trait
 def: "sequence feature annotation reflecting disease susceptibility"
 is_a: OBI_0000905 ! sequence feature annotation
-is_a: NO:0000008 ! variant annotation
+is_a: NIAGADS:0000008 ! variant annotation
 
 [Term]
-id: NO:0000012
+id: NIAGADS:0000012
 name: effect and predicted effect impact
 def: "predicted effect of a variant on a genomic region"
 is_a: OBI_0000905 ! sequence feature annotation
-is_a: NO:0000008 ! variant annotation
+is_a: NIAGADS:0000008 ! variant annotation
 
 [Term]
-id: NO:0000013
+id: NIAGADS:0000013
 name: APOE adjusted
 def: "statistical adjustment for APOE e-4 allele status"
 
 [Term]
-id: NO:0000014
+id: NIAGADS:0000014
 name: Braak Stage I
 def: "stage 1 in the evolution of Parkinson's disease-related pathology: lesions in the dorsal IX/X motor nucleus and/or intermediate reticular zone; in Alzheimer's disease: neurofibrillary tangles are restricted to the transentorhinal region of the brain"
 
 [Term]
-id: NO:0000015
+id: NIAGADS:0000015
 name: Braak Stage II
 def: "stage 2 in the evolution of Parkinson's disease-related pathology: pathology of stage I plus lesions in caudal raphe nuclei, gigantocellular reticular nucleus, and coeruleus-subcoeruleus complex; in Alzheimer's disease: pathology of stage I, plus tangle density increases and the pathology extends into the entorhinal region"
 
 [Term]
-id: NO:0000016
+id: NIAGADS:0000016
 name: Braak Stage III
 def: "stage 3 in the evolution of Parkinson's disease-related pathology: pathology of stage II plus midbrain lesions, in particular in the pars compacta of the substantia nigra; in Alzheimer's disease: pathology of stage II plus, pathology in the outer and inner entorhinal and transentorhinal cellular layers worsens, and lesions extend into the adjoining neocortical association areas of the fusiform (occipito-temporal) gyrus"
 
 [Term]
-id: NO:0000017
+id: NIAGADS:0000017
 name: Braak Stage IV
 def: "stage 4 in the evolution of Parkinson's disease-related pathology: pathology of stage III plus prosencephalic lesions. Cortical involvement is confined to the temporal mesocortex (transentorhinal region) and allocortex (CA2-plexus). The neocortex is unaffected; in Alzheimer's disease: pathology of stage III, plus density of the lesions increases in both the entorhinal region and fusiform gyrus  with a gradual decrease of the pallid lines; neurofibrillary pathology now extends up to the medial temporal gyrus"
 
 [Term]
-id: NO:0000018
+id: NIAGADS:0000018
 name: Braak Stage V
 def: "stage 5 in the evolution of Parkinson's disease-related pathology: pathology of stage IV plus lesions in high order sensory association areas of the neocortex and prefrontal neocortex; in Alzheimer's disease: pathology of stage IV, plus lesions extend widely into the occipital lobe and appear in the peristriate region"
 
 
 [Term]
-id: NO:0000019
+id: NIAGADS:0000019
 name: Braak Stage VI
 def: "stage 6 in the evolution of PD-related pathology: pathology of stage V plus lesions in first order sensory association areas of the neocortex and premotor areas, occasionally mild changes in primary sensory areas and the primary motor field; in Alzheimer's disease: pathology of stage V, plus lesions are visible even in the parastriate and striate areas of the occipital neocortex"
 
 [Term]
-id: NO:0000020
+id: NIAGADS:0000020
 name: Braak Group: none
 def: "no neurofibrillary tangles"
 
 [Term]
-id: NO:0000021
+id: NIAGADS:0000021
 name: Braak Group: transentorhinal
 def: "Braak stages I/II"
 
 [Term]
-id: NO:0000022
+id: NIAGADS:0000022
 name: Braak Group: limbic
 def: "Braak stages III/IV"
 
 [Term]
-id: NO:0000023
+id: NIAGADS:0000023
 name: Braak Group: isocortical
 def: "Braak stages V/VI"
 
 [Term]
-id: NO:0000024
+id: NIAGADS:0000024
 name: Braak Groups
 def: "four category split of the Braak Stages: none: no neurofibrillary tangles; transentorhinal: Braak stages I/II; limbic: Braak stages III/IV; isocortical: Braak Stages V/VI"
 
 [Term]
-id: NO:0000025
+id: NIAGADS:0000025
 name: Braak Stages
 def: "stages marking evolution of Parkison's disease-related pathology and distribution of neurofibrillary tangles in the brain; later adapted for Alzheimer's disease-related pathology (Braak 1993: PMID 8121624)"
 
 [Term]
-id: NO:0000026
+id: NIAGADS:0000026
 name: CERAD score
 def: "Consortium to establish a Registry for Alzheimer's disease (CERAD) score for density of euritic plaques in the brain: none, sparse (A), moderate (B), frequent (C)"
 
 [Term]
-id: NO:0000033
+id: NIAGADS:0000033
 name: NH-A (Lonza CC-2565)
 def: "Normal human astrocyte cell-line"
 is_a: CLO_0000031 ! cell line
 
 [Term]
-id: NO:0000034
+id: NIAGADS:0000034
 name: Ha-h (ScienCell 1830)
 def: "Human astrocytes-hippocampal"
 is_a: CL_0000000 ! cell
 
 [Term]
-id: NO:0000035
+id: NIAGADS:0000035
 name: Ha-sp (ScienCell 1820)
 def: "Human astrocytes-spinal chord"
 is_a: CL_0000000 ! cell
 
 [Term]
-id: NO:0000036
+id: NIAGADS:0000036
 name: D721
 def: "Medulloblastoma (aka D721), surgical resection from a patient with medulloblastoma as described by Darrell Bigner (1997)"
 is_a: CLO_0000031 ! cell line
 
 [Term]
-id: NO:0000037
+id: NIAGADS:0000037
 name: autopsy-based diagnosis
 def: "A diagnosis that is generated by a diagnostic process occurring during the performance of an autopsy."
 is_a: OGMS_0000073 ! diagnosis
 
 [Term]
-id: OGMS_0000073
+id: OGMS:0000073
 name: diagnosis
 
 [Term]
-id:  NO:0000047
+id:  NIAGADS:0000047
 name: Other ethnicity
 def: "ethnicity that does not unambiguously cluster with the major populations (e.g., EUR, EAS, AFR, SAS, AMR) in a principal components analysis"
 is_a: HANCESTRO_0004 ! ancestry category
 
 [Term]
-id:  NO:0000048
+id:  NIAGADS:0000048
 name: Non-Finnish European
 is_a: HANCESTRO_0004 ! ancestry category
 
 [Term]
-id: NO:0000058
+id: NIAGADS:0000058
 name: antibody target
 def: "a material entity that has as part some molecular antigen that is recognized by an antibody"
 
 [Term]
-id: NO:0000059
+id: NIAGADS:0000059
 name: APOEε4 carrier
 def: "an individual who is a carrier for the APOEε4 allele"
 is_a: EFO_0000513  ! genotype
 
 [Term]
-id: NO:0000060
+id: NIAGADS:0000060
 name: APOEε4 non-carrier
 def: "an individual who is not a carrier for the APOEε4 allele"
 is_a: EFO_0000513  ! genotype
 
 
 [Term]
-id: NO:0000063
+id: NIAGADS:0000063
 name: Non-Hispanic White
 def: "non-Hispanic (a person of Mexican, Puerto Rican, Cuban, Central or South American or other Spanish culture or origin, regardless of race) subset of Caucasian (person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White)"
 is_a: HANCESTRO_0004 ! ancestry category
 
 [Term]
-id: OBCS_0000040
+id: OBCS:0000040
 name: covariate specification
 def: "a variable specification that specifies a variable used in statistical analysis to correct, adjust, or modify the values of a dependent variable; an independent variable not manipulated by the investigator"
 
 [Term]
-id: NO:0000064
+id: NIAGADS:0000064
 name: Caribbean Hispanic
 def: "hispanic ancestry; specifically from the Caribbean"
 is_a: HANCESTRO:0004 ! ancestry category
@@ -224,3 +224,20 @@ is_a: HANCESTRO:0004 ! ancestry category
 id: OBI:0000905
 name: sequence feature annotation
 xref: OBI:OBI_0000905
+
+[Term]
+id: NIAGADS:0000001
+name: resilience to Alzheimer’s disease neuropathology
+def: "A derived phenotype representing cognitive performance that is better or worse than expected given the burden of Alzheimer disease neuropathology." []
+
+[Term]
+id: NIAGADS:0000002
+name: residual cognitive resilience to Alzheimer’s disease neuropathology
+def: "A derived phenotype representing residual cognitive performance after accounting for Alzheimer disease neuropathology and relevant covariates." []
+is_a: NIAGADS:0000001 ! cognitive resilience
+
+[Term]
+id: NIAGADS:0000065
+name: combined resilience to Alzheimer’s disease neuropathology
+def: "A derived phenotype combining residual cognitive resilience with educational attainment." []
+is_a: NIAGADS:0000001 ! cognitive resilience
