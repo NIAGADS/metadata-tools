@@ -248,12 +248,6 @@ name: combined resilience to Alzheimer’s disease neuropathology
 def: "A derived phenotype combining residual cognitive resilience with educational attainment." []
 is_a: NIAGADS:0000001 ! cognitive resilience
 
-[Term]
-id: NIAGADS:0000066
-name: GWAS summary statistics
-def: "summary statistics from meta-analysis of related Genome-wide association studies"
-is_a: OBI_0000905 ! sequence feature annotation
-is_a: NIAGADS:0000008 ! variant annotation
 
 [Term]
 id: NIAGADS:0000067
@@ -274,7 +268,6 @@ name: technical variables
 def: "Variables describing technical aspects of data generation, processing, or quality control."
 is_a: OBCS:0000040 ! covariate specification
 
-
 [Term]
 id: UMLS:C5772801
 name: LATE-NC
@@ -285,3 +278,20 @@ id: NIAGADS:0000070
 name: amyloid-beta plaques
 def: "Extracellular deposits of amyloid-beta in brain tissue, encompassing diffuse and neuritic plaques."
 synonym: "amyloid-β plaques" EXACT []
+
+id: NIAGADS:0000070
+name: amyloid-beta plaques
+def: "Extracellular deposits of amyloid-beta in brain tissue, encompassing diffuse and neuritic plaques."
+synonym: "amyloid-β plaques" EXACT []
+
+[Term]
+id: NIAGADS:0000071
+name: nighttime behavioral disturbance
+def: "Disruption of nighttime sleep and behavior, including nocturnal awakening, wandering, or excessive daytime sleeping."
+synonym: "Nighttime Behaviors" EXACT []
+
+[Term]
+id: NIAGADS:0000072
+name: aggregate variant association test summary statistics
+def: "Summary statistics from an association test that jointly evaluates multiple genetic variants grouped by gene, genomic region, or functional category for association with a phenotype."
+synonym: "variant aggregation association test" EXACT []
