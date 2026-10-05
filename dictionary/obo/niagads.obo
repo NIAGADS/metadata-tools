@@ -247,3 +247,17 @@ id: NIAGADS:0000065
 name: combined resilience to Alzheimer’s disease neuropathology
 def: "A derived phenotype combining residual cognitive resilience with educational attainment." []
 is_a: NIAGADS:0000001 ! cognitive resilience
+
+[Term]
+id: NIAGADS:0000066
+name: GWAS summary statistics
+def: "summary statistics from meta-analysis of related Genome-wide association studies"
+is_a: OBI_0000905 ! sequence feature annotation
+is_a: NIAGADS:0000008 ! variant annotation
+
+[Term]
+id: NIAGADS:0000067
+name: single-variant association test summary statistics
+def: "Summary statistics from single-variant association tests."
+is_a: OBI_0000905 ! sequence feature annotation
+is_a: NIAGADS:0000008 ! variant annotation
