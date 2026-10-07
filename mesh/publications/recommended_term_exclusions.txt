@@ -1,0 +1,95 @@
+mesh_term	CURIE
+Africa	MeSH:D000349
+Africa, Southern	MeSH:D000353
+Africa, Western	MeSH:D000354
+Asia	MeSH:D001208
+Asia, Eastern	MeSH:D005202
+Australia	MeSH:D001315
+Boston	MeSH:D001900
+California	MeSH:D002140
+Cameroon	MeSH:D002163
+Canada	MeSH:D002170
+Caribbean Region	MeSH:D017691
+Chicago	MeSH:D002641
+China	MeSH:D002681
+Colombia	MeSH:D003105
+Denmark	MeSH:D003718
+Developing Countries	MeSH:D003906
+Dominican Republic	MeSH:D004293
+England	MeSH:D004739
+Europe	MeSH:D005060
+Finland	MeSH:D005387
+Geography	MeSH:D005843
+Georgia	MeSH:D005845
+Ghana	MeSH:D005869
+Hawaii	MeSH:D006254
+Iceland	MeSH:D007055
+India	MeSH:D007194
+Indiana	MeSH:D007196
+Japan	MeSH:D007564
+Latin America	MeSH:D007843
+Massachusetts	MeSH:D008404
+Mediterranean Region	MeSH:D019083
+Mexico	MeSH:D008800
+Mississippi	MeSH:D008922
+Netherlands	MeSH:D009426
+New South Wales	MeSH:D009517
+New York	MeSH:D009518
+New York City	MeSH:D009519
+Nigeria	MeSH:D009549
+Norway	MeSH:D009664
+Ohio	MeSH:D009820
+Peru	MeSH:D010568
+Portugal	MeSH:D011174
+Puerto Rico	MeSH:D011647
+Republic of Korea	MeSH:D056910
+San Francisco	MeSH:D012495
+Scandinavian and Nordic Countries	MeSH:D012537
+Scotland	MeSH:D012606
+South Africa	MeSH:D013019
+South America	MeSH:D013020
+Spain	MeSH:D013030
+Sweden	MeSH:D013548
+Texas	MeSH:D013781
+United Kingdom	MeSH:D006113
+United States	MeSH:D014481
+Vietnam	MeSH:D014744
+Washington	MeSH:D014861
+Humans	MeSH:D006801
+Research	MeSH:D012106
+Biomedical Research	MeSH:D035843
+Empirical Research	MeSH:D036262
+Medicine	MeSH:D008511
+Biology	MeSH:D001695
+Disease	MeSH:D004194
+Syndrome	MeSH:D013577
+Health	MeSH:D006262
+Research Personnel	MeSH:D012108
+Research Subjects	MeSH:D035842
+Research Design	MeSH:D012107
+Data Analysis	MeSH:D000078332
+Data Interpretation, Statistical	MeSH:D003627
+Statistics as Topic	MeSH:D013223
+Time Factors	MeSH:D013997
+Sample Size	MeSH:D018401
+Pilot Projects	MeSH:D010865
+Feasibility Studies	MeSH:D005240
+Models, Theoretical	MeSH:D008962
+Classification	MeSH:D002965
+Knowledge	MeSH:D019359
+Technology	MeSH:D013672
+Communication	MeSH:D003142
+Goals	MeSH:D006040
+Clinical Relevance	MeSH:D000092522
+Negative Results	MeSH:D000076723
+Uncertainty	MeSH:D035501
+American Heart Association	MeSH:D000572
+National Heart, Lung, and Blood Institute (U.S.)	MeSH:D054555
+National Institute on Aging (U.S.)	MeSH:D054561
+World Health Organization	MeSH:D014944
+Universities	MeSH:D014495
+Societies, Scientific	MeSH:D012958
+Congresses as Topic	MeSH:D003226
+Health Personnel	MeSH:D006282
+Workload	MeSH:D016526
+Job Satisfaction	MeSH:D007588
