@@ -85,29 +85,34 @@ python3 generate_suggested_mesh_headings.py
 
 MeSH terms extracted from the publication, study, and dataset files were
 identified with assistance from ChatGPT (OpenAI) for their usefulness in
-NIAGADS topic cataloging, search, and indexing. Exclusion decisions were based
-on meaning and frequency.
+NIAGADS topic cataloging, search, and indexing.
+
+A first pass was made to exclude terms that annotated a single (non-study
+or non-dataset affiliated) publication.  After that, exclusion decisions
+were based on a combination of meaning and frequency, with extra
+consideration given to terms annotating publications associated with datasets
+and studies.
 
 Recommendations are found in `MeSH-recommended-exclusions.txt`.
 
 Terms were excluded when they described:
 
-- **Generic descriptors:** exclude Humans, Animals, sex, and broad age
+* **Generic descriptors:** exclude Humans, Animals, sex, and broad age
   groups; capture these in population metadata.
-- **Publication and administrative terms:** exclude headings about publication
+* **Publication and administrative terms:** exclude headings about publication
   format, funding, organizations, and research management.
-- **Generic research processes:** exclude broad terms that do not usefully
+* **Generic research processes:** exclude broad terms that do not usefully
   distinguish dataset subjects.
-- **Clinical headings:** exclude clinical observations, treatments, procedures,
+* **Clinical headings:** exclude clinical observations, treatments, procedures,
   outcomes, and other subjects unrelated to genomic data or associated
   phenotypes.
-- **Incidental details or downstream findings:** exclude headings describing
+* **Incidental details or downstream findings:** exclude headings describing
   publication-specific experimental details, interpretations, or applications
   rather than deposited data.
-- **Excessive specificity:** exclude individual genes, proteins, chromosome
+* **Excessive specificity:** exclude individual genes, proteins, chromosome
   numbers, and narrow pathways, with explicit exceptions for key AD genes such
   as APOE and TREM2 and markers such as tau and amyloid.
-- **Redundant broad headings:** exclude when a retained, more specific heading
+* **Redundant broad headings:** exclude when a retained, more specific heading
   adequately covers the same subject.
 
 **Weight by source:** favor headings supported by study or dataset annotations,
