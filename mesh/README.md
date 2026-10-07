@@ -68,6 +68,19 @@ suggested MeSH headings to data submitters before the Data Submission Portal
 is released. It provides a searchable list of recommended headings and MeSH
 identifiers for use when describing submitted datasets.
 
+## Internal maintenance
+
+`generate_suggested_mesh_headings.py` regenerates the support page from
+`MeSH-retained-terms.txt`. It uses only the Python standard library and
+preserves the page layout and search behavior while updating the heading rows
+and count. This is an internal maintenance utility; data submitters should
+use the HTML support page and do not need to run this script. Run it from this
+directory with:
+
+```shell
+python3 generate_suggested_mesh_headings.py
+```
+
 ## MeSH term exclusion criteria
 
 MeSH terms extracted from the publication, study, and dataset files were
