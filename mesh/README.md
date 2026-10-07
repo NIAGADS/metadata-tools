@@ -52,8 +52,8 @@ cataloging decisions:
 
 ### Review summary
 
-The review retained 247 MeSH headings and recommended excluding 768, reducing
-the candidate term set by 75.7%. Of the recommended exclusions, 73 are flagged
+The review retained 257 MeSH headings and recommended excluding 758, reducing
+the candidate term set by 74.7%. Of the recommended exclusions, 73 are flagged
 for additional review before finalizing the exclusion decision.
 
 The source counts distinguish terms found in the broader publication snapshot
